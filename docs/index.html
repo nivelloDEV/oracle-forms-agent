@@ -77,6 +77,15 @@ async function ghGet(file) {
   if (r.status === 404) return null;
   if (!r.ok) throw new Error(`GitHub API fel: ${r.status}`);
   const data = await r.json();
+  // GitHub kan returnera tom content för stora filer – använd download_url som fallback
+  if (!data.content || data.content.trim() === "") {
+    if (data.download_url) {
+      const r2 = await fetch(data.download_url + "?t=" + Date.now());
+      const json = await r2.json();
+      return { content: json, sha: data.sha };
+    }
+    return null;
+  }
   return { content: JSON.parse(atob(data.content.replace(/\s/g, ""))), sha: data.sha };
 }
 
@@ -170,14 +179,24 @@ async function toggleBlock(link, btn) {
 
 async function init() {
   try {
-    const [resultsData, blocklistData] = await Promise.all([ghGet(RESULTS_FILE), ghGet(BLOCKLIST_FILE)]);
+    const resultsData = await ghGet(RESULTS_FILE);
     allResults = resultsData ? resultsData.content : [];
+  } catch (e) {
+    document.getElementById("cards").innerHTML = `<div class="loading">Fel vid laddning av träffar: ${e.message}</div>`;
+    return;
+  }
+
+  try {
+    const blocklistData = await ghGet(BLOCKLIST_FILE);
     blocklist = new Set(blocklistData ? blocklistData.content : []);
     blocklistSha = blocklistData ? blocklistData.sha : null;
-    renderCards();
   } catch (e) {
-    document.getElementById("cards").innerHTML = `<div class="loading">Fel: ${e.message}</div>`;
+    console.warn("Kunde inte ladda blocklista:", e.message);
+    blocklist = new Set();
+    blocklistSha = null;
   }
+
+  renderCards();
 }
 
 init();
