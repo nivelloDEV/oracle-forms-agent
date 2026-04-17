@@ -10,6 +10,7 @@ RESULTS_FILE = "results.json"
 BLOCKLIST_FILE = "blocklist.json"
 
 QUERIES = [
+    'site:linkedin.com/jobs "oracle forms" sverige',
     'site:linkedin.com/jobs "oracle forms" sweden',
     'site:linkedin.com/jobs "oracle forms" danmark',
     'site:linkedin.com/jobs "oracle forms" denmark',
@@ -17,6 +18,16 @@ QUERIES = [
     '"oracle forms" virksomhed danmark',
     '"oracle forms" consultant sweden',
     '"oracle forms" developer denmark',
+    'site:linkedin.com/jobs "oracle apex" sverige',    
+    'site:linkedin.com/jobs "oracle apex" sweden',
+    'site:linkedin.com/jobs "oracle apex" danmark',
+    'site:linkedin.com/jobs "oracle apex" denmark',
+    'site:linkedin.com/jobs "pl/sql" sverige',    
+    'site:linkedin.com/jobs "pl/sql" sweden',
+    'site:linkedin.com/jobs "pl/sql" danmark',
+    'site:linkedin.com/jobs "pl/sql" denmark',
+    '"oracle apex" företag sverige',
+    '"oracle apex" virksomhed danmark',
 ]
 
 CLOSED_PHRASES = [
