@@ -5,7 +5,6 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 SERPAPI_KEY = os.environ.get("SERPAPI_KEY")
-DATA_FILE = "found_companies.json"
 
 QUERIES = [
     'site:linkedin.com/jobs "oracle forms" sweden',
@@ -23,43 +22,21 @@ CLOSED_PHRASES = [
     "job no longer available",
 ]
 
-ALLOWED_LOCATIONS = [
-    "sweden", "sverige", "stockholm", "göteborg", "malmö", "gothenburg",
-    "denmark", "danmark", "copenhagen", "köpenhamn", "københavn", "aarhus", "odense",
-]
-
-
-def load_seen() -> set:
-    if Path(DATA_FILE).exists():
-        with open(DATA_FILE) as f:
-            return set(json.load(f))
-    return set()
-
-
-def save_seen(seen: set):
-    with open(DATA_FILE, "w") as f:
-        json.dump(list(seen), f)
-
 
 def parse_date(date_str: str) -> datetime | None:
-    """Försöker tolka datumsträngar från SerpAPI, t.ex. '3 months ago', '2024-01-15'."""
     if not date_str:
         return None
     date_str = date_str.lower().strip()
     now = datetime.now()
     try:
         if "day" in date_str:
-            days = int(date_str.split()[0])
-            return now - timedelta(days=days)
+            return now - timedelta(days=int(date_str.split()[0]))
         elif "week" in date_str:
-            weeks = int(date_str.split()[0])
-            return now - timedelta(weeks=weeks)
+            return now - timedelta(weeks=int(date_str.split()[0]))
         elif "month" in date_str:
-            months = int(date_str.split()[0])
-            return now - timedelta(days=months * 30)
+            return now - timedelta(days=int(date_str.split()[0]) * 30)
         elif "year" in date_str:
-            years = int(date_str.split()[0])
-            return now - timedelta(days=years * 365)
+            return now - timedelta(days=int(date_str.split()[0]) * 365)
         else:
             return datetime.strptime(date_str, "%Y-%m-%d")
     except Exception:
@@ -67,7 +44,6 @@ def parse_date(date_str: str) -> datetime | None:
 
 
 def is_recent(date_str: str, max_days: int = 365) -> bool:
-    """Returnerar True om datumet är inom max_days, eller om datumet är okänt."""
     parsed = parse_date(date_str)
     if parsed is None:
         return True  # Okänt datum – ta med för säkerhets skull
@@ -92,9 +68,7 @@ def search_google(query: str) -> list[dict]:
             snippet = res.get("snippet", "").lower()
             title = res.get("title", "").lower()
             link = res.get("link", "")
-            is_linkedin = "linkedin.com/jobs" in link
 
-            # Hämta datum från SerpAPI (finns i "date" eller inne i "rich_snippet")
             date_str = (
                 res.get("date")
                 or res.get("rich_snippet", {}).get("top", {}).get("detected_extensions", {}).get("posted_at")
@@ -110,10 +84,6 @@ def search_google(query: str) -> list[dict]:
                     print(f"  Hoppar över stängd annons (>1 år): {res.get('title', '')}")
                     continue
 
-            if is_linkedin and not any(loc in snippet or loc in title for loc in ALLOWED_LOCATIONS):
-                print(f"  Hoppar över annons utanför SE/DK: {res.get('title', '')}")
-                continue
-
             filtered.append({
                 "title": res.get("title", ""),
                 "link": link,
@@ -128,20 +98,19 @@ def search_google(query: str) -> list[dict]:
 
 
 def run_scraper() -> list[dict]:
-    seen = load_seen()
-    new_results = []
+    all_results = []
+    seen_links = set()  # Undviker dubbletter inom samma körning
 
     for query in QUERIES:
         print(f"Söker: {query}")
         results = search_google(query)
         for r in results:
-            if r["link"] not in seen:
-                seen.add(r["link"])
-                new_results.append(r)
+            if r["link"] not in seen_links:
+                seen_links.add(r["link"])
+                all_results.append(r)
 
-    save_seen(seen)
-    print(f"\nHittade {len(new_results)} nya träffar.")
-    return new_results
+    print(f"\nHittade {len(all_results)} träffar.")
+    return all_results
 
 
 if __name__ == "__main__":
