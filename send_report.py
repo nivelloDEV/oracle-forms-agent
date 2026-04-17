@@ -25,11 +25,13 @@ def build_html(results: list[dict]) -> str:
             title = r.get("title", "").replace("<", "&lt;").replace(">", "&gt;")
             link = r.get("link", "")
             query = r.get("query", "")
+            date_raw = r.get("date", "")
+            date_tag = f'<span class="tag date">📅 {date_raw}</span>' if date_raw else ""
             cards += f"""
             <div class="card">
                 <a href="{link}" class="card-title">{title}</a>
                 <p class="snippet">{snippet}</p>
-                <span class="tag">Sök: {query}</span>
+                <span class="tag">Sök: {query}</span>{date_tag}
             </div>
             """
         body_content = cards
