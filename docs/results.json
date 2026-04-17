@@ -1,11 +1,43 @@
 [
   {
+    "title": "Oracle-udvikler til Manufacturing IT",
+    "link": "https://dk.linkedin.com/jobs/view/600698488",
+    "snippet": "Du har gode kvalifikationer og erfaring inden for Oracle Database, Oracle Weblogic, Oracle SQL og PL/SQL, Oracle Forms/Reports. Derudover er det en fordel ...",
+    "query": "site:linkedin.com/jobs \"oracle forms\" danmark",
+    "date": "",
+    "is_new": true
+  },
+  {
+    "title": "4000+ Oracle Ebs jobs in Tamil Nadu, India (398 new)",
+    "link": "https://in.linkedin.com/jobs/oracle-ebs-jobs-tamil-nadu",
+    "snippet": "Oracle EBS Rollout Specialist. Work Life Group NL. Copenhagen, Capital Region of Denmark, Denmark ... Senior Oracle Forms Developer. Transfer Solutions. Vianen, ...",
+    "query": "site:linkedin.com/jobs \"oracle forms\" denmark",
+    "date": "",
+    "is_new": true
+  },
+  {
+    "title": "Oracle Forms-utvecklare \u2013 Avaron AB",
+    "link": "https://jobbsafari.se/jobb/oracle-forms-utvecklare-sasrb-18957116",
+    "snippet": "Utveckla och f\u00f6rvalta Oracle Forms-baserade applikationer, inklusive databashantering i Oracle DB och databasn\u00e4ra kod i Oracle PL/SQL. Delta i ...",
+    "query": "\"oracle forms\" f\u00f6retag sverige",
+    "date": "",
+    "is_new": true
+  },
+  {
+    "title": "Talan - Oracle Technologies (formerly Insum)",
+    "link": "https://ca.linkedin.com/company/insum-solutions",
+    "snippet": "Does your company use Oracle Forms? Then ... Svenska (Swedish); \u0c24\u0c46\u0c32\u0c41\u0c17\u0c41 (Telugu); \u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22 (Thai); Tagalog (Tagalog)",
+    "query": "\"oracle forms\" f\u00f6retag sverige",
+    "date": "",
+    "is_new": true
+  },
+  {
     "title": "Senior Oracle developer - RDT Sweden AB",
     "link": "https://se.linkedin.com/jobs/view/senior-oracle-developer-at-rdt-sweden-ab-3550665939",
     "snippet": "We are looking Senior software developer Oracle SQL, PL/SQL, Oracle Forms and Reports Expert, university degree in system science. Language. Swedish: good.",
     "query": "site:linkedin.com/jobs \"oracle forms\" sweden",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Enterprise Digital Resources hiring Oracle Specialist in ...",
@@ -13,7 +45,7 @@
     "snippet": "Deep knowledge of Oracle Forms and Oracle Database (SQL, PL/SQL). Proven experience in Oracle APEX application development and deployment. Solid background in ...",
     "query": "site:linkedin.com/jobs \"oracle forms\" sweden",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Senior Oracle Developer - RDT Sweden AB",
@@ -21,7 +53,7 @@
     "snippet": "Required skills: \u00b7 Education. Senior software developer Oracle SQL, PL/SQL, Oracle Forms and Reports Expert, university degree in system science \u00b7 Language.",
     "query": "site:linkedin.com/jobs \"oracle forms\" sweden",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Cognizant s\u00f6ker Oracle Architect i Stockholm",
@@ -29,7 +61,7 @@
     "snippet": "We are seeking a Technology Architect with 10 to 14 years of experience in Unix Commands Oracle PL/SQL Oracle Apex Oracle Reports and Oracle Forms.",
     "query": "site:linkedin.com/jobs \"oracle forms\" sweden",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Veritaz s\u00f6ker Senior Oracle Developer - Malmo i Malm\u00f6",
@@ -37,7 +69,7 @@
     "snippet": "... Oracle Forms/Reports. In addition, you will drive Oracle PL/SQL development and ensure good quality in the delivery. What you'll do: \u00b7 Carry out and ...",
     "query": "site:linkedin.com/jobs \"oracle forms\" sweden",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "872 Remote Oracle Developer jobs in United States",
@@ -45,7 +77,7 @@
     "snippet": "SQL Developer within Corporate & Investment Banking | SEB, Stockholm. SEB. Stockholm, Stockholm County, Sweden ... Oracle Forms and Oracle PL/SQL Developer (m/f/d).",
     "query": "site:linkedin.com/jobs \"oracle forms\" sweden",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "The Group Securities hiring Senior Oracle Developer in ...",
@@ -53,7 +85,7 @@
     "snippet": "The Senior Oracle Developer will be responsible for developing, maintaining, and modernizing Oracle applications using PL/SQL , Oracle Forms & ...",
     "query": "site:linkedin.com/jobs \"oracle forms\" sweden",
     "date": "2 feb. 2026",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Oracle EBS Developer - Jobs via Dice",
@@ -61,7 +93,7 @@
     "snippet": "Utilize Oracle development tools including Oracle Forms Reports Workflow and BI Publisher to build scalable solutions ... Solna, Stockholm County, ...",
     "query": "site:linkedin.com/jobs \"oracle forms\" sweden",
     "date": "f\u00f6r 3 dagar sedan",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "SME Oracle APEX Developer - Aptonet",
@@ -69,7 +101,7 @@
     "snippet": "Analyze existing Oracle Forms applications and design migration strategies to Oracle APEX-based web applications ... Solna, Stockholm County, ...",
     "query": "site:linkedin.com/jobs \"oracle forms\" sweden",
     "date": "f\u00f6r 3 dagar sedan",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Oracle Ebs jobs in New York",
@@ -77,7 +109,7 @@
     "snippet": "Senior Oracle Forms Developer. Transfer Solutions. Vianen, Utrecht ... Stockholm, Stockholm County, Sweden. Be an early applicant. 3 weeks ago. Oracle eBS ...",
     "query": "site:linkedin.com/jobs \"oracle forms\" sweden",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Capgemini s\u00f6ker Senior Oracle Developer i Malm\u00f6",
@@ -85,7 +117,7 @@
     "snippet": "Du har gedigen kunskap inom; Oracle PL/SQL, Shell scripting, prestandajustering, XML, Oracle DBA, Oracle Forms/Reports. Du kommer driva Oracle PL/SQL ...",
     "query": "site:linkedin.com/jobs \"oracle forms\" danmark",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Oracle Specialist - University of Copenhagen",
@@ -93,7 +125,7 @@
     "snippet": "Oracle Forms og/ eller APEX. Erfaring med brug af PL/SQL, SQL eller lignende. Viden/ erfaring indenfor design og udvikling af datamodeller og anvendte ...",
     "query": "site:linkedin.com/jobs \"oracle forms\" danmark",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Oracle Senior Software Developer - Danfoss Drives",
@@ -101,15 +133,15 @@
     "snippet": "Supporting the upgrade of Oracle Forms 12c, helping transition existing implementations into future-ready solutions. Providing technical expertise in ...",
     "query": "site:linkedin.com/jobs \"oracle forms\" danmark",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Experienced Oracle Developer at Novo Nordisk Engineering",
     "link": "https://dk.linkedin.com/jobs/view/experienced-oracle-developer-at-novo-nordisk-engineering-at-nne-4278541881",
-    "snippet": "... Oracle Forms/Reports; Experience with software life-cycle processes and supporting tools; You speak and write English fluently; Experience in some of the ...",
+    "snippet": "5+ years of experience in software development; 5+ years of experience with Oracle Database, Oracle SQL and PL/SQL, Oracle Forms/Reports; Experience with ...",
     "query": "site:linkedin.com/jobs \"oracle forms\" danmark",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Oracle Specialist - K\u00f8benhavns Universitet",
@@ -117,7 +149,7 @@
     "snippet": "Oracle Forms og/ eller APEX. Erfaring med brug af PL/SQL, SQL eller lignende. Viden/ erfaring indenfor design og udvikling af datamodeller og anvendte ...",
     "query": "site:linkedin.com/jobs \"oracle forms\" danmark",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Sapiens s\u00f8ger en ADF Developer i K\u00f8benhavn",
@@ -125,7 +157,7 @@
     "snippet": "Knowledge of Oracle Forms and Reports. Knowledge of web services and REST APIs. Tools and technologies. Oracle ADF (WebLogic). Oracle JHeadstart. Oracle DB ...",
     "query": "site:linkedin.com/jobs \"oracle forms\" danmark",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "TIA/Oracle udvikler til GF Forsikring, Odense",
@@ -133,7 +165,7 @@
     "snippet": "Har viden om Oracle Forms; Har kendskab til versionsstyring (GIT og evt. Subversion); Tager ansvar og ejerskab for egne opgaver og st\u00f8tter teamet med at opn\u00e5 ...",
     "query": "site:linkedin.com/jobs \"oracle forms\" danmark",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Business Analyst - Ework Group Danmark",
@@ -141,7 +173,7 @@
     "snippet": "Existing system is built on Oracle forms, and the consultant needs to take charge of estimating several different options for modernizing the system.",
     "query": "site:linkedin.com/jobs \"oracle forms\" danmark",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "CGI Denmark s\u00f8ger en Java- og Oracleudvikler med flair for ...",
@@ -149,15 +181,7 @@
     "snippet": "For at f\u00e5 succes i jobbet er det krav at du har mindst 3 \u00e5rs erfaring med Java-udvikling, og det vil v\u00e6re et plus, hvis du har erfaring med Oracle Forms og ADF ...",
     "query": "site:linkedin.com/jobs \"oracle forms\" danmark",
     "date": "",
-    "is_new": true
-  },
-  {
-    "title": "IT-konsulenter med lead-ansvar og fokus p\u00e5 ERP-udvikling",
-    "link": "https://dk.linkedin.com/jobs/view/it-konsulenter-med-lead-ansvar-og-fokus-p%C3%A5-erp-udvikling-at-dr-danmarks-radio-4256062131",
-    "snippet": "Vi forestiller os, at du har: Erfaring med udvikling og tilpasning i Oracle E-Business Suite (PL/SQL, Oracle Forms/Reports, APEX m.fl.). Indsigt i ERP-processer ...",
-    "query": "site:linkedin.com/jobs \"oracle forms\" danmark",
-    "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Oracle Application Developer - Infinity Quest",
@@ -165,15 +189,7 @@
     "snippet": "Copenhagen, Capital Region of Denmark, Denmark 1 month ago. People also ... Desarrollador/a Oracle forms. Ayesa Digital. Seville, Andalusia, Spain 2 weeks ...",
     "query": "site:linkedin.com/jobs \"oracle forms\" denmark",
     "date": "",
-    "is_new": true
-  },
-  {
-    "title": "5000+ Oracle Ebs jobs in Pennsylvania, United States (402 ...",
-    "link": "https://www.linkedin.com/jobs/oracle-ebs-jobs-pennsylvania",
-    "snippet": "Oracle EBS Rollout Specialist. Work Life Group NL. Copenhagen, Capital Region of Denmark, Denmark ... Senior Oracle Forms Developer. Transfer Solutions. Vianen, ...",
-    "query": "site:linkedin.com/jobs \"oracle forms\" denmark",
-    "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "1000+ Oracle Ebs jobs in South Africa",
@@ -181,7 +197,7 @@
     "snippet": "Oracle EBS Rollout Specialist. Work Life Group NL. Copenhagen, Capital Region of Denmark, Denmark ... Senior Oracle Forms Developer. Transfer Solutions. Vianen, ...",
     "query": "site:linkedin.com/jobs \"oracle forms\" denmark",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Business Analyst (Core System replacement)",
@@ -189,7 +205,7 @@
     "snippet": "The existing system is built on Oracle Forms, and the consultant will be responsible for estimating various modernization options and presenting these to ...",
     "query": "site:linkedin.com/jobs \"oracle forms\" denmark",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Oracle Forms | Oracle Sverige",
@@ -197,23 +213,7 @@
     "snippet": "Oracle Forms, a component of Oracle Fusion Middleware, is Oracle's long-established technology used to build enterprise back-office desktop applications quickly ...",
     "query": "\"oracle forms\" f\u00f6retag sverige",
     "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Oracle Forms Developer - Find a Skilled Professional",
-    "link": "https://rightpeoplegroup.com/oracle-forms-developer",
-    "snippet": "We provide Oracle Forms developers who specialize in creating efficient database applications with modern interfaces while maintaining legacy system ...",
-    "query": "\"oracle forms\" f\u00f6retag sverige",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Companies using Oracle Forms and its marketshare",
-    "link": "https://enlyft.com/tech/products/oracle-forms",
-    "snippet": "11980 companies use Oracle Forms. Oracle Forms is most often used by companies with 1000-5000 employees & $1M-10M in revenue. Our usage data goes back 2 ...",
-    "query": "\"oracle forms\" f\u00f6retag sverige",
-    "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Oracle Forms-utvecklare - Hitta en skicklig expert",
@@ -221,7 +221,15 @@
     "snippet": "Vi tillhandah\u00e5ller Oracle Forms-utvecklare som \u00e4r specialiserade p\u00e5 att skapa effektiva databasapplikationer med moderna gr\u00e4nssnitt samtidigt som de ...",
     "query": "\"oracle forms\" f\u00f6retag sverige",
     "date": "",
-    "is_new": true
+    "is_new": false
+  },
+  {
+    "title": "Companies using Oracle Forms and its marketshare",
+    "link": "https://enlyft.com/tech/products/oracle-forms",
+    "snippet": "11980 companies use Oracle Forms. Oracle Forms is most often used by companies with 1000-5000 employees & $1M-10M in revenue. Our usage data goes back 2 ...",
+    "query": "\"oracle forms\" f\u00f6retag sverige",
+    "date": "",
+    "is_new": false
   },
   {
     "title": "Application Development Technologies",
@@ -229,7 +237,15 @@
     "snippet": "Oracle offers a complete and integrated set of application development and business ... Traditional Oracle Tools. Oracle Forms \u00b7 Oracle Designer \u00b7 Oracle Reports ...",
     "query": "\"oracle forms\" f\u00f6retag sverige",
     "date": "",
-    "is_new": true
+    "is_new": false
+  },
+  {
+    "title": "Oracle Forms Developer - Find a Skilled Professional",
+    "link": "https://rightpeoplegroup.com/oracle-forms-developer",
+    "snippet": "We provide Oracle Forms developers who specialize in creating efficient database applications with modern interfaces while maintaining legacy system ...",
+    "query": "\"oracle forms\" f\u00f6retag sverige",
+    "date": "",
+    "is_new": false
   },
   {
     "title": "Oracle Forms Reports Developer - Malmo",
@@ -237,7 +253,7 @@
     "snippet": "S\u00f6k tj\u00e4nsten Oracle Forms Reports Developer - Malmo i Sweden. Arion Recruitment anst\u00e4ller nu. Uppt\u00e4ck n\u00e4sta karri\u00e4rm\u00f6jlighet idag p\u00e5 ...",
     "query": "\"oracle forms\" f\u00f6retag sverige",
     "date": "f\u00f6r 3 dagar sedan",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Mobilization and Oracle Forms Nordics Roadshow",
@@ -245,7 +261,7 @@
     "snippet": "Oracle Forms, as technology, underpins tens of thousands of applications across the globe and in particular in the Nordic region if you pay ...",
     "query": "\"oracle forms\" f\u00f6retag sverige",
     "date": "8 nov. 2016",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Ledigt jobb: Oracle Forms-utvecklare till Avaron AB",
@@ -253,23 +269,7 @@
     "snippet": "Hos v\u00e5r kund kommer du att: Utveckla och f\u00f6rvalta Oracle Forms-baserade applikationer, inklusive databashantering i Oracle DB och databasn\u00e4ra ...",
     "query": "\"oracle forms\" f\u00f6retag sverige",
     "date": "23 jan. 2025",
-    "is_new": true
-  },
-  {
-    "title": "The Oracle Forms dilemma",
-    "link": "https://www.linkedin.com/pulse/oracle-forms-dilemma-g%C3%BCnther-st%C3%BCrner-uivme",
-    "snippet": "Yes, Oracle Forms is a powerful development platform and powers countless systems. And yes, Forms is a stable and reliable software package that ...",
-    "query": "\"oracle forms\" f\u00f6retag sverige",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Oracle Forms to Java & .NET Migration Tools",
-    "link": "https://www.gapvelocity.ai/migrate/oracle-forms",
-    "snippet": "GAPVelocity AI migration software cuts the time and cost of moving legacy Oracle Forms apps to .NET, ASP.NET Core, HTML5, and Angular, React, or Blazor.",
-    "query": "\"oracle forms\" f\u00f6retag sverige",
-    "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Oracle DBA konsulent | Copenhagen IT Consult",
@@ -277,7 +277,7 @@
     "snippet": "Teknologier: Oracle Rdb, PL/SQL, OpenVms, Hp Tru64, Red Hat & Oracle Entreprise Linux, Windows, Oracle 11gR2, Weblogic, Oracle Forms & Reports, Microsoft System ...",
     "query": "\"oracle forms\" virksomhed danmark",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Oracle forms",
@@ -285,7 +285,7 @@
     "snippet": "AI til virksomheder ... Oracle forms. Oracle forms. \u20b91500-12500 INR ... Freelancer-logo Denmark / Dansk \u00b7 Hj\u00e6lp & Support. Tilg\u00e6ngelighed. Freelancer. Kategorier ...",
     "query": "\"oracle forms\" virksomhed danmark",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Open Source v\u00e6rkt\u00f8j til applikationsudvikling",
@@ -293,7 +293,7 @@
     "snippet": "Hvis du har kritiske applikationer udviklet i gamle teknologier, som fx Oracle Forms, er det nok tid til at skifte til moderne teknologier. For vi kan se ...",
     "query": "\"oracle forms\" virksomhed danmark",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Oracle Netsuite-ekspert",
@@ -301,7 +301,7 @@
     "snippet": "Oracle Forms udvikling. Vi leverer Oracle Forms-udviklere, der er specialiserede i at skabe effektive databaseapplikationer med moderne brugergr\u00e6nseflader ...",
     "query": "\"oracle forms\" virksomhed danmark",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Fornyelse med Oracle APEX \u2013 mere end ny teknologi Hos flere ...",
@@ -309,7 +309,7 @@
     "snippet": "Fornyelse med Oracle APEX \u2013 mere end ny teknologi Hos flere af vores kunder ser vi, hvordan samspillet mellem Oracle Forms og APEX giver b\u00e5de stabil...",
     "query": "\"oracle forms\" virksomhed danmark",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Konvex ApS - Jan Lund Kristensen",
@@ -317,7 +317,7 @@
     "snippet": "Danske Bank, Tele Danmark, Mrsk Data og Post Danmark ... Efterflgende indgr de i komplekse beregninger og prsenteret/sagsbehandlet i Oracle Forms skrmbilleder.",
     "query": "\"oracle forms\" virksomhed danmark",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Hvordan man interagerer med Oracle Process Automation.",
@@ -325,7 +325,7 @@
     "snippet": "Form\u00e5let med dette indl\u00e6g er at vise praktisk end-to-end ops\u00e6tning for at muligg\u00f8re interaktion af Oracle Process Automation(OPA) med andre ...",
     "query": "\"oracle forms\" virksomhed danmark",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Oracle forms and report 10g project",
@@ -333,7 +333,7 @@
     "snippet": "Hi Guys, I Have project which is approval process needs to design in oracle forms 10g/reports10g. Design and table structures are ready.",
     "query": "\"oracle forms\" virksomhed danmark",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "<h1>Oracle</h1> - Simplify Systems",
@@ -341,7 +341,7 @@
     "snippet": "... Oracle Forms <BR> <li>Oracle Reports <BR> </ul> <BR> <p><p></td></tr></table> ... virksomhed og tilpasses s\u00e6rlige \u00f8nsker. Der kan ogs\u00e5 arrangeres korte ...",
     "query": "\"oracle forms\" virksomhed danmark",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Databaser - Data4u",
@@ -349,7 +349,7 @@
     "snippet": "Datawarehouse concepter. og meget mere. Vi har ogs\u00e5 et godt kendskab til. Oracle Applications/Finansiels; Oracle Reports; Oracle Forms; Oracle Discoverer. Det ...",
     "query": "\"oracle forms\" virksomhed danmark",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Oracle Applications Technical Consultant Jobs In Sweden",
@@ -357,39 +357,7 @@
     "snippet": "Oracle Applications Technical Consultant jobs in Sweden. Logo. Download ... Web services \u00b7 Oracle forms \u00b7 Workflow \u00b7 PLSQL \u00b7 XML publisher reports ...",
     "query": "\"oracle forms\" consultant sweden",
     "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Oracle Gold Partner",
-    "link": "https://www.materna.de/en/competences/technology-partner/oracle-gold-partner/",
-    "snippet": "Development and operation of customised business applications based on the Oracle Application Development Framework (ADF) and Oracle Forms \u00b7 Development and ...",
-    "query": "\"oracle forms\" consultant sweden",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Hussain Syed \u2013 Oracle EBS/Fusion SCM Techno ...",
-    "link": "https://se.linkedin.com/in/hussain-syed-44900119b",
-    "snippet": "... Oracle Forms 10g, Oracle Reports 10g, Oracle Workflow Builder, Unix, Linux ... Senior Oracle Fusion Developer(Consultant). Eniro. feb. 2023 \u2013 juni 2023 5 ...",
-    "query": "\"oracle forms\" consultant sweden",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "APEX Nordic Tour 2025 Spring Edition \u2013 Resources and ...",
-    "link": "https://blogs.oracle.com/apex/apex-nordic-tour-2025-spring-edition-resources-and-more",
-    "snippet": "Before she joined the APEX Team, she worked as an Oracle APEX Consultant, modernizing Oracle Forms apps and developing new applications with ...",
-    "query": "\"oracle forms\" consultant sweden",
-    "date": "9 maj 2025",
-    "is_new": true
-  },
-  {
-    "title": "Join Us Across 10 Countries for In-Person APEX Events ...",
-    "link": "https://blogs.oracle.com/apex/join-us-at-apex-events-2025",
-    "snippet": "... Sweden ... Before she joined the APEX Team, she worked as an Oracle APEX Consultant, modernizing Oracle Forms apps and developing new applications ...",
-    "query": "\"oracle forms\" consultant sweden",
-    "date": "14 nov. 2025",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Oracle Apps Data Base Administrator Consultant Jobs In ...",
@@ -397,31 +365,31 @@
     "snippet": "Oracle Apps Data Base Administrator Consultant jobs in Sweden. Logo ... Oracle Apps \u00b7 Weblogic \u00b7 Oracle forms \u00b7 Data structures \u00b7 Oracle RAC ...",
     "query": "\"oracle forms\" consultant sweden",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
-    "title": "Anna Mjagkova Email & Phone Number",
-    "link": "https://rocketreach.co/anna-mjagkova-email_28535420",
-    "snippet": "Oracle Forms; Oracle PL/SQL Development; Oracle Fusion Middleware; JIRA ... Anna Mjagkova, based in Stockholm, Stockholms Lan, Sweden, is currently a Consulting ...",
+    "title": "Oracle Gold Partner",
+    "link": "https://www.materna.de/en/competences/technology-partner/oracle-gold-partner/",
+    "snippet": "Development and operation of customised business applications based on the Oracle Application Development Framework (ADF) and Oracle Forms \u00b7 Development and ...",
     "query": "\"oracle forms\" consultant sweden",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
-    "title": "Sindhuja Balasubramanian \u2013 Oracle EBS Consultant",
-    "link": "https://se.linkedin.com/in/sindhuja-balasubramanian-78089a27",
-    "snippet": "3 Sverige. maj 2021 \u2013nu 5 \u00e5r. Stockholm, Sweden ... Worked on the development of interfaces, data conversions, new Oracle Forms, enhancement in Oracle Reports.",
+    "title": "APEX Nordic Tour 2025 Spring Edition \u2013 Resources and ...",
+    "link": "https://blogs.oracle.com/apex/apex-nordic-tour-2025-spring-edition-resources-and-more",
+    "snippet": "Before she joined the APEX Team, she worked as an Oracle APEX Consultant, modernizing Oracle Forms apps and developing new applications with ...",
     "query": "\"oracle forms\" consultant sweden",
-    "date": "",
-    "is_new": true
+    "date": "9 maj 2025",
+    "is_new": false
   },
   {
-    "title": "Oracle Cloud Lead Consultant Resume",
-    "link": "https://www.hireitpeople.com/resume-database/70-oracle-developers-resumes/251490-oracle-cloud-lead-consultant-resume",
-    "snippet": "He also has expertise with Oracle technical architecture and Oracle Tools including AOL, Oracle Forms, PL/SQL, OATS and Workflow.Managed ERP Transformation ...",
+    "title": "Join Us Across 10 Countries for In-Person APEX Events ...",
+    "link": "https://blogs.oracle.com/apex/join-us-at-apex-events-2025",
+    "snippet": "... Sweden ... Before she joined the APEX Team, she worked as an Oracle APEX Consultant, modernizing Oracle Forms apps and developing new applications ...",
     "query": "\"oracle forms\" consultant sweden",
-    "date": "",
-    "is_new": true
+    "date": "14 nov. 2025",
+    "is_new": false
   },
   {
     "title": "Paul Verstraete - paveco",
@@ -429,7 +397,15 @@
     "snippet": "Oracle consultant with more than 25 years of work ... Oracle Forms 4.5, 6i, Reports 6i, PL / SQL. http ... (Sweden, Sundsvall), VHI -. Voluntary Health ...",
     "query": "\"oracle forms\" consultant sweden",
     "date": "",
-    "is_new": true
+    "is_new": false
+  },
+  {
+    "title": "Oracle Forms to Java & .NET Migration Tools",
+    "link": "https://www.gapvelocity.ai/migrate/oracle-forms",
+    "snippet": "GAP offers a comprehensive, automated migration process that transforms your Oracle Forms applications into modern Java-based web applications. Key features of ...",
+    "query": "\"oracle forms\" consultant sweden",
+    "date": "",
+    "is_new": false
   },
   {
     "title": "Oracle APEX Nordic Tour 2025 is coming to you in Spring!",
@@ -437,7 +413,7 @@
     "snippet": "Before she joined the APEX Team, she worked as an Oracle APEX Consultant, modernizing Oracle Forms apps and developing new applications with ...",
     "query": "\"oracle forms\" developer denmark",
     "date": "19 juni 2025",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Dimitrios Ntakoulas - Application Developer",
@@ -445,7 +421,7 @@
     "snippet": "2024 4 \u00e5r 11 m\u00e5neder. Copenhagen Area, Capital Region, Denmark ... Oracle Certified Professional in Internet Application Developer, Oracle Forms Developer Release ...",
     "query": "\"oracle forms\" developer denmark",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Migrating to Oracle Web Forms Training Course",
@@ -453,7 +429,7 @@
     "snippet": "This instructor-led, live training (online or onsite) is aimed at engineers who wish to migrate from Oracle Forms to Oracle Web Forms.",
     "query": "\"oracle forms\" developer denmark",
     "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Top 10 Reasons why Oracle APEX is Ideal for ...",
@@ -461,7 +437,7 @@
     "snippet": "\u201cOracle Forms is Oracle's long-established technology to design and build enterprise applications quickly and efficiently.",
     "query": "\"oracle forms\" developer denmark",
     "date": "3 mars 2021",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Sql Development Jobs In Denmark",
@@ -469,15 +445,7 @@
     "snippet": "\u00b7 Oracle Forms 12c \u00b7 Application Management \u00b7 Analytical Skills \u00b7 Problem Solving \u00b7 Db Servers \u00b7 maintaining enterprise applications for payroll ...",
     "query": "\"oracle forms\" developer denmark",
     "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Steen Heile Christensen | Konsulent",
-    "link": "https://use.worksome.com/profile/44473",
-    "snippet": "Skills. Data migrationRuby on railsOracleOracle formsPl/sql + 14 more. I'm ... Developer AT&T / NCR Denmark. Environment: Oracle Apps. 10.5, AR, GL ...",
-    "query": "\"oracle forms\" developer denmark",
-    "date": "",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Morten Dahl | ICT-AGRI-FOOD Meta Knowledge Base",
@@ -485,15 +453,7 @@
     "snippet": "... Oracle Forms, PL/SQL programming. RFP writing, System design on Oracle based systems. Troubleshooting and performance optimization on Oracle based systems ...",
     "query": "\"oracle forms\" developer denmark",
     "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Oracle APEX Nordic Tour 2025 Fall Edition",
-    "link": "https://blogs.oracle.com/apex/oracle-apex-nordic-tour-2025-fall-edition",
-    "snippet": "Denmark ... Before she joined the APEX Team, she worked as an Oracle APEX Consultant, modernizing Oracle Forms apps and developing new ...",
-    "query": "\"oracle forms\" developer denmark",
-    "date": "22 okt. 2025",
-    "is_new": true
+    "is_new": false
   },
   {
     "title": "Oracle Developer (Reports/ Forms/ADF/PL/SQL)",
@@ -501,14 +461,6 @@
     "snippet": "We are seeking a talented Oracle Developer with experience in Oracle Forms, Oracle Reports, Oracle ADF, or PL/SQL to join our dynamic development team.",
     "query": "\"oracle forms\" developer denmark",
     "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Danish Oracle User Group",
-    "link": "https://www.doug.dk/",
-    "snippet": "There are a number of advantages that makes Oracle APEX the clear platform of choice for easily transitioning Oracle Forms applications to ...",
-    "query": "\"oracle forms\" developer denmark",
-    "date": "8 mars 2026",
-    "is_new": true
+    "is_new": false
   }
 ]
