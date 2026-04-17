@@ -97,10 +97,23 @@ def search_google(query: str) -> list[dict]:
                     print(f"  Hoppar över stängd annons (>1 år): {res.get('title', '')}")
                     continue
 
+            # Bygg en fylligare beskrivning genom att kombinera tillgänglig data
+            rich = res.get("rich_snippet", {})
+            rich_top = rich.get("top", {})
+            rich_bottom = rich.get("bottom", {})
+            extra_parts = []
+            for d in [rich_top, rich_bottom]:
+                for v in d.values():
+                    if isinstance(v, str) and len(v) > 20 and v.lower() not in snippet:
+                        extra_parts.append(v)
+            full_snippet = res.get("snippet", "")
+            if extra_parts:
+                full_snippet += " | " + " | ".join(extra_parts[:2])
+
             filtered.append({
                 "title": res.get("title", ""),
                 "link": link,
-                "snippet": res.get("snippet", ""),
+                "snippet": full_snippet,
                 "query": query,
                 "date": date_str,
             })
@@ -130,6 +143,7 @@ def run_scraper() -> list[dict]:
 
     new_count = sum(1 for r in all_results if r["is_new"])
     print(f"\nHittade {len(all_results)} träffar ({new_count} nya, {len(all_results) - new_count} återkommande).")
+    all_results.sort(key=lambda r: not r["is_new"])
     return all_results
 
 
