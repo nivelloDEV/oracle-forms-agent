@@ -13,7 +13,7 @@
   .header p { opacity: 0.85; font-size: 14px; margin-top: 4px; }
   .body { background: white; padding: 24px 32px; border-radius: 0 0 8px 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
   .summary { background: #fff8f5; border-left: 4px solid #c74b00; padding: 12px 16px; margin-bottom: 24px; border-radius: 4px; font-size: 15px; }
-  .card { border: 1px solid #e8e8e8; border-radius: 6px; padding: 16px; margin-bottom: 16px; transition: opacity 0.3s; }
+  .card { border: 1px solid #e8e8e8; border-radius: 6px; padding: 16px; margin-bottom: 16px; }
   .card-new { border-left: 4px solid #2e7d32; }
   .card-returning { border-left: 4px solid #999; }
   .card-blocked { border-left: 4px solid #c00; opacity: 0.6; }
@@ -30,7 +30,7 @@
   .block-btn:hover { background: #fee; border-color: #c00; color: #c00; }
   .block-btn.blocked-btn { background: #fee; border-color: #c00; color: #c00; }
   .comment-section { margin-top: 10px; }
-  .comment-display { background: #fffde7; border-left: 3px solid #f9a825; padding: 8px 12px; border-radius: 4px; font-size: 13px; color: #555; margin-bottom: 6px; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  .comment-display { background: #fffde7; border-left: 3px solid #f9a825; padding: 8px 12px; border-radius: 4px; font-size: 13px; color: #555; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
   .comment-display span { flex: 1; }
   .comment-edit-btn { background: none; border: none; cursor: pointer; font-size: 12px; color: #999; white-space: nowrap; }
   .comment-edit-btn:hover { color: #c74b00; }
@@ -84,11 +84,18 @@ let comments = {};
 let commentsSha = null;
 let currentTab = "all";
 
-// Använd index-baserade ID:n för att undvika problem med specialtecken i URL:er
-const linkIndex = new Map();
+// Slå upp länk via index för att undvika specialtecken i HTML-attribut
+const linkByIndex = [];
+const indexByLink = new Map();
 function getLinkId(link) {
-  if (!linkIndex.has(link)) linkIndex.set(link, linkIndex.size);
-  return "lnk" + linkIndex.get(link);
+  if (!indexByLink.has(link)) {
+    indexByLink.set(link, linkByIndex.length);
+    linkByIndex.push(link);
+  }
+  return indexByLink.get(link);
+}
+function getLinkById(id) {
+  return linkByIndex[id];
 }
 
 async function ghGet(file) {
@@ -109,7 +116,10 @@ async function ghGet(file) {
 }
 
 async function ghPut(file, content, sha) {
-  const body = { message: `Uppdatera ${file}`, content: btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2)))) };
+  const body = {
+    message: `Uppdatera ${file}`,
+    content: btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2))))
+  };
   if (sha) body.sha = sha;
   const r = await fetch(API + file, {
     method: "PUT",
@@ -117,8 +127,7 @@ async function ghPut(file, content, sha) {
     body: JSON.stringify(body),
   });
   if (!r.ok) throw new Error(`Kunde inte spara: ${r.status}`);
-  const data = await r.json();
-  return data.content.sha;
+  return (await r.json()).content.sha;
 }
 
 function showStatus(msg, type) {
@@ -138,47 +147,47 @@ function showTab(tab, btn) {
 function commentSection(link) {
   const id = getLinkId(link);
   const existing = comments[link] || "";
-  const safeLink = JSON.stringify(link);
   if (existing) {
-    return `
-      <div class="comment-section">
-        <div class="comment-display" id="cd-${id}">
-          <span>💬 ${existing}</span>
-          <button class="comment-edit-btn" onclick="showCommentInput(${safeLink})">Redigera</button>
-        </div>
-      </div>`;
-  } else {
-    return `
-      <div class="comment-section">
-        <div class="comment-input-row" id="ci-${id}">
-          <input class="comment-input" placeholder="Lägg till kommentar..." id="inp-${id}" onkeydown="if(event.key==='Enter') saveComment(${safeLink})">
-          <button class="comment-save-btn" onclick="saveComment(${safeLink})">Spara</button>
-        </div>
-      </div>`;
+    return `<div class="comment-section">
+      <div class="comment-display" id="cd-${id}">
+        <span>💬 ${existing}</span>
+        <button class="comment-edit-btn" data-id="${id}" onclick="showCommentInput(this.dataset.id)">Redigera</button>
+      </div>
+    </div>`;
   }
+  return `<div class="comment-section">
+    <div class="comment-input-row" id="ci-${id}">
+      <input class="comment-input" placeholder="Lägg till kommentar..." id="inp-${id}">
+      <button class="comment-save-btn" data-id="${id}" onclick="saveComment(this.dataset.id)">Spara</button>
+    </div>
+  </div>`;
 }
 
-function showCommentInput(link) {
-  const id = getLinkId(link);
-  const existing = (comments[link] || "").replace(/"/g, "&quot;");
-  const safeLink = JSON.stringify(link);
+function showCommentInput(id) {
+  const link = getLinkById(parseInt(id));
+  const existing = (comments[link] || "");
   const cdEl = document.getElementById("cd-" + id);
   if (cdEl) {
-    cdEl.outerHTML = `
-      <div class="comment-input-row" id="ci-${id}">
-        <input class="comment-input" placeholder="Lägg till kommentar..." id="inp-${id}" value="${existing}" onkeydown="if(event.key==='Enter') saveComment(${safeLink})">
-        <button class="comment-save-btn" onclick="saveComment(${safeLink})">Spara</button>
-      </div>`;
-    document.getElementById("inp-" + id).focus();
+    const row = document.createElement("div");
+    row.className = "comment-input-row";
+    row.id = "ci-" + id;
+    row.innerHTML = `<input class="comment-input" id="inp-${id}" value="">
+      <button class="comment-save-btn" data-id="${id}" onclick="saveComment(this.dataset.id)">Spara</button>`;
+    cdEl.replaceWith(row);
+    const input = document.getElementById("inp-" + id);
+    input.value = existing;
+    input.addEventListener("keydown", e => { if (e.key === "Enter") saveComment(id); });
+    input.focus();
   }
 }
 
-async function saveComment(link) {
+async function saveComment(id) {
+  const link = getLinkById(parseInt(id));
+  if (!link) return;
   if (!TOKEN) {
     showStatus("⚠️ Öppna sidan med ?token=DITT_TOKEN för att spara kommentarer.", "error");
     return;
   }
-  const id = getLinkId(link);
   const input = document.getElementById("inp-" + id);
   const text = input ? input.value.trim() : "";
 
@@ -201,7 +210,6 @@ async function saveComment(link) {
 
 function renderCards() {
   const container = document.getElementById("cards");
-
   const visibleCount = allResults.filter(r => !blocklist.has(r.link)).length;
   const newCount = allResults.filter(r => r.is_new && !blocklist.has(r.link)).length;
   document.getElementById("summary").innerHTML =
@@ -214,20 +222,19 @@ function renderCards() {
       return;
     }
     container.innerHTML = blockedUrls.map(link => {
+      const id = getLinkId(link);
       const match = allResults.find(r => r.link === link);
       const title = match ? match.title : link;
       const snippet = match ? `<p class="snippet">${match.snippet}</p>` : "";
-      const safeLink = JSON.stringify(link);
-      return `
-        <div class="card card-blocked">
-          <div class="card-header">
-            <span class="badge badge-blocked">🚫 Blockerad</span>
-            <a href="${link}" class="card-title" target="_blank">${title}</a>
-            <button class="block-btn blocked-btn" onclick="toggleBlock(${safeLink}, this)">Ta bort blockering</button>
-          </div>
-          ${snippet}
-          ${commentSection(link)}
-        </div>`;
+      return `<div class="card card-blocked">
+        <div class="card-header">
+          <span class="badge badge-blocked">🚫 Blockerad</span>
+          <a href="${link}" class="card-title" target="_blank">${title}</a>
+          <button class="block-btn blocked-btn" data-id="${id}" onclick="toggleBlock(this.dataset.id, this)">Ta bort blockering</button>
+        </div>
+        ${snippet}
+        ${commentSection(link)}
+      </div>`;
     }).join("");
     return;
   }
@@ -245,25 +252,28 @@ function renderCards() {
   }
 
   container.innerHTML = filtered.map(r => {
-    const badge = r.is_new ? `<span class="badge badge-new">✨ Ny</span>` : `<span class="badge badge-returning">🔁 Återkommande</span>`;
+    const id = getLinkId(r.link);
+    const badge = r.is_new
+      ? `<span class="badge badge-new">✨ Ny</span>`
+      : `<span class="badge badge-returning">🔁 Återkommande</span>`;
     const cardClass = r.is_new ? "card card-new" : "card card-returning";
     const dateTag = r.date ? `<span class="tag">📅 ${r.date}</span>` : "";
-    const safeLink = JSON.stringify(r.link);
-    return `
-      <div class="${cardClass}">
-        <div class="card-header">
-          ${badge}
-          <a href="${r.link}" class="card-title" target="_blank">${r.title}</a>
-          <button class="block-btn" onclick="toggleBlock(${safeLink}, this)">Inte intressant</button>
-        </div>
-        <p class="snippet">${r.snippet}</p>
-        <span class="tag">Sök: ${r.query}</span>${dateTag}
-        ${commentSection(r.link)}
-      </div>`;
+    return `<div class="${cardClass}">
+      <div class="card-header">
+        ${badge}
+        <a href="${r.link}" class="card-title" target="_blank">${r.title}</a>
+        <button class="block-btn" data-id="${id}" onclick="toggleBlock(this.dataset.id, this)">Inte intressant</button>
+      </div>
+      <p class="snippet">${r.snippet}</p>
+      <span class="tag">Sök: ${r.query}</span>${dateTag}
+      ${commentSection(r.link)}
+    </div>`;
   }).join("");
 }
 
-async function toggleBlock(link, btn) {
+async function toggleBlock(id, btn) {
+  const link = getLinkById(parseInt(id));
+  if (!link) return;
   if (!TOKEN) {
     showStatus("⚠️ Öppna sidan med ?token=DITT_TOKEN i URL:en för att kunna blockera träffar.", "error");
     return;
@@ -290,27 +300,20 @@ async function init() {
     document.getElementById("cards").innerHTML = `<div class="loading">Fel vid laddning av träffar: ${e.message}</div>`;
     return;
   }
-
   try {
     const blocklistData = await ghGet(BLOCKLIST_FILE);
     blocklist = new Set(blocklistData ? blocklistData.content : []);
     blocklistSha = blocklistData ? blocklistData.sha : null;
   } catch (e) {
-    console.warn("Kunde inte ladda blocklista:", e.message);
     blocklist = new Set();
-    blocklistSha = null;
   }
-
   try {
     const commentsData = await ghGet(COMMENTS_FILE);
     comments = commentsData ? commentsData.content : {};
     commentsSha = commentsData ? commentsData.sha : null;
   } catch (e) {
-    console.warn("Kunde inte ladda kommentarer:", e.message);
     comments = {};
-    commentsSha = null;
   }
-
   renderCards();
 }
 
