@@ -10,7 +10,6 @@ RESULTS_FILE = "results.json"
 BLOCKLIST_FILE = "blocklist.json"
 
 QUERIES = [
-    'site:linkedin.com/jobs "oracle forms" sverige',
     'site:linkedin.com/jobs "oracle forms" sweden',
     'site:linkedin.com/jobs "oracle forms" danmark',
     'site:linkedin.com/jobs "oracle forms" denmark',
@@ -18,16 +17,16 @@ QUERIES = [
     '"oracle forms" virksomhed danmark',
     '"oracle forms" consultant sweden',
     '"oracle forms" developer denmark',
-    'site:linkedin.com/jobs "oracle apex" sverige',    
     'site:linkedin.com/jobs "oracle apex" sweden',
     'site:linkedin.com/jobs "oracle apex" danmark',
     'site:linkedin.com/jobs "oracle apex" denmark',
-    'site:linkedin.com/jobs "pl/sql" sverige',    
     'site:linkedin.com/jobs "pl/sql" sweden',
     'site:linkedin.com/jobs "pl/sql" danmark',
     'site:linkedin.com/jobs "pl/sql" denmark',
     '"oracle apex" företag sverige',
     '"oracle apex" virksomhed danmark',
+    '"pl/sql" konsult sverige',
+    '"pl/sql" konsulent danmark',
 ]
 
 CLOSED_PHRASES = [
@@ -50,10 +49,26 @@ def save_seen(seen: set):
 
 
 def load_blocklist() -> set:
-    if Path(BLOCKLIST_FILE).exists():
-        with open(BLOCKLIST_FILE) as f:
-            return set(json.load(f))
-    return set()
+    """Hämtar blocklistan direkt från GitHub så att webbgränssnittets ändringar alltid används."""
+    github_token = os.environ.get("GITHUB_TOKEN")
+    repo = "nivelloDEV/oracle-forms-agent"
+    url = f"https://api.github.com/repos/{repo}/contents/{BLOCKLIST_FILE}"
+    headers = {}
+    if github_token:
+        headers["Authorization"] = f"token {github_token}"
+    try:
+        r = requests.get(url, headers=headers, timeout=10)
+        if r.status_code == 404:
+            print("Ingen blocklista hittad, fortsätter utan.")
+            return set()
+        r.raise_for_status()
+        import base64
+        data = json.loads(base64.b64decode(r.json()["content"].replace("\n", "")).decode())
+        print(f"Laddade blocklista med {len(data)} poster.")
+        return set(data)
+    except Exception as e:
+        print(f"Kunde inte hämta blocklista: {e}")
+        return set()
 
 
 def save_results(results: list):
