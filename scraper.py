@@ -5,6 +5,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 SERPAPI_KEY = os.environ.get("SERPAPI_KEY")
+DATA_FILE = "found_companies.json"
 
 QUERIES = [
     'site:linkedin.com/jobs "oracle forms" sweden',
@@ -21,6 +22,18 @@ CLOSED_PHRASES = [
     "no longer accepting",
     "job no longer available",
 ]
+
+
+def load_seen() -> set:
+    if Path(DATA_FILE).exists():
+        with open(DATA_FILE) as f:
+            return set(json.load(f))
+    return set()
+
+
+def save_seen(seen: set):
+    with open(DATA_FILE, "w") as f:
+        json.dump(list(seen), f)
 
 
 def parse_date(date_str: str) -> datetime | None:
@@ -46,7 +59,7 @@ def parse_date(date_str: str) -> datetime | None:
 def is_recent(date_str: str, max_days: int = 365) -> bool:
     parsed = parse_date(date_str)
     if parsed is None:
-        return True  # Okänt datum – ta med för säkerhets skull
+        return True
     return (datetime.now() - parsed).days <= max_days
 
 
@@ -98,22 +111,30 @@ def search_google(query: str) -> list[dict]:
 
 
 def run_scraper() -> list[dict]:
+    seen = load_seen()
     all_results = []
-    seen_links = set()  # Undviker dubbletter inom samma körning
+    seen_links_this_run = set()
 
     for query in QUERIES:
         print(f"Söker: {query}")
         results = search_google(query)
         for r in results:
-            if r["link"] not in seen_links:
-                seen_links.add(r["link"])
+            if r["link"] not in seen_links_this_run:
+                seen_links_this_run.add(r["link"])
+                r["is_new"] = r["link"] not in seen  # Märk om den är ny
                 all_results.append(r)
 
-    print(f"\nHittade {len(all_results)} träffar.")
+    # Spara alla som setts nu
+    seen.update(seen_links_this_run)
+    save_seen(seen)
+
+    new_count = sum(1 for r in all_results if r["is_new"])
+    print(f"\nHittade {len(all_results)} träffar ({new_count} nya, {len(all_results) - new_count} återkommande).")
     return all_results
 
 
 if __name__ == "__main__":
     results = run_scraper()
     for r in results:
-        print(f"\n{r['title']}\n{r['link']}\n{r['snippet']}")
+        status = "NY" if r["is_new"] else "ÅTERKOMMANDE"
+        print(f"\n[{status}] {r['title']}\n{r['link']}\n{r['snippet']}")
