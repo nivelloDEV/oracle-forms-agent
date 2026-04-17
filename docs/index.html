@@ -77,7 +77,7 @@ async function ghGet(file) {
   if (r.status === 404) return null;
   if (!r.ok) throw new Error(`GitHub API fel: ${r.status}`);
   const data = await r.json();
-  return { content: JSON.parse(atob(data.content.replace(/\n/g, ""))), sha: data.sha };
+  return { content: JSON.parse(atob(data.content.replace(/\s/g, ""))), sha: data.sha };
 }
 
 async function ghPut(file, content, sha) {
