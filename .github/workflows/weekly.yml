@@ -1,0 +1,44 @@
+name: Oracle Forms Weekly Agent
+
+on:
+  schedule:
+    - cron: "0 7 * * 1"   # Varje måndag kl 07:00 UTC (= 08:00 svensk tid)
+  workflow_dispatch:        # Möjliggör manuell körning via GitHub UI
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checka ut koden
+        uses: actions/checkout@v4
+
+      - name: Sätt upp Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installera beroenden
+        run: pip install requests
+
+      - name: Hämta tidigare data (found_companies.json)
+        uses: actions/cache@v4
+        with:
+          path: found_companies.json
+          key: companies-cache-${{ github.run_id }}
+          restore-keys: |
+            companies-cache-
+
+      - name: Kör agenten
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: python main.py
+
+      - name: Spara uppdaterad data
+        uses: actions/cache/save@v4
+        with:
+          path: found_companies.json
+          key: companies-cache-${{ github.run_id }}
