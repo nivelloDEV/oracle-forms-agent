@@ -1,699 +1,155 @@
 [
   {
-    "title": "Jobb som matchar \u201dPl Sql Developer\u201d i Sverige",
-    "link": "https://se.linkedin.com/jobs/pl-sql-developer-jobs",
-    "snippet": "Dagens popul\u00e4raste jobb som matchar \u201dPl Sql Developer\u201d i Sverige. Dra ... PL/SQL Developer (Oracle Forms & Reports). Neotalent Conclusion. Porto-omr\u00e5det ...",
-    "query": "site:linkedin.com/jobs \"oracle forms\" sverige",
+    "title": "Expertis inom PL/SQL-utveckling f\u00f6r dina Oracle-l\u00f6sningar",
+    "link": "https://rightpeoplegroup.com/sv/pl-sql-utvecklare",
+    "snippet": "En PL/SQL konsult \u00e4r en specialist med djupg\u00e5ende kunskap om Oracle-databasens arkitektur och programmeringsm\u00f6jligheter. Deras prim\u00e4ra uppgift \u00e4r att designa, ...",
+    "query": "\"pl/sql\" konsult sverige",
     "date": "",
     "is_new": true
   },
   {
-    "title": "Oracle Forms Developer jobs in United States",
-    "link": "https://www.linkedin.com/jobs/oracle-forms-developer-jobs",
-    "snippet": "Today's top Oracle Forms Developer jobs in United States. Leverage your professional network, and get hired. New Oracle Forms Developer jobs added daily.",
-    "query": "site:linkedin.com/jobs \"oracle forms\" sverige",
+    "title": "Oracle SQL Konsult i Sverige",
+    "link": "https://www.nobleprog.se/consulting/oracle-sql",
+    "snippet": "V\u00e5ra Oracle PL/SQL experter genomf\u00f6r en djupg\u00e5ende analys av dina existerande system och processer, identifierar omr\u00e5den f\u00f6r f\u00f6rb\u00e4ttring och rekommenderar de ...",
+    "query": "\"pl/sql\" konsult sverige",
     "date": "",
     "is_new": true
   },
   {
-    "title": "Capgemini s\u00f6ker Senior Oracle Developer i Malm\u00f6",
-    "link": "https://se.linkedin.com/jobs/view/senior-oracle-developer-at-capgemini-4292890418",
-    "snippet": "Oracle Forms/Reports; End-2-End utveckling av Oracle and Shell scripting. Prestandajustering; Flytande svenska och engelska kunskaper i s\u00e5v\u00e4l tal som skrift.",
-    "query": "site:linkedin.com/jobs \"oracle forms\" sverige",
+    "title": "12 lediga jobb f\u00f6r PL SQL - 12 april 2026",
+    "link": "https://se.indeed.com/q-pl-sql-jobb.html",
+    "snippet": "Jobb som matchar pl sql \u00b7 Oracle Retail Cloud (Functional / Techno Functional). TechBiz Global GmbH. Stockholm \u00b7 Senior Developer / Solution Architect \u2013 Card ...",
+    "query": "\"pl/sql\" konsult sverige",
     "date": "",
     "is_new": true
   },
   {
-    "title": "Oracle Forms Developer",
-    "link": "https://ca.linkedin.com/jobs/view/oracle-forms-developer-at-rajnap-technosoft-private-limited-4397299889",
-    "snippet": "Oracle Forms Developer \u00b7 Seniority level. Mid-Senior level \u00b7 Employment type. Contract \u00b7 Job function. Information Technology.",
-    "query": "site:linkedin.com/jobs \"oracle forms\" sverige",
-    "date": "f\u00f6r 7 dagar sedan",
-    "is_new": true
-  },
-  {
-    "title": "Oracle Forms jobs in Belgium",
-    "link": "https://be.linkedin.com/jobs/oracle-forms-jobs",
-    "snippet": "Today's top Oracle Forms jobs in Belgium. Leverage your professional network, and get hired. New Oracle Forms jobs added daily.",
-    "query": "site:linkedin.com/jobs \"oracle forms\" sverige",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Oracle Forms / Reports Developer - Affinity",
-    "link": "https://ca.linkedin.com/jobs/view/oracle-forms-reports-developer-at-affinity-4397604539",
-    "snippet": "The role focuses on maintenance, enhancement, incident response, and troubleshooting of departmental applications developed using Oracle Forms ...",
-    "query": "site:linkedin.com/jobs \"oracle forms\" sverige",
-    "date": "f\u00f6r 5 dagar sedan",
-    "is_new": true
-  },
-  {
-    "title": "Senior Oracle EBS Technical Consultant",
-    "link": "https://www.linkedin.com/jobs/view/4398258403/",
-    "snippet": "Oracle Forms: Strong development and support experience with Oracle Forms, including triggers, libraries, compilation and deployment, and ...",
-    "query": "site:linkedin.com/jobs \"oracle forms\" sverige",
-    "date": "7 apr. 2026",
-    "is_new": true
-  },
-  {
-    "title": "29954-DTS-053-Oracle Forms Developer - Amyantek",
-    "link": "https://ca.linkedin.com/jobs/view/29954-dts-053-oracle-forms-developer-at-amyantek-4400278133",
-    "snippet": "Technical Skills: Proficiency in Oracle Forms and Reports Tools; Proficiency PL/SQL and SQL. Familiarity with Oracle Application Server ...",
-    "query": "site:linkedin.com/jobs \"oracle forms\" sverige",
-    "date": "f\u00f6r 7 dagar sedan",
-    "is_new": true
-  },
-  {
-    "title": "Senior Oracle ERP Technical Developer (R12), APEX",
-    "link": "https://www.linkedin.com/jobs/view/senior-oracle-erp-technical-developer-r12-apex-remote-worker-opening-at-bae-systems-inc-4385027720",
-    "snippet": "The ideal candidate will possess a Bachelor's degree and 10-15 years of technical development experience, with a focus on Oracle Forms ...",
-    "query": "site:linkedin.com/jobs \"oracle forms\" sverige",
-    "date": "2 apr. 2026",
-    "is_new": true
-  },
-  {
-    "title": "Oracle APEX-utvecklare som g\u00f6r v\u00e4rlden anv\u00e4ndarv\u00e4nligare",
-    "link": "https://se.linkedin.com/jobs/view/oracle-apex-utvecklare-som-g%C3%B6r-v%C3%A4rlden-anv%C3%A4ndarv%C3%A4nligare-at-kits-ab-4121372187",
-    "snippet": "Erfarenhet av att utveckla applikationer i Oracle APEX. \u00b7 Goda kunskaper i SQL och PL/SQL. \u00b7 F\u00f6rst\u00e5else f\u00f6r databaser och systemintegrationer.",
-    "query": "site:linkedin.com/jobs \"oracle apex\" sverige",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Systemutvecklare Oracle Apex - L\u00e4kemedelsverket",
-    "link": "https://se.linkedin.com/jobs/view/systemutvecklare-oracle-apex-at-medical-products-agency-l%C3%A4kemedelsverket-4351976797",
-    "snippet": "Utveckla, testa och drifts\u00e4tta Oracle Apex l\u00f6sningar i n\u00e4ra samverkan med verksamheten; F\u00f6rvalta och vidareutveckla befintliga l\u00f6sningar; Bidra i hela ...",
-    "query": "site:linkedin.com/jobs \"oracle apex\" sverige",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "L\u00e4kemedelsverket s\u00f6ker Systemutvecklare Oracle Apex i ...",
-    "link": "https://se.linkedin.com/jobs/view/systemutvecklare-oracle-apex-at-medical-products-agency-l%C3%A4kemedelsverket-4293785426",
-    "snippet": "Arbetslivserfarenhet som systemutvecklare med Oracle Apex som teknik. Erfarenhet av att arbeta med databaser. Det \u00e4r meriterande om du \u00e4ven har ...",
-    "query": "site:linkedin.com/jobs \"oracle apex\" sverige",
-    "date": "23 sep. 2025",
-    "is_new": true
-  },
-  {
-    "title": "14 jobb som matchar Oracle i Uppsala l\u00e4n, Sverige",
-    "link": "https://se.linkedin.com/jobs/oracle-jobs-uppsala-l%C3%A4n",
-    "snippet": "14 jobb f\u00f6r \u201dOracle\u201d i Uppsala l\u00e4n, Sverige \u00b7 Integrationsutvecklare till Frontwalker! \u00b7 Systemutvecklare Oracle Apex \u00b7 IT-arkitekt ICT vid TVK Ledsyst \u00b7 IT- ...",
-    "query": "site:linkedin.com/jobs \"oracle apex\" sverige",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Systemutvecklare Oracle Apex - L\u00e4kemedelsverket",
-    "link": "https://se.linkedin.com/jobs/view/systemutvecklare-oracle-apex-at-medical-products-agency-l%C3%A4kemedelsverket-4219651998",
-    "snippet": "Systemutvecklare Oracle Apex \u00b7 Yrkesniv\u00e5. Ej till\u00e4mpligt \u00b7 Anst\u00e4llningstyp. Heltid \u00b7 Befattning. IT \u00b7 Branscher. Offentlig f\u00f6rvaltning.",
-    "query": "site:linkedin.com/jobs \"oracle apex\" sverige",
-    "date": "21 maj 2025",
-    "is_new": true
-  },
-  {
-    "title": "Oracle s\u00f6ker Data Development Specialist i Sverige",
-    "link": "https://se.linkedin.com/jobs/view/data-development-specialist-at-oracle-3959903017",
-    "snippet": "Create compelling assets encompassing external publications and internal documentation, Oracle APEX and Database Development tools and our recommended processes ...",
-    "query": "site:linkedin.com/jobs \"oracle apex\" sverige",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Databasutvecklare till EPICO Tech",
-    "link": "https://www.linkedin.com/jobs/view/databasutvecklare-till-epico-tech-at-epico-tech-4339741055",
-    "snippet": "Minst 5 \u00e5rs erfarenhet av databasutveckling (SQL, PL/SQL) inom Oracle. Erfarenhet av att arbeta med Oracle APEX, eller en vilja att snabbt s\u00e4tta dig in i det.",
-    "query": "site:linkedin.com/jobs \"oracle apex\" sverige",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Systemutvecklare Oracle - Professional Galaxy AB",
-    "link": "https://se.linkedin.com/jobs/view/systemutvecklare-oracle-at-professional-galaxy-ab-4320898095",
-    "snippet": "Konsulten ska ha minst 3 \u00e5rs erfarenhet av Oracle APEX. Konsulten ska ha erfarenhet av versionshantering av databasobjekt i GIT. Har bevis bifogats anbudet ...",
-    "query": "site:linkedin.com/jobs \"oracle apex\" sverige",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "52 jobb som matchar Systemutvecklare i B\u00e5lsta, Uppsala ...",
-    "link": "https://se.linkedin.com/jobs/systemutvecklare-jobs-b%C3%A5lsta",
-    "snippet": "Systemutvecklare Oracle Apex. Systemutvecklare Oracle Apex. L\u00e4kemedelsverket. Uppsala. Bli en av de f\u00f6rsta att s\u00f6ka jobbet. 1 vecka sedan. Fullstack-utvecklare ...",
-    "query": "site:linkedin.com/jobs \"oracle apex\" sverige",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Kravledare med fokus p\u00e5 low-code - L\u00e4kemedelsverket",
-    "link": "https://se.linkedin.com/jobs/view/kravledare-med-fokus-p%C3%A5-low-code-at-medical-products-agency-l%C3%A4kemedelsverket-4338373706",
-    "snippet": "Arbetet \u00e4r organiserat i tv\u00e5 team: ett specialiserat p\u00e5 RPA och ett p\u00e5 Oracle APEX. Tillsammans driver vi b\u00e5de f\u00f6rvaltning och vidareutveckling av v\u00e5ra ...",
-    "query": "site:linkedin.com/jobs \"oracle apex\" sverige",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Oracle APEX Developer - Infinity Quest",
-    "link": "https://www.linkedin.com/jobs/view/oracle-apex-developer-at-infinity-quest-4216538355",
-    "snippet": "Job Title : APEX Developer. Must have skills: 5+ years Expert Knowledge Oracle PLSQL. 5+ years Expert Knowledge Oracle Apex framework.",
-    "query": "site:linkedin.com/jobs \"oracle apex\" sweden",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "280 Oracle Apex jobs in United Kingdom (14 new)",
-    "link": "https://uk.linkedin.com/jobs/oracle-apex-jobs",
-    "snippet": "Today's top 280 Oracle Apex jobs in United Kingdom. Leverage your professional network, and get hired. New Oracle Apex jobs added daily.",
-    "query": "site:linkedin.com/jobs \"oracle apex\" sweden",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "16 Oracle Apex jobs in Belgium",
-    "link": "https://be.linkedin.com/jobs/oracle-apex-jobs",
-    "snippet": "Today's top 16 Oracle Apex jobs in Belgium. Leverage your professional network, and get hired. New Oracle Apex jobs added daily.",
-    "query": "site:linkedin.com/jobs \"oracle apex\" sweden",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Oracle Apex Developer - Robert Half",
-    "link": "https://www.linkedin.com/jobs/view/oracle-apex-developer-at-robert-half-4393555844",
-    "snippet": "We are looking for an experienced Oracle Apex Developer to join our team on a long-term contract basis in Bloomfield Township, MI.",
-    "query": "site:linkedin.com/jobs \"oracle apex\" sweden",
-    "date": "8 apr. 2026",
-    "is_new": true
-  },
-  {
-    "title": "Senior Oracle Database Developer with APEX",
-    "link": "https://www.linkedin.com/jobs/view/senior-oracle-database-developer-with-apex-at-sligo-software-solutions-inc-4401090260",
-    "snippet": "Senior Oracle APEX Developer II. CGS Federal (Contact Government ... Svenska (Swedish); \u0c24\u0c46\u0c32\u0c41\u0c17\u0c41 (Telugu); \u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22 (Thai); Tagalog ...",
-    "query": "site:linkedin.com/jobs \"oracle apex\" sweden",
-    "date": "f\u00f6r 4 dagar sedan",
-    "is_new": true
-  },
-  {
-    "title": "Oracle OCI/APEX Engineer - Jobs via Dice",
-    "link": "https://www.linkedin.com/jobs/view/oracle-oci-apex-engineer-at-jobs-via-dice-4401114456",
-    "snippet": "oracle apex administration and support Required 5 Years oracle db migration from solaris to linux (database 12c/11g) Required 10 Years",
-    "query": "site:linkedin.com/jobs \"oracle apex\" sweden",
-    "date": "f\u00f6r 3 dagar sedan",
-    "is_new": true
-  },
-  {
-    "title": "Senior Oracle APEX Developer II with Security Clearance",
-    "link": "https://www.linkedin.com/jobs/view/senior-oracle-apex-developer-ii-with-security-clearance-at-cgs-federal-contact-government-services-4397471073",
-    "snippet": "Work at the direction of the program manager to support the full lifecycle development of custom Oracle Applications, primarily using the Oracle APEX toolset.",
-    "query": "site:linkedin.com/jobs \"oracle apex\" sweden",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "14 Oracle Apex jobs in Ireland (2 new) - Dublin",
-    "link": "https://ie.linkedin.com/jobs/oracle-apex-jobs",
-    "snippet": "Today's top 14 Oracle Apex jobs in Ireland. Leverage your professional network, and get hired. New Oracle Apex jobs added daily.",
-    "query": "site:linkedin.com/jobs \"oracle apex\" sweden",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "1000+ Oracle Apex Developer jobs in United States (73 new)",
-    "link": "https://www.linkedin.com/jobs/oracle-apex-developer-jobs",
-    "snippet": "Today's top 1000+ Oracle Apex Developer jobs in United States. Leverage your professional network, and get hired. New Oracle Apex Developer jobs added daily ...",
-    "query": "site:linkedin.com/jobs \"oracle apex\" sweden",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Developer Oracle APEX - Consultec-TI Corp.",
-    "link": "https://www.linkedin.com/jobs/view/developer-oracle-apex-at-consultec-ti-corp-4398440181",
-    "snippet": "Dise\u00f1ar, desarrollar y mantener aplicaciones empresariales utilizando Oracle APEX (23.x o superior). Desarrollar l\u00f3gica de negocio avanzada ...",
-    "query": "site:linkedin.com/jobs \"oracle apex\" danmark",
-    "date": "8 apr. 2026",
-    "is_new": true
-  },
-  {
-    "title": "Oracle APEX Udvikler - Technical University of Denmark",
-    "link": "https://dk.linkedin.com/jobs/view/oracle-apex-udvikler-it-service-at-dtu-technical-university-of-denmark-3654901813",
-    "snippet": "Vi har en forventning om, at du arbejder hjemmevant med Oracle APEX. Desuden er du struktureret og ser muligheder i nye v\u00e6rkt\u00f8jer og l\u00f8sninger. Som person er ...",
-    "query": "site:linkedin.com/jobs \"oracle apex\" danmark",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Senior Oracle APEX Developer II with Security Clearance",
-    "link": "https://www.linkedin.com/jobs/view/senior-oracle-apex-developer-ii-with-security-clearance-at-cgs-federal-contact-government-services-4397461395",
-    "snippet": "Work at the direction of the program manager to support the full lifecycle development of custom Oracle Applications, primarily using the Oracle APEX toolset.",
-    "query": "site:linkedin.com/jobs \"oracle apex\" danmark",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Oracle Application Specialist - Response Informatics",
-    "link": "https://www.linkedin.com/jobs/view/oracle-application-specialist-at-response-informatics-4174810680",
-    "snippet": "Copenhagen, Capital Region of Denmark, Denmark 3 ... Desarrollador/a Junior Oracle APEX (Remoto) ... Dansk (Danish); Deutsch (German); \u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac (Greek)",
-    "query": "site:linkedin.com/jobs \"oracle apex\" denmark",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Oracle Service Cloud Specialist - act digital EMEA",
-    "link": "https://www.linkedin.com/jobs/view/oracle-service-cloud-specialist-at-act-digital-emea-alter-solutions-4324840261",
-    "snippet": "Oracle APEX Developer. Oracle APEX Developer. Hays. Spain 1 week ago. Oracle JD Edwards Supply Chain Consultant (Senior) - 100% remoto, Espa\u00f1a. Oracle JD ...",
-    "query": "site:linkedin.com/jobs \"oracle apex\" denmark",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Oracle ERP Cloud Security/License Consultant",
-    "link": "https://www.linkedin.com/jobs/view/oracle-erp-cloud-security-license-consultant-at-next-ventures-4349495611",
-    "snippet": "Copenhagen, Capital Region of Denmark, Denmark 2 months ago. Specialista Oracle ... ORACLE APEX Developer. Billennium. Poland 1 week ago. Software Engineer ...",
-    "query": "site:linkedin.com/jobs \"oracle apex\" denmark",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Oracle Apex Developer - Headhunter-Outsource",
-    "link": "https://id.linkedin.com/jobs/view/oracle-apex-developer-at-headhunter-outsource-4327230822",
-    "snippet": "Develop, enhance, and maintain applications using Oracle APEX. \u00b7 Work on finance-related modules such as budget tracking, payments, and reporting ...",
-    "query": "site:linkedin.com/jobs \"oracle apex\" denmark",
-    "date": "9 jan. 2026",
-    "is_new": true
-  },
-  {
-    "title": "Fullstack-udvikler til Koncernapplikationer",
-    "link": "https://dk.linkedin.com/jobs/view/fullstack-udvikler-til-koncernapplikationer-at-dr-danmarks-radio-4350691991",
-    "snippet": "Vi forestiller os, at du: Har erfaring med Oracle APEX og udvikling af webapplikationer; Har solide kompetencer i PL/SQL og Oracle Database; Har erfaring med ...",
-    "query": "site:linkedin.com/jobs \"oracle apex\" denmark",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Oracle HCM Cloud Lead (French or German speaking)",
-    "link": "https://www.linkedin.com/jobs/view/oracle-hcm-cloud-lead-french-or-german-speaking-at-next-ventures-4345832885",
-    "snippet": "Copenhagen, Capital Region of Denmark, Denmark 2 months ago. Specialista Oracle ... ORACLE APEX Developer. Billennium. Poland 1 week ago. Software Engineer ...",
-    "query": "site:linkedin.com/jobs \"oracle apex\" denmark",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Oracle Fusion Test Lead / Test Manager",
-    "link": "https://www.linkedin.com/jobs/view/oracle-fusion-test-lead-test-manager-at-westhouse-schweiz-ag-4387803819",
-    "snippet": "Copenhagen, Capital Region of Denmark, Denmark 2 months ago ... ORACLE APEX Developer. Billennium. Poland 1 week ago. People also viewed. Oracle ...",
-    "query": "site:linkedin.com/jobs \"oracle apex\" denmark",
+    "title": "11 oracle pl sql Jobs in Sweden, April 2026",
+    "link": "https://www.glassdoor.com/Job/sweden-oracle-pl-sql-jobs-SRCH_IL.0,6_IN223_KO7,20.htm",
+    "snippet": "Search Oracle pl sql jobs in Sweden with company ratings & salaries. 11 open jobs for Oracle pl sql in Sweden.",
+    "query": "\"pl/sql\" konsult sverige",
     "date": "",
     "is_new": true
   },
   {
-    "title": "757 jobb som matchar Pl Sql i Sverige",
-    "link": "https://se.linkedin.com/jobs/pl-sql-jobs",
-    "snippet": "757 jobb f\u00f6r \u201dPl Sql\u201d i Sverige (Nya: 40) \u00b7 Oracle Data Integrator \u00b7 Junior AI Systems Engineer \u00b7 Junior HR Data Engineer \u00b7 Senior Backend Engineer - Subscriptions.",
-    "query": "site:linkedin.com/jobs \"pl/sql\" sverige",
+    "title": "Patrik Larsson | PatrIT Konsult AB | Konsultprofil",
+    "link": "https://www.brainville.com/p/patriklarsson_30296",
+    "snippet": "Designade, utvecklade och dokumenterade ETL-fl\u00f6den fr\u00e4mst med Informatica Powercenter och PL/SQL. ... Utf\u00f6rde prestandaoptimeringar av driftsatta fl\u00f6den.",
+    "query": "\"pl/sql\" konsult sverige",
     "date": "",
     "is_new": true
   },
   {
-    "title": "L\u00e4nsf\u00f6rs\u00e4kringar s\u00f6ker Systemutvecklare PL/SQL i ...",
-    "link": "https://se.linkedin.com/jobs/view/systemutvecklare-pl-sql-at-l%C3%A4nsf%C3%B6rs%C3%A4kringar-2777861631?refId=9dYtWg%2FFiuj5tNMHae3Zsg%3D%3D&trackingId=%2Fn3Oav41KmZjyPfcQt%2Fasw%3D%3D&position=5&pageNum=0&trk=public_jobs_jserp-result_search-card",
-    "snippet": "I rollen som Systemutvecklare hos L\u00e4nsf\u00f6rs\u00e4kringar AB kommer du arbeta som PL/SQL utvecklare och medverka i utvecklingsgruppen. Du deltar i daily scrum och ...",
-    "query": "site:linkedin.com/jobs \"pl/sql\" sverige",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Oracle PL/SQL developer - Jobs via Dice",
-    "link": "https://www.linkedin.com/jobs/view/oracle-pl-sql-developer-at-jobs-via-dice-4398159893",
-    "snippet": "Must have skills: 7-8+ years experience in Oracle PL/SQL code development including packages , procedures , functions , triggers expected; Hands ...",
-    "query": "site:linkedin.com/jobs \"pl/sql\" sverige",
-    "date": "f\u00f6r 7 dagar sedan",
-    "is_new": true
-  },
-  {
-    "title": "Oracle PL/SQL Developer",
-    "link": "https://www.linkedin.com/jobs/view/oracle-pl-sql-developer-at-tata-consultancy-services-4381779587",
-    "snippet": "Should have a good knowledge in Advanced PL/SQL; Should have very good communication skills/interpersonal skills and experience in interacting ...",
-    "query": "site:linkedin.com/jobs \"pl/sql\" sverige",
-    "date": "12 mars 2026",
-    "is_new": true
-  },
-  {
-    "title": "Oracle PL/SQL Developer - Milestone Technologies, Inc.",
-    "link": "https://www.linkedin.com/jobs/view/oracle-pl-sql-developer-at-milestone-technologies-inc-4401816147",
-    "snippet": "10+ years of software development \u00b7 Expert in back-end development using Oracle PL/SQL \u00b7 Strong report development skills using Jasper Reports or ...",
-    "query": "site:linkedin.com/jobs \"pl/sql\" sverige",
-    "date": "f\u00f6r 2 dagar sedan",
-    "is_new": true
-  },
-  {
-    "title": "Senior Oracle PL/SQL Developer - Jobs via Dice",
-    "link": "https://www.linkedin.com/jobs/view/senior-oracle-pl-sql-developer-at-jobs-via-dice-4402352017",
-    "snippet": "Apply via Dice today! ... PETADATA is seeking a Senior Oracle PL/SQL Developer with 13+ years of experience in SQL/PLSQL development, performance ...",
-    "query": "site:linkedin.com/jobs \"pl/sql\" sverige",
-    "date": "f\u00f6r 10 timmar sedan",
-    "is_new": true
-  },
-  {
-    "title": "Oracle PL/SQL Developer - VMC Soft Technologies, Inc",
-    "link": "https://www.linkedin.com/jobs/view/oracle-pl-sql-developer-at-vmc-soft-technologies-inc-4399543502",
-    "snippet": "Oracle PL/SQL Developer. Pittsburgh, PA - Onsite. Experience: 10+ Years. Visa Independent Candidates Only. Job Details: Must Have Skills.",
-    "query": "site:linkedin.com/jobs \"pl/sql\" sverige",
-    "date": "f\u00f6r 4 dagar sedan",
-    "is_new": true
-  },
-  {
-    "title": "Pl Sql Developer jobs in Serbia",
-    "link": "https://rs.linkedin.com/jobs/pl-sql-developer-jobs",
-    "snippet": "Today's top Pl Sql Developer jobs in Serbia. Leverage your professional network, and get hired. New Pl Sql Developer jobs added daily.",
-    "query": "site:linkedin.com/jobs \"pl/sql\" sverige",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Oracle Pl Sql jobs in United States",
-    "link": "https://www.linkedin.com/jobs/oracle-pl-sql-jobs",
-    "snippet": "Today's top Oracle Pl Sql jobs in United States. Leverage your professional network, and get hired. New Oracle Pl Sql jobs added daily ... Svenska (Swedish)",
-    "query": "site:linkedin.com/jobs \"pl/sql\" sverige",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Oracle PL/SQL Architect - EU Citizen",
-    "link": "https://www.linkedin.com/jobs/view/oracle-pl-sql-architect-eu-citizen-at-response-informatics-4169984358",
-    "snippet": "Oracle PL/SQL Architect - EU Citizen ; Seniority level. Mid-Senior level ; Employment type. Contract ; Job function. Information Technology ; Industries. IT ...",
-    "query": "site:linkedin.com/jobs \"pl/sql\" sweden",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Technical Lead (Oracle pl/sql programming) - HR Ways",
-    "link": "https://se.linkedin.com/jobs/view/technical-lead-oracle-pl-sql-programming-at-hr-ways-hiring-tech-talent-4288008182",
-    "snippet": "About the job Technical Lead (Oracle pl/sql programming). Client Introduction: The company is a multinational Sweden SAAS product-based firm.",
-    "query": "site:linkedin.com/jobs \"pl/sql\" sweden",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Infosys s\u00f6ker PL/SQL Developer i G\u00f6teborg",
-    "link": "https://se.linkedin.com/jobs/view/pl-sql-developer-at-infosys-3216357979",
-    "snippet": "PL/SQL Developer ; Yrkesniv\u00e5. Ej till\u00e4mpligt ; Anst\u00e4llningstyp. Heltid ; Befattning. IT ; Branscher. IT-tj\u00e4nster och IT-konsulttj\u00e4nster.",
-    "query": "site:linkedin.com/jobs \"pl/sql\" sweden",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Adavo hiring Databasutvecklare in Stockholm ...",
-    "link": "https://www.linkedin.com/jobs/view/databasutvecklare-at-adavo-4371551561",
-    "snippet": "Erfarenhet av utveckling i PL/SQL och PL/pgSQL; Erfarenhet av migrering av databaskod mellan olika databashanterare; Erfarenhet av arbete i system med h\u00f6g ...",
-    "query": "site:linkedin.com/jobs \"pl/sql\" sweden",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Backend Developer PL/SQL inom Business Intelligence",
-    "link": "https://se.linkedin.com/jobs/view/backend-developer-pl-sql-inom-business-intelligence-at-ab-trav-och-galopp-4192864906",
-    "snippet": "Du kommer f\u00e5 m\u00f6jlighet att jobba med ett avancerat system byggt i PL/SQL som hanterar stora transaktionsm\u00e4ngder med fokus p\u00e5 ber\u00e4kningar och transformeringar ...",
-    "query": "site:linkedin.com/jobs \"pl/sql\" sweden",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Oracle Database and PL/SQL Developer",
-    "link": "https://se.linkedin.com/jobs/view/oracle-database-and-pl-sql-developer-at-cubane-solutions-sweden-india-4197785361",
-    "snippet": "Role : Oracle Database and PL/SQL Developer role. Location : Stockholm. Assignment is 1 year and possibility for Extension. Experience : Senior Level.",
-    "query": "site:linkedin.com/jobs \"pl/sql\" sweden",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Nion hiring Data Warehouse Utvecklare in Stockholm ...",
-    "link": "https://www.linkedin.com/jobs/view/data-warehouse-utvecklare-at-nion-4303762211",
-    "snippet": "+6 \u00e5rs erfarenhet som Data Warehouse utvecklare; Relevant ingenj\u00f6rsexamen/yrkesutbildning inom IT eller datateknik; Beh\u00e4rskar SQL Server, PL/SQL Oracle och ...",
-    "query": "site:linkedin.com/jobs \"pl/sql\" sweden",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Oracle EPM Implementation and Integration Specialist",
-    "link": "https://www.linkedin.com/jobs/view/oracle-epm-implementation-and-integration-specialist-at-crane-nxt-4394961475",
-    "snippet": "... Sweden, and Malta. Position Overview The Oracle EPM ... Senior Oracle PL/SQL Developer. Motion Recruitment. United States $55 ...",
-    "query": "site:linkedin.com/jobs \"pl/sql\" sweden",
-    "date": "2 apr. 2026",
-    "is_new": true
-  },
-  {
-    "title": "231 Pl Sql-job i Danmark - K\u00f8benhavn",
-    "link": "https://dk.linkedin.com/jobs/pl-sql-jobs",
-    "snippet": "Dagens mest popul\u00e6re 231 Pl Sql job inden for i Danmark. Brug dit faglige netv\u00e6rk til at finde dr\u00f8mmejobbet. Nye Pl Sql-job bliver tilf\u00f8jet dagligt.",
-    "query": "site:linkedin.com/jobs \"pl/sql\" danmark",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Sapiens s\u00f8ger en Software Engineer (Java, PL/SQL) i ...",
-    "link": "https://dk.linkedin.com/jobs/view/software-engineer-java-pl-sql-at-sapiens-4222237091",
-    "snippet": "Develop, implement, and maintain Tia enterprise applications using Oracle technology and PL/SQL. ... \u00c5ben ans\u00f8gning - Danmark. Fluido. Gentofte 5 m\u00e5neder ...",
-    "query": "site:linkedin.com/jobs \"pl/sql\" danmark",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Sapiens hiring Software Engineer in Copenhagen, Capital ...",
-    "link": "https://www.linkedin.com/jobs/view/2730881130/?eBP=JOB_SEARCH_ORGANIC&recommendedFlavor=IN_NETWORK&refId=3SqX6OjSOBplIqrllt4oyA%3D%3D&trackingId=W80FvzAG5Y99llrIYm/hOQ%3D%3D&trk=flagship3_search_srp_jobs",
-    "snippet": "... PL/SQL, and maintaining frontend that is based on Oracle ADF, a Java-based UI framework. In our daily work we use Scrum framework for developing and ...",
-    "query": "site:linkedin.com/jobs \"pl/sql\" danmark",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "senior software engineer med pl/sql- og devops-erfaring",
-    "link": "https://dk.linkedin.com/jobs/view/senior-software-engineer-med-pl-sql-og-devops-erfaring-at-seges-innovation-4214578514",
-    "snippet": "Stor erfaring med PL/SQL og Oracle-databaser; Erfaring med eller st\u00e6rk interesse for DevOps-metoder, automatisering, CI/CD og driftsoptimering; Erfaring med API ...",
-    "query": "site:linkedin.com/jobs \"pl/sql\" danmark",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "senior software developer med pl/sql-erfaring og indsigt i ...",
-    "link": "https://dk.linkedin.com/jobs/view/senior-software-developer-med-pl-sql-erfaring-og-indsigt-i-oracle-at-seges-innovation-4049430849",
-    "snippet": "Vi s\u00f8ger en erfaren software developer, som kan navigere i vores Oracle-l\u00f8sning med omfattende PL/SQL-kode, til at styrke vores v\u00e6rdistr\u00f8m Livestock. Vi ...",
-    "query": "site:linkedin.com/jobs \"pl/sql\" danmark",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Nordea s\u00f8ger en Lead Developer PL/SQL i K\u00f8benhavn",
-    "link": "https://dk.linkedin.com/jobs/view/lead-developer-pl-sql-at-nordea-3423618968",
-    "snippet": "People leader for a team of :12 PL/SQL developers located in India and Poland. Application development responsible for one or more Oracle databases Recovery Doc ...",
-    "query": "site:linkedin.com/jobs \"pl/sql\" danmark",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "HCLTech s\u00f6ker Oracle Data Integrator i Helsingborg",
-    "link": "https://se.linkedin.com/jobs/view/oracle-data-integrator-at-hcltech-4387285890?refId=eaK7Hp5wHnYhVUwgbW1dVA%3D%3D&trackingId=8yiTuII8KiSNIREdq1mrjg%3D%3D&position=23&pageNum=0",
-    "snippet": "Experience with Ansible/groovy and automation tools. Experience of creating PL/SQL ... Kongens Lyngby, Region Hovedstaden, Danmark 1 m\u00e5nad sedan. Staff ...",
-    "query": "site:linkedin.com/jobs \"pl/sql\" danmark",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Capgemini s\u00f6ker Senior Oracle Developer i Malm\u00f6",
-    "link": "https://se.linkedin.com/jobs/view/senior-oracle-developer-at-capgemini-4088136541",
-    "snippet": "Du har gedigen kunskap inom; Oracle PL/SQL, Shell scripting, prestandajustering, XML, Oracle DBA, Oracle Forms/Reports. Du kommer driva Oracle PL/SQL ...",
-    "query": "site:linkedin.com/jobs \"pl/sql\" danmark",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Oracle Cloud Technical Expert - TROVA SOLUTIONS",
-    "link": "https://www.linkedin.com/jobs/view/oracle-cloud-technical-expert-at-trova-solutions-4329453915",
-    "snippet": "Deliver PL/SQL procedures development, scheduling of ESS jobs, UCM uploads ... Copenhagen, Capital Region of Denmark, Denmark 2 months ago. Oracle ERP ...",
-    "query": "site:linkedin.com/jobs \"pl/sql\" denmark",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Software Testing Specialist - Response Informatics",
-    "link": "https://www.linkedin.com/jobs/view/software-testing-specialist-at-response-informatics-4394398588",
-    "snippet": "Very good knowledge of Database system Oracle RDBMS and database programming language PL/SQL; ... Copenhagen, Capital Region of Denmark, Denmark ...",
-    "query": "site:linkedin.com/jobs \"pl/sql\" denmark",
-    "date": "f\u00f6r 4 dagar sedan",
-    "is_new": true
-  },
-  {
-    "title": "Principal/Staff Data Engineer - European Union",
-    "link": "https://www.linkedin.com/jobs/view/principal-staff-data-engineer-at-wave-talent-4282599712",
-    "snippet": "Similar jobs. Data Engineer PL/SQL Intermediate. Data Engineer PL/SQL Intermediate ... Denmark 5 days ago. Explore top content on LinkedIn. Find curated posts ...",
-    "query": "site:linkedin.com/jobs \"pl/sql\" denmark",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Sweden | apex",
-    "link": "https://blogs.oracle.com/apex/tag/sweden",
-    "snippet": "Oracle APEX Business Innovations is back! Karina Pastor 1 minute read. Oracle ... Vodafone Business: Revolutionizing B2B Operations with Oracle APEX.",
-    "query": "\"oracle apex\" f\u00f6retag sverige",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Application Development Services",
-    "link": "https://www.oracle.com/se/application-development/",
-    "snippet": "Learn why Omdia recognized Oracle APEX as a Leader in low-code app development. Access the Omdia report. Why Oracle for AppDev. Build faster with AI. From ...",
-    "query": "\"oracle apex\" f\u00f6retag sverige",
-    "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Oracle APEX Konsult i Sverige",
-    "link": "https://www.nobleprog.se/consulting/oracle-apex",
-    "snippet": "NobleProg erbjuder ett brett utbud av Oracle APEX konsult i Sverige: NobleProg-konsulterna \u00e4r erfarna praktiker i Oracle APEX och har ett gott f\u00f6rst\u00e5nd f\u00f6r ...",
-    "query": "\"oracle apex\" f\u00f6retag sverige",
-    "date": "",
+    "title": "Oracle PL/SQL-utvecklare",
+    "link": "https://cinode.market/requests/13033",
+    "snippet": "- Gedigen kunskap och erfarenhet PL/SQL och Oraclemilj\u00f6. - ODI (Oracle Data Integrator). - Stort plus med efarenhet fr\u00e5n retail-branschen. - ...",
+    "query": "\"pl/sql\" konsult sverige",
+    "date": "1 nov. 2024",
     "is_new": true
   },
   {
-    "title": "Systemutvecklare Oracle Apex",
-    "link": "https://www.jobbastatligt.se/sok?Sort=DESC&pageid=65569&tab=contentTab",
-    "snippet": "Hos oss kommer du att: Utveckla, testa och drifts\u00e4tta Oracle Apex l\u00f6sningar i n\u00e4ra samverkan med verksamheten; F\u00f6rvalta och vidareutveckla befintliga l\u00f6sningar ...",
-    "query": "\"oracle apex\" f\u00f6retag sverige",
+    "title": "Oracle-konsult - Upgraded",
+    "link": "https://upgraded.se/konsultuppdrag/155930-oracle-konsult/",
+    "snippet": "Ska-krav: Du har minst 5 \u00e5rs erfarenhet av att arbeta med Oracle 11, inkluderat PL/SQL. Du har erfarenhet av liknande migreringsuppdrag. Du har relevant ...",
+    "query": "\"pl/sql\" konsult sverige",
     "date": "",
     "is_new": true
   },
   {
-    "title": "AI Vector Search in APEX",
-    "link": "https://www.oracle.com/se/artificial-intelligence/ai-vector-search-in-apex/",
-    "snippet": "Introduction. Oracle APEX now leverages the AI Vector Search feature introduced in Oracle AI Database to implement semantics-based similarity searches.",
-    "query": "\"oracle apex\" f\u00f6retag sverige",
+    "title": "Om f\u00f6retaget - JZ IT-Konsult AB",
+    "link": "https://jz-it-konsult.se/Uppdragshistorik.html",
+    "snippet": "Roller: systemanalytiker, systemdesigner, utvecklare, support. Teknisk milj\u00f6: SunOS, Oracle, SQL, PL/SQL, TOAD, UNIX-shell, AWK, Delphi, C#.",
+    "query": "\"pl/sql\" konsult sverige",
     "date": "",
     "is_new": true
   },
   {
-    "title": "Systemutvecklare Oracle Apex | Uppsala lediga jobb - Uppsala",
-    "link": "https://www.uppsalaledigajobb.se/jobb/5611519/systemutvecklare-oracle-apex",
-    "snippet": "Vi s\u00f6ker nu tv\u00e5 stycken Oracle Apex utvecklare som kan utveckla och f\u00f6rvalta v\u00e5ra webbaserade register. Dina arbetsuppgifter. Vi s\u00f6ker nu tv\u00e5 Oracle APEX ...",
-    "query": "\"oracle apex\" f\u00f6retag sverige",
+    "title": "SQL-expert - Konsult inom databashanteringssystem.",
+    "link": "https://rightpeoplegroup.com/sv/databasexsperter/sql-expert",
+    "snippet": "Kompetensgap: Om det befintliga teamet saknar djup kunskap inom ett visst omr\u00e5de, till exempel en specifik SQL-dialekt (T-SQL, PL/SQL) eller avancerad data ...",
+    "query": "\"pl/sql\" konsult sverige",
     "date": "",
     "is_new": true
   },
   {
-    "title": "Oracle Apex developer",
-    "link": "https://www.hcltech.com/careers/oracle-apex-developer",
-    "snippet": "Oracle Apex developer \u00b7 Works with Oracle's world class technology to develop, implement and support various tools and services to support all aspects of SaaS ...",
-    "query": "\"oracle apex\" f\u00f6retag sverige",
+    "title": "Anm\u00e4lan till uppdrag 5272",
+    "link": "https://www.konsultpoolen.se/KPWebSite.nsf/application.xsp?a=5272",
+    "snippet": "Vi beh\u00f6ver f\u00f6r kunds r\u00e4kning omg\u00e5ende st\u00e4rka upp deras IT-logistikteam med en PL/SQL-MQ-utvecklare. Uppdrag inneb\u00e4r att vara med och utveckla deras ...",
+    "query": "\"pl/sql\" konsult sverige",
     "date": "",
     "is_new": true
   },
   {
-    "title": "Oracle APEX Consultant \u2013 Meet your business needs with ...",
-    "link": "https://www.oracleapexconsultant.com/",
-    "snippet": "Deploy your web application which connects directly with your oracle database with the Oracle APEX consultant. We can help you from design to development and ...",
-    "query": "\"oracle apex\" f\u00f6retag sverige",
+    "title": "PL/SQL databaseudvikling",
+    "link": "https://rightpeoplegroup.com/da/pl-sql-udvikler",
+    "snippet": "Vi leverer eksperter i PL/SQL-udvikling, som optimerer databaseydeevne og skaber effektive Oracle-l\u00f8sninger, der er skr\u00e6ddersyet til din virksomheds behov.",
+    "query": "\"pl/sql\" konsulent danmark",
     "date": "",
     "is_new": true
   },
   {
-    "title": "MBN Data",
-    "link": "https://www.mbndata.dk/",
-    "snippet": "Oracle APEX opstart & mentoring. Vi hj\u00e6lper gerne med at komme igang med Oracle Application Express (APEX). \u00b7 IT Konsulentbistand \u00b7 APEX Kursus ...",
-    "query": "\"oracle apex\" virksomhed danmark",
+    "title": "Oracle designer and developer (Oracle E-Business Suite ...",
+    "link": "https://citc.dk/oracle-designer-and-developer/",
+    "snippet": "Senior Oracle (PL/SQL) and Microsoft SQL Server (T-SQL) system designer and system developer (technical consultant) with expert competences in Oracle E-Business ...",
+    "query": "\"pl/sql\" konsulent danmark",
     "date": "",
     "is_new": true
   },
   {
-    "title": "Cegal er Nordens f\u00f8rende Oracle-partner",
-    "link": "https://www.cegal.com/da/resources/cegal-er-nordens-f%C3%B8rende-oracle-partner",
-    "snippet": "Related articles. Oracle Digitalisering. Fornyelse med Oracle APEX - mere end ny teknologi. Jon Petter Hjulstad Jon Petter er Principal Global Business ...",
-    "query": "\"oracle apex\" virksomhed danmark",
+    "title": "Bellatriks Consulting",
+    "link": "https://bellatriks.dk/",
+    "snippet": "e-mail: tram@bellatriks.dk; Pharma IT Thor Petersen Tel.: +45 53838475 e-mail ... Code Review in Java, PL/SQL, Java Script, C#; Configuration Management ...",
+    "query": "\"pl/sql\" konsulent danmark",
     "date": "",
     "is_new": true
   },
   {
-    "title": "Find Top Oracle APEX Experts for Hire in March 2026 on ...",
-    "link": "https://www.dk.freelancer.com/hire/oracle-apex",
-    "snippet": "S\u00e5dan ans\u00e6tter du en god freelance Oracle APEX Expert. Oracle APEX (Application Express) is Oracle's software platform for developing and designing desktop ...",
-    "query": "\"oracle apex\" virksomhed danmark",
+    "title": "Oracle Tech Product Excellence",
+    "link": "https://www.cegal.com/da/consultancy/produkt-excellence/oracle-tech-product-excellence",
+    "snippet": "Oracle-Middelware og -integration, MW, PaaS; Business Intelligence, BI \u00b7 Data Warehouse, DWH; Analyse, AI/ML; PL/SQL; SQL \u00b7 Oracle APEX ...",
+    "query": "\"pl/sql\" konsulent danmark",
     "date": "",
     "is_new": true
   },
   {
-    "title": "Oracle-udviklere fra Right People Group",
-    "link": "https://rightpeoplegroup.com/da/oracle-udvikler",
-    "snippet": "Eller er deres styrke udvikling i Oracle APEX? En m\u00e5lrettet tilgang er n\u00f8dvendig for at sikre et perfekt match. Mange v\u00e6lger derfor at samarbejde med en ...",
-    "query": "\"oracle apex\" virksomhed danmark",
+    "title": "Tryg s\u00f8ger en Udvikler med PL/SQL erfaring i Ballerup",
+    "link": "https://dk.linkedin.com/jobs/view/udvikler-med-pl-sql-erfaring-at-tryg-3048071591",
+    "snippet": "Din rolle som udvikler vil best\u00e5 i at udvikle og drifte vores Tia platform, hvor dine PL/SQL eller rene SQL kompetencer kommer i spil. ... Graduate program CGI ...",
+    "query": "\"pl/sql\" konsulent danmark",
     "date": "",
     "is_new": true
   },
   {
-    "title": "Devitec ApS",
-    "link": "https://www.devitech.dk/references.php",
-    "snippet": "Konsulent p\u00e5 Oracle APEX-l\u00f8sninger. Referencer og netv\u00e6rk ... DigitalLead. DigitalLead er Danmark's nationale klynge for digitale teknologier og fungerer som ...",
-    "query": "\"oracle apex\" virksomhed danmark",
+    "title": "emagine | experience expertise",
+    "link": "https://www.emagine.org/",
+    "snippet": "... consultants, we deliver results through tailored top consulting services ... Oracle. Oracle, PL/SQL, EBS, STP, ETL. MySQL. MySQL, STP, Linux, ETL. NoSQL.",
+    "query": "\"pl/sql\" konsulent danmark",
     "date": "",
     "is_new": true
   },
   {
-    "title": "Oracle APEX: Den perfekte ledsager til Oracle Fusion",
-    "link": "https://dk.linkedin.com/pulse/oracle-apex-perfect-companion-fusion-clover-infotech-2me3f?tl=da",
-    "snippet": "Med Oracle APEX kan virksomheder: Bygge interaktive dashboards , der giver indsigt i \u00f8konomi-, salgs- og HR-data i realtid. Udvikle Brugerdefinerede ...",
-    "query": "\"oracle apex\" virksomhed danmark",
+    "title": "SQL Kurser - For b\u00e5de nybegynder og erfarne brugere.",
+    "link": "https://www.dbvision.dk/sql-kurser/",
+    "snippet": "Dette kursus giver et bredt kendskab til PL/SQL. Kursusformen er en workshop med mange praktiske \u00f8velser. Kurset indeholder blandt andet f\u00f8lgende: Kort ...",
+    "query": "\"pl/sql\" konsulent danmark",
     "date": "",
     "is_new": true
   },
   {
-    "title": "Job ads - Oracle Apex",
-    "link": "https://www.jobindex.dk/jobsoegning?lang=en&q=oracle+apex",
-    "snippet": "Du vil have arbejdsopgaver for de virksomheder der administreres p\u00e5 hovedkontoret, hvor den prim\u00e6re opgave er at v\u00e6re ansvarlig for regnskabsudarbejdelsen p\u00e5 ...",
-    "query": "\"oracle apex\" virksomhed danmark",
+    "title": "KAMB-IT",
+    "link": "https://kamb-it.dk/",
+    "snippet": "Konsulent. Test Management. Test Strategi Test Planl\u00e6gning Test Analyse ... PL/SQL udvikling. Linux/Unix udvikling/. Referencer. Leo Pharma Nykredit Arriva ...",
+    "query": "\"pl/sql\" konsulent danmark",
     "date": "",
-    "is_new": true
-  },
-  {
-    "title": "Oracle Apex AI Assistant muligg\u00f8r udvikling af ...",
-    "link": "https://it-kanalen.dk/oracle-apex-ai-assistant-muliggoer/",
-    "snippet": "Med over 21 millioner byggede applikationer er Oracle APEX den foretrukne platform for over 850.000 udviklere i organisationer p\u00e5 tv\u00e6rs af ...",
-    "query": "\"oracle apex\" virksomhed danmark",
-    "date": "19 juni 2024",
     "is_new": true
   },
   {
-    "title": "about us - da",
-    "link": "https://bizzpath.com/dk/about-us-da/",
-    "snippet": "Den danske virksomhed ... Nu arbejder han og hans udviklingsteam p\u00e5 BizzPath, udviklet i Oracle APEX og k\u00f8rer i Oracle Cloud i Frankfurt og Saudi-Arabien.",
-    "query": "\"oracle apex\" virksomhed danmark",
+    "title": "Job ads - Pl Sql",
+    "link": "https://www.jobindex.dk/jobsoegning?q=pl+sql&lang=en",
+    "snippet": "Du arbejder prim\u00e6rt med Oracle-teknologier \u2013 herunder Oracle APEX, PL/SQL, REST-integrationer og integrationer til Oracle E-Business Suite 12.2 \u2013 og er med ...",
+    "query": "\"pl/sql\" konsulent danmark",
     "date": "",
     "is_new": true
-  },
-  {
-    "title": "Cognizant s\u00f6ker Oracle Architect i Stockholm",
-    "link": "https://se.linkedin.com/jobs/view/oracle-architect-at-cognizant-4271835002",
-    "snippet": "We are seeking a Technology Architect with 10 to 14 years of experience in Unix Commands Oracle PL/SQL Oracle Apex Oracle Reports and Oracle Forms. The ...",
-    "query": "site:linkedin.com/jobs \"oracle forms\" sverige",
-    "date": "",
-    "is_new": false
-  },
-  {
-    "title": "Senior Oracle developer - RDT Sweden AB",
-    "link": "https://se.linkedin.com/jobs/view/senior-oracle-developer-at-rdt-sweden-ab-3550665939",
-    "snippet": "We are looking Senior software developer Oracle SQL, PL/SQL, Oracle Forms and Reports Expert, university degree in system science. Language. Swedish: good.",
-    "query": "site:linkedin.com/jobs \"oracle forms\" sweden",
-    "date": "",
-    "is_new": false
-  },
-  {
-    "title": "Enterprise Digital Resources hiring Oracle Specialist in ...",
-    "link": "https://www.linkedin.com/jobs/view/oracle-specialist-at-enterprise-digital-resources-4315959002",
-    "snippet": "Deep knowledge of Oracle Forms and Oracle Database (SQL, PL/SQL). Proven experience in Oracle APEX application development and deployment. Solid background in ...",
-    "query": "site:linkedin.com/jobs \"oracle forms\" sweden",
-    "date": "",
-    "is_new": false
-  },
-  {
-    "title": "Senior Oracle Developer - RDT Sweden AB",
-    "link": "https://se.linkedin.com/jobs/view/senior-oracle-developer-at-weitglobal-w-it-g-consulting-ab-3560683136",
-    "snippet": "Required skills: \u00b7 Education. Senior software developer Oracle SQL, PL/SQL, Oracle Forms and Reports Expert, university degree in system science \u00b7 Language.",
-    "query": "site:linkedin.com/jobs \"oracle forms\" sweden",
-    "date": "",
-    "is_new": false
   },
   {
     "title": "Veritaz s\u00f6ker Senior Oracle Developer - Malmo i Malm\u00f6",
@@ -704,43 +160,11 @@
     "is_new": false
   },
   {
-    "title": "872 Remote Oracle Developer jobs in United States",
-    "link": "https://www.linkedin.com/jobs/remote-oracle-developer-jobs",
-    "snippet": "SQL Developer within Corporate & Investment Banking | SEB, Stockholm. SEB. Stockholm, Stockholm County, Sweden ... Oracle Forms and Oracle PL/SQL Developer (m/f/d).",
-    "query": "site:linkedin.com/jobs \"oracle forms\" sweden",
-    "date": "",
-    "is_new": false
-  },
-  {
     "title": "The Group Securities hiring Senior Oracle Developer in ...",
     "link": "https://www.linkedin.com/jobs/view/4365742419/",
     "snippet": "The Senior Oracle Developer will be responsible for developing, maintaining, and modernizing Oracle applications using PL/SQL , Oracle Forms & ...",
     "query": "site:linkedin.com/jobs \"oracle forms\" sweden",
     "date": "2 feb. 2026",
-    "is_new": false
-  },
-  {
-    "title": "Oracle EBS Developer - Jobs via Dice",
-    "link": "https://www.linkedin.com/jobs/view/oracle-ebs-developer-at-jobs-via-dice-4394246096",
-    "snippet": "Utilize Oracle development tools including Oracle Forms Reports Workflow and BI Publisher to build scalable solutions ... Solna, Stockholm County, ...",
-    "query": "site:linkedin.com/jobs \"oracle forms\" sweden",
-    "date": "f\u00f6r 3 dagar sedan",
-    "is_new": false
-  },
-  {
-    "title": "SME Oracle APEX Developer - Aptonet",
-    "link": "https://www.linkedin.com/jobs/view/sme-oracle-apex-developer-at-aptonet-4395445098",
-    "snippet": "Analyze existing Oracle Forms applications and design migration strategies to Oracle APEX-based web applications ... Solna, Stockholm County, ...",
-    "query": "site:linkedin.com/jobs \"oracle forms\" sweden",
-    "date": "f\u00f6r 3 dagar sedan",
-    "is_new": false
-  },
-  {
-    "title": "Oracle Ebs jobs in New York",
-    "link": "https://www.linkedin.com/jobs/oracle-ebs-jobs-new-york",
-    "snippet": "Senior Oracle Forms Developer. Transfer Solutions. Vianen, Utrecht ... Stockholm, Stockholm County, Sweden. Be an early applicant. 3 weeks ago. Oracle eBS ...",
-    "query": "site:linkedin.com/jobs \"oracle forms\" sweden",
-    "date": "",
     "is_new": false
   },
   {
@@ -784,41 +208,9 @@
     "is_new": false
   },
   {
-    "title": "Sapiens s\u00f8ger en ADF Developer i K\u00f8benhavn",
-    "link": "https://dk.linkedin.com/jobs/view/adf-developer-at-sapiens-3724875722",
-    "snippet": "Knowledge of Oracle Forms and Reports. Knowledge of web services and REST APIs. Tools and technologies. Oracle ADF (WebLogic). Oracle JHeadstart. Oracle DB ...",
-    "query": "site:linkedin.com/jobs \"oracle forms\" danmark",
-    "date": "",
-    "is_new": false
-  },
-  {
     "title": "TIA/Oracle udvikler til GF Forsikring, Odense",
     "link": "https://dk.linkedin.com/jobs/view/tia-oracle-udvikler-til-gf-forsikring-odense-at-gf-forsikring-4343574591",
     "snippet": "Har viden om Oracle Forms; Har kendskab til versionsstyring (GIT og evt. Subversion); Tager ansvar og ejerskab for egne opgaver og st\u00f8tter teamet med at opn\u00e5 ...",
-    "query": "site:linkedin.com/jobs \"oracle forms\" danmark",
-    "date": "",
-    "is_new": false
-  },
-  {
-    "title": "Business Analyst - Ework Group Danmark",
-    "link": "https://dk.linkedin.com/jobs/view/business-analyst-at-ework-group-4091178535",
-    "snippet": "Existing system is built on Oracle forms, and the consultant needs to take charge of estimating several different options for modernizing the system.",
-    "query": "site:linkedin.com/jobs \"oracle forms\" danmark",
-    "date": "",
-    "is_new": false
-  },
-  {
-    "title": "CGI Denmark s\u00f8ger en Java- og Oracleudvikler med flair for ...",
-    "link": "https://dk.linkedin.com/jobs/view/java-og-oracleudvikler-med-flair-for-videreudvikling-og-vedligeholdelse-at-cgi-danmark-3787030526",
-    "snippet": "For at f\u00e5 succes i jobbet er det krav at du har mindst 3 \u00e5rs erfaring med Java-udvikling, og det vil v\u00e6re et plus, hvis du har erfaring med Oracle Forms og ADF ...",
-    "query": "site:linkedin.com/jobs \"oracle forms\" danmark",
-    "date": "",
-    "is_new": false
-  },
-  {
-    "title": "Oracle-udvikler til Manufacturing IT",
-    "link": "https://dk.linkedin.com/jobs/view/600698488",
-    "snippet": "Du har gode kvalifikationer og erfaring inden for Oracle Database, Oracle Weblogic, Oracle SQL og PL/SQL, Oracle Forms/Reports. Derudover er det en fordel ...",
     "query": "site:linkedin.com/jobs \"oracle forms\" danmark",
     "date": "",
     "is_new": false
@@ -832,66 +224,10 @@
     "is_new": false
   },
   {
-    "title": "1000+ Oracle Ebs jobs in South Africa",
-    "link": "https://za.linkedin.com/jobs/oracle-ebs-jobs",
-    "snippet": "Oracle EBS Rollout Specialist. Work Life Group NL. Copenhagen, Capital Region of Denmark, Denmark ... Senior Oracle Forms Developer. Transfer Solutions. Vianen, ...",
-    "query": "site:linkedin.com/jobs \"oracle forms\" denmark",
-    "date": "",
-    "is_new": false
-  },
-  {
-    "title": "4000+ Oracle Ebs jobs in Tamil Nadu, India (398 new)",
-    "link": "https://in.linkedin.com/jobs/oracle-ebs-jobs-tamil-nadu",
-    "snippet": "Oracle EBS Rollout Specialist. Work Life Group NL. Copenhagen, Capital Region of Denmark, Denmark ... Senior Oracle Forms Developer. Transfer Solutions. Vianen, ...",
-    "query": "site:linkedin.com/jobs \"oracle forms\" denmark",
-    "date": "",
-    "is_new": false
-  },
-  {
     "title": "Business Analyst (Core System replacement)",
     "link": "https://dk.linkedin.com/jobs/view/business-analyst-core-system-replacement-at-emagine-4091419477",
     "snippet": "The existing system is built on Oracle Forms, and the consultant will be responsible for estimating various modernization options and presenting these to ...",
     "query": "site:linkedin.com/jobs \"oracle forms\" denmark",
-    "date": "",
-    "is_new": false
-  },
-  {
-    "title": "Oracle Forms | Oracle Sverige",
-    "link": "https://www.oracle.com/se/application-development/technologies/forms/forms.html",
-    "snippet": "Oracle Forms, a component of Oracle Fusion Middleware, is Oracle's long-established technology used to build enterprise back-office desktop applications quickly ...",
-    "query": "\"oracle forms\" f\u00f6retag sverige",
-    "date": "",
-    "is_new": false
-  },
-  {
-    "title": "Oracle Forms-utvecklare - Hitta en skicklig expert",
-    "link": "https://rightpeoplegroup.com/sv/oracle-forms-utvecklare",
-    "snippet": "Vi tillhandah\u00e5ller Oracle Forms-utvecklare som \u00e4r specialiserade p\u00e5 att skapa effektiva databasapplikationer med moderna gr\u00e4nssnitt samtidigt som de ...",
-    "query": "\"oracle forms\" f\u00f6retag sverige",
-    "date": "",
-    "is_new": false
-  },
-  {
-    "title": "Companies using Oracle Forms and its marketshare",
-    "link": "https://enlyft.com/tech/products/oracle-forms",
-    "snippet": "11980 companies use Oracle Forms. Oracle Forms is most often used by companies with 1000-5000 employees & $1M-10M in revenue. Our usage data goes back 2 ...",
-    "query": "\"oracle forms\" f\u00f6retag sverige",
-    "date": "",
-    "is_new": false
-  },
-  {
-    "title": "Application Development Technologies",
-    "link": "https://www.oracle.com/se/application-development/technologies/",
-    "snippet": "Oracle offers a complete and integrated set of application development and business ... Traditional Oracle Tools. Oracle Forms \u00b7 Oracle Designer \u00b7 Oracle Reports ...",
-    "query": "\"oracle forms\" f\u00f6retag sverige",
-    "date": "",
-    "is_new": false
-  },
-  {
-    "title": "Oracle Forms Developer - Find a Skilled Professional",
-    "link": "https://rightpeoplegroup.com/oracle-forms-developer",
-    "snippet": "We provide Oracle Forms developers who specialize in creating efficient database applications with modern interfaces while maintaining legacy system ...",
-    "query": "\"oracle forms\" f\u00f6retag sverige",
     "date": "",
     "is_new": false
   },
@@ -904,22 +240,6 @@
     "is_new": false
   },
   {
-    "title": "Mobilization and Oracle Forms Nordics Roadshow",
-    "link": "https://blogs.oracle.com/digitalassistant/mobilization-and-oracle-forms-nordics-roadshow",
-    "snippet": "Oracle Forms, as technology, underpins tens of thousands of applications across the globe and in particular in the Nordic region if you pay ...",
-    "query": "\"oracle forms\" f\u00f6retag sverige",
-    "date": "8 nov. 2016",
-    "is_new": false
-  },
-  {
-    "title": "Oracle Forms-utvecklare \u2013 Avaron AB",
-    "link": "https://jobbsafari.se/jobb/oracle-forms-utvecklare-sasrb-18957116",
-    "snippet": "Utveckla och f\u00f6rvalta Oracle Forms-baserade applikationer, inklusive databashantering i Oracle DB och databasn\u00e4ra kod i Oracle PL/SQL. Delta i ...",
-    "query": "\"oracle forms\" f\u00f6retag sverige",
-    "date": "",
-    "is_new": false
-  },
-  {
     "title": "Ledigt jobb: Oracle Forms-utvecklare till Avaron AB",
     "link": "https://webbjobb.io/jobb/308698/oracle-forms-utvecklare",
     "snippet": "Hos v\u00e5r kund kommer du att: Utveckla och f\u00f6rvalta Oracle Forms-baserade applikationer, inklusive databashantering i Oracle DB och databasn\u00e4ra ...",
@@ -928,89 +248,9 @@
     "is_new": false
   },
   {
-    "title": "Talan - Oracle Technologies (formerly Insum)",
-    "link": "https://ca.linkedin.com/company/insum-solutions",
-    "snippet": "Does your company use Oracle Forms? Then ... Svenska (Swedish); \u0c24\u0c46\u0c32\u0c41\u0c17\u0c41 (Telugu); \u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22 (Thai); Tagalog (Tagalog)",
-    "query": "\"oracle forms\" f\u00f6retag sverige",
-    "date": "",
-    "is_new": false
-  },
-  {
     "title": "Oracle DBA konsulent | Copenhagen IT Consult",
     "link": "https://citc.dk/oracle-dba-konsulent/",
     "snippet": "Teknologier: Oracle Rdb, PL/SQL, OpenVms, Hp Tru64, Red Hat & Oracle Entreprise Linux, Windows, Oracle 11gR2, Weblogic, Oracle Forms & Reports, Microsoft System ...",
-    "query": "\"oracle forms\" virksomhed danmark",
-    "date": "",
-    "is_new": false
-  },
-  {
-    "title": "Oracle forms",
-    "link": "https://www.dk.freelancer.com/projects/oracle/oracle-forms-14918479",
-    "snippet": "AI til virksomheder ... Oracle forms. Oracle forms. \u20b91500-12500 INR ... Freelancer-logo Denmark / Dansk \u00b7 Hj\u00e6lp & Support. Tilg\u00e6ngelighed. Freelancer. Kategorier ...",
-    "query": "\"oracle forms\" virksomhed danmark",
-    "date": "",
-    "is_new": false
-  },
-  {
-    "title": "Open Source v\u00e6rkt\u00f8j til applikationsudvikling",
-    "link": "https://itm8.dk/application-services/futureforms",
-    "snippet": "Hvis du har kritiske applikationer udviklet i gamle teknologier, som fx Oracle Forms, er det nok tid til at skifte til moderne teknologier. For vi kan se ...",
-    "query": "\"oracle forms\" virksomhed danmark",
-    "date": "",
-    "is_new": false
-  },
-  {
-    "title": "Oracle Netsuite-ekspert",
-    "link": "https://rightpeoplegroup.com/da/oraclenetsuite",
-    "snippet": "Oracle Forms udvikling. Vi leverer Oracle Forms-udviklere, der er specialiserede i at skabe effektive databaseapplikationer med moderne brugergr\u00e6nseflader ...",
-    "query": "\"oracle forms\" virksomhed danmark",
-    "date": "",
-    "is_new": false
-  },
-  {
-    "title": "Fornyelse med Oracle APEX \u2013 mere end ny teknologi Hos flere ...",
-    "link": "https://www.facebook.com/cegaldanmark/posts/fornyelse-med-oracle-apex-mere-end-ny-teknologihos-flere-af-vores-kunder-ser-vi-/1408080571326720/",
-    "snippet": "Fornyelse med Oracle APEX \u2013 mere end ny teknologi Hos flere af vores kunder ser vi, hvordan samspillet mellem Oracle Forms og APEX giver b\u00e5de stabil...",
-    "query": "\"oracle forms\" virksomhed danmark",
-    "date": "",
-    "is_new": false
-  },
-  {
-    "title": "Konvex ApS - Jan Lund Kristensen",
-    "link": "https://www.konvex.dk/",
-    "snippet": "Danske Bank, Tele Danmark, Mrsk Data og Post Danmark ... Efterflgende indgr de i komplekse beregninger og prsenteret/sagsbehandlet i Oracle Forms skrmbilleder.",
-    "query": "\"oracle forms\" virksomhed danmark",
-    "date": "",
-    "is_new": false
-  },
-  {
-    "title": "Hvordan man interagerer med Oracle Process Automation.",
-    "link": "https://dk.linkedin.com/pulse/how-interact-oracle-process-automation-peter-obert-ogeme?tl=da",
-    "snippet": "Form\u00e5let med dette indl\u00e6g er at vise praktisk end-to-end ops\u00e6tning for at muligg\u00f8re interaktion af Oracle Process Automation(OPA) med andre ...",
-    "query": "\"oracle forms\" virksomhed danmark",
-    "date": "",
-    "is_new": false
-  },
-  {
-    "title": "Oracle forms and report 10g project",
-    "link": "https://www.dk.freelancer.com/projects/oracle/oracle-forms-report-project",
-    "snippet": "Hi Guys, I Have project which is approval process needs to design in oracle forms 10g/reports10g. Design and table structures are ready.",
-    "query": "\"oracle forms\" virksomhed danmark",
-    "date": "",
-    "is_new": false
-  },
-  {
-    "title": "<h1>Oracle</h1> - Simplify Systems",
-    "link": "http://www.simplifysys.dk:82/ords/plsql/sim_sec_dk$section.QueryViewByKey?P_SECTION_ID=460&Z_CHK=39140",
-    "snippet": "... Oracle Forms <BR> <li>Oracle Reports <BR> </ul> <BR> <p><p></td></tr></table> ... virksomhed og tilpasses s\u00e6rlige \u00f8nsker. Der kan ogs\u00e5 arrangeres korte ...",
-    "query": "\"oracle forms\" virksomhed danmark",
-    "date": "",
-    "is_new": false
-  },
-  {
-    "title": "Databaser - Data4u",
-    "link": "https://li.dk/data.aspx?oid=25",
-    "snippet": "Datawarehouse concepter. og meget mere. Vi har ogs\u00e5 et godt kendskab til. Oracle Applications/Finansiels; Oracle Reports; Oracle Forms; Oracle Discoverer. Det ...",
     "query": "\"oracle forms\" virksomhed danmark",
     "date": "",
     "is_new": false
@@ -1032,78 +272,6 @@
     "is_new": false
   },
   {
-    "title": "Oracle Gold Partner",
-    "link": "https://www.materna.de/en/competences/technology-partner/oracle-gold-partner/",
-    "snippet": "Development and operation of customised business applications based on the Oracle Application Development Framework (ADF) and Oracle Forms \u00b7 Development and ...",
-    "query": "\"oracle forms\" consultant sweden",
-    "date": "",
-    "is_new": false
-  },
-  {
-    "title": "APEX Nordic Tour 2025 Spring Edition \u2013 Resources and ...",
-    "link": "https://blogs.oracle.com/apex/apex-nordic-tour-2025-spring-edition-resources-and-more",
-    "snippet": "Before she joined the APEX Team, she worked as an Oracle APEX Consultant, modernizing Oracle Forms apps and developing new applications with ...",
-    "query": "\"oracle forms\" consultant sweden",
-    "date": "9 maj 2025",
-    "is_new": false
-  },
-  {
-    "title": "Join Us Across 10 Countries for In-Person APEX Events ...",
-    "link": "https://blogs.oracle.com/apex/join-us-at-apex-events-2025",
-    "snippet": "... Sweden ... Before she joined the APEX Team, she worked as an Oracle APEX Consultant, modernizing Oracle Forms apps and developing new applications ...",
-    "query": "\"oracle forms\" consultant sweden",
-    "date": "14 nov. 2025",
-    "is_new": false
-  },
-  {
-    "title": "Paul Verstraete - paveco",
-    "link": "http://paveco.be/CV%20Paul%20Verstraete%20-%20senior%20oracle%20consultant%2012_01_2021%20(EN).pdf",
-    "snippet": "Oracle consultant with more than 25 years of work ... Oracle Forms 4.5, 6i, Reports 6i, PL / SQL. http ... (Sweden, Sundsvall), VHI -. Voluntary Health ...",
-    "query": "\"oracle forms\" consultant sweden",
-    "date": "",
-    "is_new": false
-  },
-  {
-    "title": "Oracle Forms to Java & .NET Migration Tools",
-    "link": "https://www.gapvelocity.ai/migrate/oracle-forms",
-    "snippet": "GAP offers a comprehensive, automated migration process that transforms your Oracle Forms applications into modern Java-based web applications. Key features of ...",
-    "query": "\"oracle forms\" consultant sweden",
-    "date": "",
-    "is_new": false
-  },
-  {
-    "title": "Oracle APEX Nordic Tour 2025 is coming to you in Spring!",
-    "link": "https://blogs.oracle.com/apex/oracle-apex-nordic-tour-2025",
-    "snippet": "Before she joined the APEX Team, she worked as an Oracle APEX Consultant, modernizing Oracle Forms apps and developing new applications with ...",
-    "query": "\"oracle forms\" developer denmark",
-    "date": "19 juni 2025",
-    "is_new": false
-  },
-  {
-    "title": "Dimitrios Ntakoulas - Application Developer",
-    "link": "https://dk.linkedin.com/in/dimitrios-ntakoulas",
-    "snippet": "2024 4 \u00e5r 11 m\u00e5neder. Copenhagen Area, Capital Region, Denmark ... Oracle Certified Professional in Internet Application Developer, Oracle Forms Developer Release ...",
-    "query": "\"oracle forms\" developer denmark",
-    "date": "",
-    "is_new": false
-  },
-  {
-    "title": "Migrating to Oracle Web Forms Training Course",
-    "link": "https://www.nobleprog.dk/cc/oraclewebforms",
-    "snippet": "This instructor-led, live training (online or onsite) is aimed at engineers who wish to migrate from Oracle Forms to Oracle Web Forms.",
-    "query": "\"oracle forms\" developer denmark",
-    "date": "",
-    "is_new": false
-  },
-  {
-    "title": "Top 10 Reasons why Oracle APEX is Ideal for ...",
-    "link": "https://www.softbase.dk/post/top-10-reasons-why-oracle-apex-is-ideal-for-oracle-forms-developers",
-    "snippet": "\u201cOracle Forms is Oracle's long-established technology to design and build enterprise applications quickly and efficiently.",
-    "query": "\"oracle forms\" developer denmark",
-    "date": "3 mars 2021",
-    "is_new": false
-  },
-  {
     "title": "Sql Development Jobs In Denmark",
     "link": "https://www.naukri.com/sql-development-jobs-in-denmark",
     "snippet": "\u00b7 Oracle Forms 12c \u00b7 Application Management \u00b7 Analytical Skills \u00b7 Problem Solving \u00b7 Db Servers \u00b7 maintaining enterprise applications for payroll ...",
@@ -1112,18 +280,450 @@
     "is_new": false
   },
   {
-    "title": "Morten Dahl | ICT-AGRI-FOOD Meta Knowledge Base",
-    "link": "https://ictagrifood.eu/user-profile/2271",
-    "snippet": "... Oracle Forms, PL/SQL programming. RFP writing, System design on Oracle based systems. Troubleshooting and performance optimization on Oracle based systems ...",
-    "query": "\"oracle forms\" developer denmark",
+    "title": "Oracle APEX Developer - Infinity Quest",
+    "link": "https://www.linkedin.com/jobs/view/oracle-apex-developer-at-infinity-quest-4216538355",
+    "snippet": "Job Title : APEX Developer. Must have skills: 5+ years Expert Knowledge Oracle PLSQL. 5+ years Expert Knowledge Oracle Apex framework.",
+    "query": "site:linkedin.com/jobs \"oracle apex\" sweden",
     "date": "",
     "is_new": false
   },
   {
-    "title": "Oracle Developer (Reports/ Forms/ADF/PL/SQL)",
-    "link": "https://www.accenture.com/my-en/careers/jobdetails?id=R00233169_en",
-    "snippet": "We are seeking a talented Oracle Developer with experience in Oracle Forms, Oracle Reports, Oracle ADF, or PL/SQL to join our dynamic development team.",
-    "query": "\"oracle forms\" developer denmark",
+    "title": "280 Oracle Apex jobs in United Kingdom (14 new)",
+    "link": "https://uk.linkedin.com/jobs/oracle-apex-jobs",
+    "snippet": "Today's top 280 Oracle Apex jobs in United Kingdom. Leverage your professional network, and get hired. New Oracle Apex jobs added daily.",
+    "query": "site:linkedin.com/jobs \"oracle apex\" sweden",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "16 Oracle Apex jobs in Belgium",
+    "link": "https://be.linkedin.com/jobs/oracle-apex-jobs",
+    "snippet": "Today's top 16 Oracle Apex jobs in Belgium. Leverage your professional network, and get hired. New Oracle Apex jobs added daily.",
+    "query": "site:linkedin.com/jobs \"oracle apex\" sweden",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Oracle Apex Developer - Robert Half",
+    "link": "https://www.linkedin.com/jobs/view/oracle-apex-developer-at-robert-half-4393555844",
+    "snippet": "We are looking for an experienced Oracle Apex Developer to join our team on a long-term contract basis in Bloomfield Township, MI.",
+    "query": "site:linkedin.com/jobs \"oracle apex\" sweden",
+    "date": "8 apr. 2026",
+    "is_new": false
+  },
+  {
+    "title": "Senior Oracle Database Developer with APEX",
+    "link": "https://www.linkedin.com/jobs/view/senior-oracle-database-developer-with-apex-at-sligo-software-solutions-inc-4401090260",
+    "snippet": "Senior Oracle APEX Developer II. CGS Federal (Contact Government ... Svenska (Swedish); \u0c24\u0c46\u0c32\u0c41\u0c17\u0c41 (Telugu); \u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22 (Thai); Tagalog ...",
+    "query": "site:linkedin.com/jobs \"oracle apex\" sweden",
+    "date": "f\u00f6r 4 dagar sedan",
+    "is_new": false
+  },
+  {
+    "title": "Oracle OCI/APEX Engineer - Jobs via Dice",
+    "link": "https://www.linkedin.com/jobs/view/oracle-oci-apex-engineer-at-jobs-via-dice-4401114456",
+    "snippet": "oracle apex administration and support Required 5 Years oracle db migration from solaris to linux (database 12c/11g) Required 10 Years",
+    "query": "site:linkedin.com/jobs \"oracle apex\" sweden",
+    "date": "f\u00f6r 3 dagar sedan",
+    "is_new": false
+  },
+  {
+    "title": "Senior Oracle APEX Developer II with Security Clearance",
+    "link": "https://www.linkedin.com/jobs/view/senior-oracle-apex-developer-ii-with-security-clearance-at-cgs-federal-contact-government-services-4397471073",
+    "snippet": "Work at the direction of the program manager to support the full lifecycle development of custom Oracle Applications, primarily using the Oracle APEX toolset.",
+    "query": "site:linkedin.com/jobs \"oracle apex\" sweden",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "14 Oracle Apex jobs in Ireland (2 new) - Dublin",
+    "link": "https://ie.linkedin.com/jobs/oracle-apex-jobs",
+    "snippet": "Today's top 14 Oracle Apex jobs in Ireland. Leverage your professional network, and get hired. New Oracle Apex jobs added daily.",
+    "query": "site:linkedin.com/jobs \"oracle apex\" sweden",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "1000+ Oracle Apex Developer jobs in United States (73 new)",
+    "link": "https://www.linkedin.com/jobs/oracle-apex-developer-jobs",
+    "snippet": "Today's top 1000+ Oracle Apex Developer jobs in United States. Leverage your professional network, and get hired. New Oracle Apex Developer jobs added daily ...",
+    "query": "site:linkedin.com/jobs \"oracle apex\" sweden",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Developer Oracle APEX - Consultec-TI Corp.",
+    "link": "https://www.linkedin.com/jobs/view/developer-oracle-apex-at-consultec-ti-corp-4398440181",
+    "snippet": "Dise\u00f1ar, desarrollar y mantener aplicaciones empresariales utilizando Oracle APEX (23.x o superior). Desarrollar l\u00f3gica de negocio avanzada ...",
+    "query": "site:linkedin.com/jobs \"oracle apex\" danmark",
+    "date": "8 apr. 2026",
+    "is_new": false
+  },
+  {
+    "title": "Oracle APEX Udvikler - Technical University of Denmark",
+    "link": "https://dk.linkedin.com/jobs/view/oracle-apex-udvikler-it-service-at-dtu-technical-university-of-denmark-3654901813",
+    "snippet": "Vi har en forventning om, at du arbejder hjemmevant med Oracle APEX. Desuden er du struktureret og ser muligheder i nye v\u00e6rkt\u00f8jer og l\u00f8sninger. Som person er ...",
+    "query": "site:linkedin.com/jobs \"oracle apex\" danmark",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Senior Oracle APEX Developer II with Security Clearance",
+    "link": "https://www.linkedin.com/jobs/view/senior-oracle-apex-developer-ii-with-security-clearance-at-cgs-federal-contact-government-services-4397461395",
+    "snippet": "Work at the direction of the program manager to support the full lifecycle development of custom Oracle Applications, primarily using the Oracle APEX toolset.",
+    "query": "site:linkedin.com/jobs \"oracle apex\" danmark",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Oracle Application Specialist - Response Informatics",
+    "link": "https://www.linkedin.com/jobs/view/oracle-application-specialist-at-response-informatics-4174810680",
+    "snippet": "Copenhagen, Capital Region of Denmark, Denmark 3 ... Desarrollador/a Junior Oracle APEX (Remoto) ... Dansk (Danish); Deutsch (German); \u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac (Greek)",
+    "query": "site:linkedin.com/jobs \"oracle apex\" denmark",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Oracle Service Cloud Specialist - act digital EMEA",
+    "link": "https://www.linkedin.com/jobs/view/oracle-service-cloud-specialist-at-act-digital-emea-alter-solutions-4324840261",
+    "snippet": "Oracle APEX Developer. Oracle APEX Developer. Hays. Spain 1 week ago. Oracle JD Edwards Supply Chain Consultant (Senior) - 100% remoto, Espa\u00f1a. Oracle JD ...",
+    "query": "site:linkedin.com/jobs \"oracle apex\" denmark",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Oracle ERP Cloud Security/License Consultant",
+    "link": "https://www.linkedin.com/jobs/view/oracle-erp-cloud-security-license-consultant-at-next-ventures-4349495611",
+    "snippet": "Copenhagen, Capital Region of Denmark, Denmark 2 months ago. Specialista Oracle ... ORACLE APEX Developer. Billennium. Poland 1 week ago. Software Engineer ...",
+    "query": "site:linkedin.com/jobs \"oracle apex\" denmark",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Oracle Apex Developer - Headhunter-Outsource",
+    "link": "https://id.linkedin.com/jobs/view/oracle-apex-developer-at-headhunter-outsource-4327230822",
+    "snippet": "Develop, enhance, and maintain applications using Oracle APEX. \u00b7 Work on finance-related modules such as budget tracking, payments, and reporting ...",
+    "query": "site:linkedin.com/jobs \"oracle apex\" denmark",
+    "date": "9 jan. 2026",
+    "is_new": false
+  },
+  {
+    "title": "Fullstack-udvikler til Koncernapplikationer",
+    "link": "https://dk.linkedin.com/jobs/view/fullstack-udvikler-til-koncernapplikationer-at-dr-danmarks-radio-4350691991",
+    "snippet": "Vi forestiller os, at du: Har erfaring med Oracle APEX og udvikling af webapplikationer; Har solide kompetencer i PL/SQL og Oracle Database; Har erfaring med ...",
+    "query": "site:linkedin.com/jobs \"oracle apex\" denmark",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Oracle HCM Cloud Lead (French or German speaking)",
+    "link": "https://www.linkedin.com/jobs/view/oracle-hcm-cloud-lead-french-or-german-speaking-at-next-ventures-4345832885",
+    "snippet": "Copenhagen, Capital Region of Denmark, Denmark 2 months ago. Specialista Oracle ... ORACLE APEX Developer. Billennium. Poland 1 week ago. Software Engineer ...",
+    "query": "site:linkedin.com/jobs \"oracle apex\" denmark",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Oracle Fusion Test Lead / Test Manager",
+    "link": "https://www.linkedin.com/jobs/view/oracle-fusion-test-lead-test-manager-at-westhouse-schweiz-ag-4387803819",
+    "snippet": "Copenhagen, Capital Region of Denmark, Denmark 2 months ago ... ORACLE APEX Developer. Billennium. Poland 1 week ago. People also viewed. Oracle ...",
+    "query": "site:linkedin.com/jobs \"oracle apex\" denmark",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Jobb som matchar \u201dPl Sql Developer\u201d i Sverige",
+    "link": "https://se.linkedin.com/jobs/pl-sql-developer-jobs",
+    "snippet": "3 000+ jobb med nyckelorden Pl Sql Developer i Sverige. PL/SQL Developer. PL/SQL Developer. BayRock Labs. Syracuse-Auburnomr\u00e5det 6 m\u00e5nader sedan.",
+    "query": "site:linkedin.com/jobs \"pl/sql\" sweden",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Oracle PL/SQL Architect - EU Citizen",
+    "link": "https://www.linkedin.com/jobs/view/oracle-pl-sql-architect-eu-citizen-at-response-informatics-4169984358",
+    "snippet": "Oracle PL/SQL Architect - EU Citizen ; Seniority level. Mid-Senior level ; Employment type. Contract ; Job function. Information Technology ; Industries. IT ...",
+    "query": "site:linkedin.com/jobs \"pl/sql\" sweden",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Technical Lead (Oracle pl/sql programming) - HR Ways",
+    "link": "https://se.linkedin.com/jobs/view/technical-lead-oracle-pl-sql-programming-at-hr-ways-hiring-tech-talent-4288008182",
+    "snippet": "About the job Technical Lead (Oracle pl/sql programming). Client Introduction: The company is a multinational Sweden SAAS product-based firm.",
+    "query": "site:linkedin.com/jobs \"pl/sql\" sweden",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Infosys s\u00f6ker PL/SQL Developer i G\u00f6teborg",
+    "link": "https://se.linkedin.com/jobs/view/pl-sql-developer-at-infosys-3216357979",
+    "snippet": "PL/SQL Developer ; Yrkesniv\u00e5. Ej till\u00e4mpligt ; Anst\u00e4llningstyp. Heltid ; Befattning. IT ; Branscher. IT-tj\u00e4nster och IT-konsulttj\u00e4nster.",
+    "query": "site:linkedin.com/jobs \"pl/sql\" sweden",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Adavo hiring Databasutvecklare in Stockholm ...",
+    "link": "https://www.linkedin.com/jobs/view/databasutvecklare-at-adavo-4371551561",
+    "snippet": "Erfarenhet av utveckling i PL/SQL och PL/pgSQL; Erfarenhet av migrering av databaskod mellan olika databashanterare; Erfarenhet av arbete i system med h\u00f6g ...",
+    "query": "site:linkedin.com/jobs \"pl/sql\" sweden",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Backend Developer PL/SQL inom Business Intelligence",
+    "link": "https://se.linkedin.com/jobs/view/backend-developer-pl-sql-inom-business-intelligence-at-ab-trav-och-galopp-4192864906",
+    "snippet": "Du kommer f\u00e5 m\u00f6jlighet att jobba med ett avancerat system byggt i PL/SQL som hanterar stora transaktionsm\u00e4ngder med fokus p\u00e5 ber\u00e4kningar och transformeringar ...",
+    "query": "site:linkedin.com/jobs \"pl/sql\" sweden",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Oracle Database and PL/SQL Developer",
+    "link": "https://se.linkedin.com/jobs/view/oracle-database-and-pl-sql-developer-at-cubane-solutions-sweden-india-4197785361",
+    "snippet": "Role : Oracle Database and PL/SQL Developer role. Location : Stockholm. Assignment is 1 year and possibility for Extension. Experience : Senior Level.",
+    "query": "site:linkedin.com/jobs \"pl/sql\" sweden",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Nion hiring Data Warehouse Utvecklare in Stockholm ...",
+    "link": "https://www.linkedin.com/jobs/view/data-warehouse-utvecklare-at-nion-4303762211",
+    "snippet": "+6 \u00e5rs erfarenhet som Data Warehouse utvecklare; Relevant ingenj\u00f6rsexamen/yrkesutbildning inom IT eller datateknik; Beh\u00e4rskar SQL Server, PL/SQL Oracle och ...",
+    "query": "site:linkedin.com/jobs \"pl/sql\" sweden",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Oracle EPM Implementation and Integration Specialist",
+    "link": "https://www.linkedin.com/jobs/view/oracle-epm-implementation-and-integration-specialist-at-crane-nxt-4394961475",
+    "snippet": "... Sweden, and Malta. Position Overview The Oracle EPM ... Senior Oracle PL/SQL Developer. Motion Recruitment. United States $55 ...",
+    "query": "site:linkedin.com/jobs \"pl/sql\" sweden",
+    "date": "2 apr. 2026",
+    "is_new": false
+  },
+  {
+    "title": "231 Pl Sql-job i Danmark - K\u00f8benhavn",
+    "link": "https://dk.linkedin.com/jobs/pl-sql-jobs",
+    "snippet": "Dagens mest popul\u00e6re 231 Pl Sql job inden for i Danmark. Brug dit faglige netv\u00e6rk til at finde dr\u00f8mmejobbet. Nye Pl Sql-job bliver tilf\u00f8jet dagligt.",
+    "query": "site:linkedin.com/jobs \"pl/sql\" danmark",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Sapiens s\u00f8ger en Software Engineer (Java, PL/SQL) i ...",
+    "link": "https://dk.linkedin.com/jobs/view/software-engineer-java-pl-sql-at-sapiens-4222237091",
+    "snippet": "Develop, implement, and maintain Tia enterprise applications using Oracle technology and PL/SQL. ... \u00c5ben ans\u00f8gning - Danmark. Fluido. Gentofte 5 m\u00e5neder ...",
+    "query": "site:linkedin.com/jobs \"pl/sql\" danmark",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Sapiens hiring Software Engineer in Copenhagen, Capital ...",
+    "link": "https://www.linkedin.com/jobs/view/2730881130/?eBP=JOB_SEARCH_ORGANIC&recommendedFlavor=IN_NETWORK&refId=3SqX6OjSOBplIqrllt4oyA%3D%3D&trackingId=W80FvzAG5Y99llrIYm/hOQ%3D%3D&trk=flagship3_search_srp_jobs",
+    "snippet": "... PL/SQL, and maintaining frontend that is based on Oracle ADF, a Java-based UI framework. In our daily work we use Scrum framework for developing and ...",
+    "query": "site:linkedin.com/jobs \"pl/sql\" danmark",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "senior software engineer med pl/sql- og devops-erfaring",
+    "link": "https://dk.linkedin.com/jobs/view/senior-software-engineer-med-pl-sql-og-devops-erfaring-at-seges-innovation-4214578514",
+    "snippet": "Stor erfaring med PL/SQL og Oracle-databaser; Erfaring med eller st\u00e6rk interesse for DevOps-metoder, automatisering, CI/CD og driftsoptimering; Erfaring med API ...",
+    "query": "site:linkedin.com/jobs \"pl/sql\" danmark",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "senior software developer med pl/sql-erfaring og indsigt i ...",
+    "link": "https://dk.linkedin.com/jobs/view/senior-software-developer-med-pl-sql-erfaring-og-indsigt-i-oracle-at-seges-innovation-4049430849",
+    "snippet": "Vi s\u00f8ger en erfaren software developer, som kan navigere i vores Oracle-l\u00f8sning med omfattende PL/SQL-kode, til at styrke vores v\u00e6rdistr\u00f8m Livestock. Vi ...",
+    "query": "site:linkedin.com/jobs \"pl/sql\" danmark",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Nordea s\u00f8ger en Lead Developer PL/SQL i K\u00f8benhavn",
+    "link": "https://dk.linkedin.com/jobs/view/lead-developer-pl-sql-at-nordea-3423618968",
+    "snippet": "People leader for a team of :12 PL/SQL developers located in India and Poland. Application development responsible for one or more Oracle databases Recovery Doc ...",
+    "query": "site:linkedin.com/jobs \"pl/sql\" danmark",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "HCLTech s\u00f6ker Oracle Data Integrator i Helsingborg",
+    "link": "https://se.linkedin.com/jobs/view/oracle-data-integrator-at-hcltech-4387285890?refId=eaK7Hp5wHnYhVUwgbW1dVA%3D%3D&trackingId=8yiTuII8KiSNIREdq1mrjg%3D%3D&position=23&pageNum=0",
+    "snippet": "Experience with Ansible/groovy and automation tools. Experience of creating PL/SQL ... Kongens Lyngby, Region Hovedstaden, Danmark 1 m\u00e5nad sedan. Staff ...",
+    "query": "site:linkedin.com/jobs \"pl/sql\" danmark",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Capgemini s\u00f6ker Senior Oracle Developer i Malm\u00f6",
+    "link": "https://se.linkedin.com/jobs/view/senior-oracle-developer-at-capgemini-4088136541",
+    "snippet": "Du har gedigen kunskap inom; Oracle PL/SQL, Shell scripting, prestandajustering, XML, Oracle DBA, Oracle Forms/Reports. Du kommer driva Oracle PL/SQL ...",
+    "query": "site:linkedin.com/jobs \"pl/sql\" danmark",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Oracle Cloud Technical Expert - TROVA SOLUTIONS",
+    "link": "https://www.linkedin.com/jobs/view/oracle-cloud-technical-expert-at-trova-solutions-4329453915",
+    "snippet": "Deliver PL/SQL procedures development, scheduling of ESS jobs, UCM uploads ... Copenhagen, Capital Region of Denmark, Denmark 2 months ago. Oracle ERP ...",
+    "query": "site:linkedin.com/jobs \"pl/sql\" denmark",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Software Testing Specialist - Response Informatics",
+    "link": "https://www.linkedin.com/jobs/view/software-testing-specialist-at-response-informatics-4394398588",
+    "snippet": "Very good knowledge of Database system Oracle RDBMS and database programming language PL/SQL; ... Copenhagen, Capital Region of Denmark, Denmark ...",
+    "query": "site:linkedin.com/jobs \"pl/sql\" denmark",
+    "date": "f\u00f6r 4 dagar sedan",
+    "is_new": false
+  },
+  {
+    "title": "Principal/Staff Data Engineer - European Union",
+    "link": "https://www.linkedin.com/jobs/view/principal-staff-data-engineer-at-wave-talent-4282599712",
+    "snippet": "Similar jobs. Data Engineer PL/SQL Intermediate. Data Engineer PL/SQL Intermediate ... Denmark 5 days ago. Explore top content on LinkedIn. Find curated posts ...",
+    "query": "site:linkedin.com/jobs \"pl/sql\" denmark",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Sweden | apex",
+    "link": "https://blogs.oracle.com/apex/tag/sweden",
+    "snippet": "Oracle APEX Business Innovations is back! Karina Pastor 1 minute read. Oracle ... Vodafone Business: Revolutionizing B2B Operations with Oracle APEX.",
+    "query": "\"oracle apex\" f\u00f6retag sverige",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Application Development Services",
+    "link": "https://www.oracle.com/se/application-development/",
+    "snippet": "Learn why Omdia recognized Oracle APEX as a Leader in low-code app development. Access the Omdia report. Why Oracle for AppDev. Build faster with AI. From ...",
+    "query": "\"oracle apex\" f\u00f6retag sverige",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Oracle APEX Konsult i Sverige",
+    "link": "https://www.nobleprog.se/consulting/oracle-apex",
+    "snippet": "NobleProg erbjuder ett brett utbud av Oracle APEX konsult i Sverige: NobleProg-konsulterna \u00e4r erfarna praktiker i Oracle APEX och har ett gott f\u00f6rst\u00e5nd f\u00f6r ...",
+    "query": "\"oracle apex\" f\u00f6retag sverige",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Systemutvecklare Oracle Apex",
+    "link": "https://www.jobbastatligt.se/sok?Sort=DESC&pageid=65569&tab=contentTab",
+    "snippet": "Hos oss kommer du att: Utveckla, testa och drifts\u00e4tta Oracle Apex l\u00f6sningar i n\u00e4ra samverkan med verksamheten; F\u00f6rvalta och vidareutveckla befintliga l\u00f6sningar ...",
+    "query": "\"oracle apex\" f\u00f6retag sverige",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "AI Vector Search in APEX",
+    "link": "https://www.oracle.com/se/artificial-intelligence/ai-vector-search-in-apex/",
+    "snippet": "Introduction. Oracle APEX now leverages the AI Vector Search feature introduced in Oracle AI Database to implement semantics-based similarity searches.",
+    "query": "\"oracle apex\" f\u00f6retag sverige",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Systemutvecklare Oracle Apex | Uppsala lediga jobb - Uppsala",
+    "link": "https://www.uppsalaledigajobb.se/jobb/5611519/systemutvecklare-oracle-apex",
+    "snippet": "Vi s\u00f6ker nu tv\u00e5 stycken Oracle Apex utvecklare som kan utveckla och f\u00f6rvalta v\u00e5ra webbaserade register. Dina arbetsuppgifter. Vi s\u00f6ker nu tv\u00e5 Oracle APEX ...",
+    "query": "\"oracle apex\" f\u00f6retag sverige",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Oracle Apex developer",
+    "link": "https://www.hcltech.com/careers/oracle-apex-developer",
+    "snippet": "Oracle Apex developer \u00b7 Works with Oracle's world class technology to develop, implement and support various tools and services to support all aspects of SaaS ...",
+    "query": "\"oracle apex\" f\u00f6retag sverige",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Oracle APEX Consultant \u2013 Meet your business needs with ...",
+    "link": "https://www.oracleapexconsultant.com/",
+    "snippet": "Deploy your web application which connects directly with your oracle database with the Oracle APEX consultant. We can help you from design to development and ...",
+    "query": "\"oracle apex\" f\u00f6retag sverige",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "MBN Data",
+    "link": "https://www.mbndata.dk/",
+    "snippet": "Oracle APEX opstart & mentoring. Vi hj\u00e6lper gerne med at komme igang med Oracle Application Express (APEX). \u00b7 IT Konsulentbistand \u00b7 APEX Kursus ...",
+    "query": "\"oracle apex\" virksomhed danmark",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Cegal er Nordens f\u00f8rende Oracle-partner",
+    "link": "https://www.cegal.com/da/resources/cegal-er-nordens-f%C3%B8rende-oracle-partner",
+    "snippet": "Related articles. Oracle Digitalisering. Fornyelse med Oracle APEX - mere end ny teknologi. Jon Petter Hjulstad Jon Petter er Principal Global Business ...",
+    "query": "\"oracle apex\" virksomhed danmark",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Find Top Oracle APEX Experts for Hire in March 2026 on ...",
+    "link": "https://www.dk.freelancer.com/hire/oracle-apex",
+    "snippet": "S\u00e5dan ans\u00e6tter du en god freelance Oracle APEX Expert. Oracle APEX (Application Express) is Oracle's software platform for developing and designing desktop ...",
+    "query": "\"oracle apex\" virksomhed danmark",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Oracle-udviklere fra Right People Group",
+    "link": "https://rightpeoplegroup.com/da/oracle-udvikler",
+    "snippet": "Eller er deres styrke udvikling i Oracle APEX? En m\u00e5lrettet tilgang er n\u00f8dvendig for at sikre et perfekt match. Mange v\u00e6lger derfor at samarbejde med en ...",
+    "query": "\"oracle apex\" virksomhed danmark",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Devitec ApS",
+    "link": "https://www.devitech.dk/references.php",
+    "snippet": "Konsulent p\u00e5 Oracle APEX-l\u00f8sninger. Referencer og netv\u00e6rk ... DigitalLead. DigitalLead er Danmark's nationale klynge for digitale teknologier og fungerer som ...",
+    "query": "\"oracle apex\" virksomhed danmark",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Oracle APEX: Den perfekte ledsager til Oracle Fusion",
+    "link": "https://dk.linkedin.com/pulse/oracle-apex-perfect-companion-fusion-clover-infotech-2me3f?tl=da",
+    "snippet": "Med Oracle APEX kan virksomheder: Bygge interaktive dashboards , der giver indsigt i \u00f8konomi-, salgs- og HR-data i realtid. Udvikle Brugerdefinerede ...",
+    "query": "\"oracle apex\" virksomhed danmark",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Job ads - Oracle Apex",
+    "link": "https://www.jobindex.dk/jobsoegning?lang=en&q=oracle+apex",
+    "snippet": "Du vil have arbejdsopgaver for de virksomheder der administreres p\u00e5 hovedkontoret, hvor den prim\u00e6re opgave er at v\u00e6re ansvarlig for regnskabsudarbejdelsen p\u00e5 ...",
+    "query": "\"oracle apex\" virksomhed danmark",
+    "date": "",
+    "is_new": false
+  },
+  {
+    "title": "Oracle Apex AI Assistant muligg\u00f8r udvikling af ...",
+    "link": "https://it-kanalen.dk/oracle-apex-ai-assistant-muliggoer/",
+    "snippet": "Med over 21 millioner byggede applikationer er Oracle APEX den foretrukne platform for over 850.000 udviklere i organisationer p\u00e5 tv\u00e6rs af ...",
+    "query": "\"oracle apex\" virksomhed danmark",
+    "date": "19 juni 2024",
+    "is_new": false
+  },
+  {
+    "title": "about us - da",
+    "link": "https://bizzpath.com/dk/about-us-da/",
+    "snippet": "Den danske virksomhed ... Nu arbejder han og hans udviklingsteam p\u00e5 BizzPath, udviklet i Oracle APEX og k\u00f8rer i Oracle Cloud i Frankfurt og Saudi-Arabien.",
+    "query": "\"oracle apex\" virksomhed danmark",
     "date": "",
     "is_new": false
   }
