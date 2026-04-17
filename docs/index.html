@@ -14,15 +14,16 @@
   .body { background: white; padding: 24px 32px; border-radius: 0 0 8px 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
   .summary { background: #fff8f5; border-left: 4px solid #c74b00; padding: 12px 16px; margin-bottom: 24px; border-radius: 4px; font-size: 15px; }
   .card { border: 1px solid #e8e8e8; border-radius: 6px; padding: 16px; margin-bottom: 16px; transition: opacity 0.3s; }
-  .card.blocked { opacity: 0.35; }
   .card-new { border-left: 4px solid #2e7d32; }
   .card-returning { border-left: 4px solid #999; }
+  .card-blocked { border-left: 4px solid #c00; opacity: 0.6; }
   .card-header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; flex-wrap: wrap; }
   .card-title { color: #c74b00; font-size: 16px; font-weight: bold; text-decoration: none; flex: 1; }
   .card-title:hover { text-decoration: underline; }
   .badge { font-size: 12px; padding: 3px 10px; border-radius: 12px; font-weight: bold; white-space: nowrap; }
   .badge-new { background: #e8f5e9; color: #2e7d32; }
   .badge-returning { background: #f0f0f0; color: #666; }
+  .badge-blocked { background: #fee; color: #c00; }
   .snippet { color: #333; font-size: 14px; margin: 8px 0 12px; line-height: 1.7; border-left: 3px solid #eee; padding-left: 10px; }
   .tag { display: inline-block; background: #f0f0f0; color: #666; font-size: 12px; padding: 3px 8px; border-radius: 12px; margin-right: 6px; }
   .block-btn { margin-left: auto; background: none; border: 1px solid #ccc; border-radius: 4px; padding: 4px 10px; font-size: 12px; cursor: pointer; color: #666; transition: all 0.2s; white-space: nowrap; }
@@ -77,7 +78,6 @@ async function ghGet(file) {
   if (r.status === 404) return null;
   if (!r.ok) throw new Error(`GitHub API fel: ${r.status}`);
   const data = await r.json();
-  // GitHub kan returnera tom content för stora filer – använd download_url som fallback
   if (!data.content || data.content.trim() === "") {
     if (data.download_url) {
       const r2 = await fetch(data.download_url + "?t=" + Date.now());
@@ -118,19 +118,42 @@ function showTab(tab, btn) {
 
 function renderCards() {
   const container = document.getElementById("cards");
-  const filtered = allResults.filter(r => {
-    const isBlocked = blocklist.has(r.link);
-    if (currentTab === "blocked") return isBlocked;
-    if (isBlocked) return false;
-    if (currentTab === "new") return r.is_new;
-    if (currentTab === "returning") return !r.is_new;
-    return true;
-  });
 
   const visibleCount = allResults.filter(r => !blocklist.has(r.link)).length;
   const newCount = allResults.filter(r => r.is_new && !blocklist.has(r.link)).length;
   document.getElementById("summary").innerHTML =
     `🔍 <strong>${visibleCount} aktiva träffar</strong> &nbsp;·&nbsp; ✨ <strong>${newCount} nya</strong> &nbsp;·&nbsp; 🚫 <strong>${blocklist.size} blockerade</strong>`;
+
+  if (currentTab === "blocked") {
+    const blockedUrls = [...blocklist];
+    if (blockedUrls.length === 0) {
+      container.innerHTML = `<div class="loading">Inga blockerade träffar.</div>`;
+      return;
+    }
+    container.innerHTML = blockedUrls.map(link => {
+      const match = allResults.find(r => r.link === link);
+      const title = match ? match.title : link;
+      const snippet = match ? `<p class="snippet">${match.snippet}</p>` : "";
+      const safeLink = link.replace(/'/g, "\\'");
+      return `
+        <div class="card card-blocked">
+          <div class="card-header">
+            <span class="badge badge-blocked">🚫 Blockerad</span>
+            <a href="${link}" class="card-title" target="_blank">${title}</a>
+            <button class="block-btn blocked-btn" onclick="toggleBlock('${safeLink}', this)">Ta bort blockering</button>
+          </div>
+          ${snippet}
+        </div>`;
+    }).join("");
+    return;
+  }
+
+  const filtered = allResults.filter(r => {
+    if (blocklist.has(r.link)) return false;
+    if (currentTab === "new") return r.is_new;
+    if (currentTab === "returning") return !r.is_new;
+    return true;
+  });
 
   if (filtered.length === 0) {
     container.innerHTML = `<div class="loading">Inga träffar i denna vy.</div>`;
@@ -138,19 +161,15 @@ function renderCards() {
   }
 
   container.innerHTML = filtered.map(r => {
-    const isBlocked = blocklist.has(r.link);
     const badge = r.is_new ? `<span class="badge badge-new">✨ Ny</span>` : `<span class="badge badge-returning">🔁 Återkommande</span>`;
-    const cardClass = isBlocked ? "card blocked" : (r.is_new ? "card card-new" : "card card-returning");
-    const btnLabel = isBlocked ? "🚫 Blockerad" : "Inte intressant";
-    const btnClass = isBlocked ? "block-btn blocked-btn" : "block-btn";
+    const cardClass = r.is_new ? "card card-new" : "card card-returning";
     const dateTag = r.date ? `<span class="tag">📅 ${r.date}</span>` : "";
-    const safeId = encodeURIComponent(r.link);
     return `
-      <div class="${cardClass}" id="card-${safeId}">
+      <div class="${cardClass}">
         <div class="card-header">
           ${badge}
           <a href="${r.link}" class="card-title" target="_blank">${r.title}</a>
-          <button class="${btnClass}" onclick="toggleBlock('${r.link.replace(/'/g, "\\'")}', this)">${btnLabel}</button>
+          <button class="block-btn" onclick="toggleBlock('${r.link.replace(/'/g, "\\'")}', this)">Inte intressant</button>
         </div>
         <p class="snippet">${r.snippet}</p>
         <span class="tag">Sök: ${r.query}</span>${dateTag}
