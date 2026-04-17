@@ -84,6 +84,13 @@ let comments = {};
 let commentsSha = null;
 let currentTab = "all";
 
+// Använd index-baserade ID:n för att undvika problem med specialtecken i URL:er
+const linkIndex = new Map();
+function getLinkId(link) {
+  if (!linkIndex.has(link)) linkIndex.set(link, linkIndex.size);
+  return "lnk" + linkIndex.get(link);
+}
+
 async function ghGet(file) {
   const headers = TOKEN ? { Authorization: `token ${TOKEN}` } : {};
   const r = await fetch(API + file + "?t=" + Date.now(), { headers });
@@ -129,40 +136,40 @@ function showTab(tab, btn) {
 }
 
 function commentSection(link) {
-  const safeLink = link.replace(/'/g, "\\'");
+  const id = getLinkId(link);
   const existing = comments[link] || "";
-  const encoded = link.replace(/[^a-zA-Z0-9]/g, "_").slice(0, 40);
+  const safeLink = JSON.stringify(link);
   if (existing) {
     return `
       <div class="comment-section">
-        <div class="comment-display" id="cd-${encoded}">
+        <div class="comment-display" id="cd-${id}">
           <span>💬 ${existing}</span>
-          <button class="comment-edit-btn" onclick="showCommentInput('${safeLink}')">Redigera</button>
+          <button class="comment-edit-btn" onclick="showCommentInput(${safeLink})">Redigera</button>
         </div>
       </div>`;
   } else {
     return `
       <div class="comment-section">
-        <div class="comment-input-row" id="ci-${encoded}">
-          <input class="comment-input" placeholder="Lägg till kommentar..." id="inp-${encoded}" onkeydown="if(event.key==='Enter') saveComment('${safeLink}')">
-          <button class="comment-save-btn" onclick="saveComment('${safeLink}')">Spara</button>
+        <div class="comment-input-row" id="ci-${id}">
+          <input class="comment-input" placeholder="Lägg till kommentar..." id="inp-${id}" onkeydown="if(event.key==='Enter') saveComment(${safeLink})">
+          <button class="comment-save-btn" onclick="saveComment(${safeLink})">Spara</button>
         </div>
       </div>`;
   }
 }
 
 function showCommentInput(link) {
-  const encoded = link.replace(/[^a-zA-Z0-9]/g, "_").slice(0, 40);
-  const existing = comments[link] || "";
-  const safeLink = link.replace(/'/g, "\\'");
-  const cdEl = document.getElementById("cd-" + encoded);
+  const id = getLinkId(link);
+  const existing = (comments[link] || "").replace(/"/g, "&quot;");
+  const safeLink = JSON.stringify(link);
+  const cdEl = document.getElementById("cd-" + id);
   if (cdEl) {
     cdEl.outerHTML = `
-      <div class="comment-input-row" id="ci-${encoded}">
-        <input class="comment-input" placeholder="Lägg till kommentar..." id="inp-${encoded}" value="${existing.replace(/"/g, '&quot;')}" onkeydown="if(event.key==='Enter') saveComment('${safeLink}')">
-        <button class="comment-save-btn" onclick="saveComment('${safeLink}')">Spara</button>
+      <div class="comment-input-row" id="ci-${id}">
+        <input class="comment-input" placeholder="Lägg till kommentar..." id="inp-${id}" value="${existing}" onkeydown="if(event.key==='Enter') saveComment(${safeLink})">
+        <button class="comment-save-btn" onclick="saveComment(${safeLink})">Spara</button>
       </div>`;
-    document.getElementById("inp-" + encoded).focus();
+    document.getElementById("inp-" + id).focus();
   }
 }
 
@@ -171,8 +178,8 @@ async function saveComment(link) {
     showStatus("⚠️ Öppna sidan med ?token=DITT_TOKEN för att spara kommentarer.", "error");
     return;
   }
-  const encoded = link.replace(/[^a-zA-Z0-9]/g, "_").slice(0, 40);
-  const input = document.getElementById("inp-" + encoded);
+  const id = getLinkId(link);
+  const input = document.getElementById("inp-" + id);
   const text = input ? input.value.trim() : "";
 
   if (text) {
@@ -210,13 +217,13 @@ function renderCards() {
       const match = allResults.find(r => r.link === link);
       const title = match ? match.title : link;
       const snippet = match ? `<p class="snippet">${match.snippet}</p>` : "";
-      const safeLink = link.replace(/'/g, "\\'");
+      const safeLink = JSON.stringify(link);
       return `
         <div class="card card-blocked">
           <div class="card-header">
             <span class="badge badge-blocked">🚫 Blockerad</span>
             <a href="${link}" class="card-title" target="_blank">${title}</a>
-            <button class="block-btn blocked-btn" onclick="toggleBlock('${safeLink}', this)">Ta bort blockering</button>
+            <button class="block-btn blocked-btn" onclick="toggleBlock(${safeLink}, this)">Ta bort blockering</button>
           </div>
           ${snippet}
           ${commentSection(link)}
@@ -241,12 +248,13 @@ function renderCards() {
     const badge = r.is_new ? `<span class="badge badge-new">✨ Ny</span>` : `<span class="badge badge-returning">🔁 Återkommande</span>`;
     const cardClass = r.is_new ? "card card-new" : "card card-returning";
     const dateTag = r.date ? `<span class="tag">📅 ${r.date}</span>` : "";
+    const safeLink = JSON.stringify(r.link);
     return `
       <div class="${cardClass}">
         <div class="card-header">
           ${badge}
           <a href="${r.link}" class="card-title" target="_blank">${r.title}</a>
-          <button class="block-btn" onclick="toggleBlock('${r.link.replace(/'/g, "\\'")}', this)">Inte intressant</button>
+          <button class="block-btn" onclick="toggleBlock(${safeLink}, this)">Inte intressant</button>
         </div>
         <p class="snippet">${r.snippet}</p>
         <span class="tag">Sök: ${r.query}</span>${dateTag}
