@@ -73,7 +73,7 @@ let currentTab = "all";
 
 async function ghGet(file) {
   const headers = TOKEN ? { Authorization: `token ${TOKEN}` } : {};
-  const r = await fetch(API + file, { headers });
+  const r = await fetch(API + file + "?t=" + Date.now(), { headers });
   if (r.status === 404) return null;
   if (!r.ok) throw new Error(`GitHub API fel: ${r.status}`);
   const data = await r.json();
