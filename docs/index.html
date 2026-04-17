@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oracle Forms – Träffar</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial, sans-serif; background: #f5f5f5; color: #333; padding: 20px; }
+  .wrapper { max-width: 800px; margin: auto; }
+  .header { background: #c74b00; color: white; padding: 24px 32px; border-radius: 8px 8px 0 0; }
+  .header h1 { font-size: 22px; }
+  .header p { opacity: 0.85; font-size: 14px; margin-top: 4px; }
+  .body { background: white; padding: 24px 32px; border-radius: 0 0 8px 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+  .summary { background: #fff8f5; border-left: 4px solid #c74b00; padding: 12px 16px; margin-bottom: 24px; border-radius: 4px; font-size: 15px; }
+  .card { border: 1px solid #e8e8e8; border-radius: 6px; padding: 16px; margin-bottom: 16px; transition: opacity 0.3s; }
+  .card.blocked { opacity: 0.35; }
+  .card-new { border-left: 4px solid #2e7d32; }
+  .card-returning { border-left: 4px solid #999; }
+  .card-header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; flex-wrap: wrap; }
+  .card-title { color: #c74b00; font-size: 16px; font-weight: bold; text-decoration: none; flex: 1; }
+  .card-title:hover { text-decoration: underline; }
+  .badge { font-size: 12px; padding: 3px 10px; border-radius: 12px; font-weight: bold; white-space: nowrap; }
+  .badge-new { background: #e8f5e9; color: #2e7d32; }
+  .badge-returning { background: #f0f0f0; color: #666; }
+  .snippet { color: #333; font-size: 14px; margin: 8px 0 12px; line-height: 1.7; border-left: 3px solid #eee; padding-left: 10px; }
+  .tag { display: inline-block; background: #f0f0f0; color: #666; font-size: 12px; padding: 3px 8px; border-radius: 12px; margin-right: 6px; }
+  .block-btn { margin-left: auto; background: none; border: 1px solid #ccc; border-radius: 4px; padding: 4px 10px; font-size: 12px; cursor: pointer; color: #666; transition: all 0.2s; white-space: nowrap; }
+  .block-btn:hover { background: #fee; border-color: #c00; color: #c00; }
+  .block-btn.blocked-btn { background: #fee; border-color: #c00; color: #c00; }
+  .loading { text-align: center; padding: 40px; color: #888; }
+  .status { margin-bottom: 16px; padding: 10px 14px; border-radius: 4px; font-size: 14px; display: none; }
+  .status.success { background: #e8f5e9; color: #2e7d32; display: block; }
+  .status.error { background: #fee; color: #c00; display: block; }
+  .tabs { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+  .tab { padding: 8px 16px; border-radius: 4px; border: 1px solid #ddd; cursor: pointer; font-size: 14px; background: white; }
+  .tab.active { background: #c74b00; color: white; border-color: #c74b00; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>Oracle Forms – Träffar</h1>
+    <p>Markera träffar som inte är intressanta så filtreras de bort nästa vecka</p>
+  </div>
+  <div class="body">
+    <div id="status" class="status"></div>
+    <div class="tabs">
+      <button class="tab active" onclick="showTab('all', this)">Alla</button>
+      <button class="tab" onclick="showTab('new', this)">✨ Nya</button>
+      <button class="tab" onclick="showTab('returning', this)">🔁 Återkommande</button>
+      <button class="tab" onclick="showTab('blocked', this)">🚫 Blockerade</button>
+    </div>
+    <div id="summary" class="summary">Laddar träffar...</div>
+    <div id="cards" class="loading">Hämtar data från GitHub...</div>
+  </div>
+</div>
+
+<script>
+const OWNER = "nivelloDEV";
+const REPO = "oracle-forms-agent";
+const RESULTS_FILE = "results.json";
+const BLOCKLIST_FILE = "blocklist.json";
+const API = `https://api.github.com/repos/${OWNER}/${REPO}/contents/`;
+
+const params = new URLSearchParams(window.location.search);
+const TOKEN = params.get("token") || "";
+
+let allResults = [];
+let blocklist = new Set();
+let blocklistSha = null;
+let currentTab = "all";
+
+async function ghGet(file) {
+  const headers = TOKEN ? { Authorization: `token ${TOKEN}` } : {};
+  const r = await fetch(API + file, { headers });
+  if (r.status === 404) return null;
+  if (!r.ok) throw new Error(`GitHub API fel: ${r.status}`);
+  const data = await r.json();
+  return { content: JSON.parse(atob(data.content.replace(/\n/g, ""))), sha: data.sha };
+}
+
+async function ghPut(file, content, sha) {
+  const body = { message: `Uppdatera ${file}`, content: btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2)))) };
+  if (sha) body.sha = sha;
+  const r = await fetch(API + file, {
+    method: "PUT",
+    headers: { Authorization: `token ${TOKEN}`, "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  });
+  if (!r.ok) throw new Error(`Kunde inte spara: ${r.status}`);
+  const data = await r.json();
+  return data.content.sha;
+}
+
+function showStatus(msg, type) {
+  const el = document.getElementById("status");
+  el.textContent = msg;
+  el.className = `status ${type}`;
+  setTimeout(() => { el.className = "status"; }, 4000);
+}
+
+function showTab(tab, btn) {
+  currentTab = tab;
+  document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+  btn.classList.add("active");
+  renderCards();
+}
+
+function renderCards() {
+  const container = document.getElementById("cards");
+  const filtered = allResults.filter(r => {
+    const isBlocked = blocklist.has(r.link);
+    if (currentTab === "blocked") return isBlocked;
+    if (isBlocked) return false;
+    if (currentTab === "new") return r.is_new;
+    if (currentTab === "returning") return !r.is_new;
+    return true;
+  });
+
+  const visibleCount = allResults.filter(r => !blocklist.has(r.link)).length;
+  const newCount = allResults.filter(r => r.is_new && !blocklist.has(r.link)).length;
+  document.getElementById("summary").innerHTML =
+    `🔍 <strong>${visibleCount} aktiva träffar</strong> &nbsp;·&nbsp; ✨ <strong>${newCount} nya</strong> &nbsp;·&nbsp; 🚫 <strong>${blocklist.size} blockerade</strong>`;
+
+  if (filtered.length === 0) {
+    container.innerHTML = `<div class="loading">Inga träffar i denna vy.</div>`;
+    return;
+  }
+
+  container.innerHTML = filtered.map(r => {
+    const isBlocked = blocklist.has(r.link);
+    const badge = r.is_new ? `<span class="badge badge-new">✨ Ny</span>` : `<span class="badge badge-returning">🔁 Återkommande</span>`;
+    const cardClass = isBlocked ? "card blocked" : (r.is_new ? "card card-new" : "card card-returning");
+    const btnLabel = isBlocked ? "🚫 Blockerad" : "Inte intressant";
+    const btnClass = isBlocked ? "block-btn blocked-btn" : "block-btn";
+    const dateTag = r.date ? `<span class="tag">📅 ${r.date}</span>` : "";
+    const safeId = encodeURIComponent(r.link);
+    return `
+      <div class="${cardClass}" id="card-${safeId}">
+        <div class="card-header">
+          ${badge}
+          <a href="${r.link}" class="card-title" target="_blank">${r.title}</a>
+          <button class="${btnClass}" onclick="toggleBlock('${r.link.replace(/'/g, "\\'")}', this)">${btnLabel}</button>
+        </div>
+        <p class="snippet">${r.snippet}</p>
+        <span class="tag">Sök: ${r.query}</span>${dateTag}
+      </div>`;
+  }).join("");
+}
+
+async function toggleBlock(link, btn) {
+  if (!TOKEN) {
+    showStatus("⚠️ Öppna sidan med ?token=DITT_TOKEN i URL:en för att kunna blockera träffar.", "error");
+    return;
+  }
+  const wasBlocked = blocklist.has(link);
+  wasBlocked ? blocklist.delete(link) : blocklist.add(link);
+  try {
+    const fresh = await ghGet(BLOCKLIST_FILE);
+    blocklistSha = fresh ? fresh.sha : null;
+    blocklistSha = await ghPut(BLOCKLIST_FILE, [...blocklist], blocklistSha);
+    showStatus(wasBlocked ? "✅ Borttagen från blocklistan" : "🚫 Blockerad – filtreras bort nästa vecka", "success");
+  } catch (e) {
+    wasBlocked ? blocklist.add(link) : blocklist.delete(link);
+    showStatus("Fel: " + e.message, "error");
+  }
+  renderCards();
+}
+
+async function init() {
+  try {
+    const [resultsData, blocklistData] = await Promise.all([ghGet(RESULTS_FILE), ghGet(BLOCKLIST_FILE)]);
+    allResults = resultsData ? resultsData.content : [];
+    blocklist = new Set(blocklistData ? blocklistData.content : []);
+    blocklistSha = blocklistData ? blocklistData.sha : null;
+    renderCards();
+  } catch (e) {
+    document.getElementById("cards").innerHTML = `<div class="loading">Fel: ${e.message}</div>`;
+  }
+}
+
+init();
+</script>
+</body>
+</html>

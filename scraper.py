@@ -6,6 +6,8 @@ from pathlib import Path
 
 SERPAPI_KEY = os.environ.get("SERPAPI_KEY")
 DATA_FILE = "found_companies.json"
+RESULTS_FILE = "results.json"
+BLOCKLIST_FILE = "blocklist.json"
 
 QUERIES = [
     'site:linkedin.com/jobs "oracle forms" sweden',
@@ -34,6 +36,18 @@ def load_seen() -> set:
 def save_seen(seen: set):
     with open(DATA_FILE, "w") as f:
         json.dump(list(seen), f)
+
+
+def load_blocklist() -> set:
+    if Path(BLOCKLIST_FILE).exists():
+        with open(BLOCKLIST_FILE) as f:
+            return set(json.load(f))
+    return set()
+
+
+def save_results(results: list):
+    with open(RESULTS_FILE, "w") as f:
+        json.dump(results, f, indent=2)
 
 
 def parse_date(date_str: str) -> datetime | None:
@@ -89,7 +103,6 @@ def search_google(query: str) -> list[dict]:
             )
 
             is_closed = any(phrase in snippet or phrase in title for phrase in CLOSED_PHRASES)
-
             if is_closed:
                 if is_recent(date_str):
                     print(f"  Stängd men under 1 år gammal, tar med: {res.get('title', '')}")
@@ -97,12 +110,10 @@ def search_google(query: str) -> list[dict]:
                     print(f"  Hoppar över stängd annons (>1 år): {res.get('title', '')}")
                     continue
 
-            # Bygg en fylligare beskrivning genom att kombinera tillgänglig data
+            # Bygg fylligare beskrivning från rich_snippet
             rich = res.get("rich_snippet", {})
-            rich_top = rich.get("top", {})
-            rich_bottom = rich.get("bottom", {})
             extra_parts = []
-            for d in [rich_top, rich_bottom]:
+            for d in [rich.get("top", {}), rich.get("bottom", {})]:
                 for v in d.values():
                     if isinstance(v, str) and len(v) > 20 and v.lower() not in snippet:
                         extra_parts.append(v)
@@ -125,6 +136,7 @@ def search_google(query: str) -> list[dict]:
 
 def run_scraper() -> list[dict]:
     seen = load_seen()
+    blocklist = load_blocklist()
     all_results = []
     seen_links_this_run = set()
 
@@ -132,18 +144,27 @@ def run_scraper() -> list[dict]:
         print(f"Söker: {query}")
         results = search_google(query)
         for r in results:
-            if r["link"] not in seen_links_this_run:
-                seen_links_this_run.add(r["link"])
-                r["is_new"] = r["link"] not in seen  # Märk om den är ny
-                all_results.append(r)
+            if r["link"] in seen_links_this_run:
+                continue
+            if r["link"] in blocklist:
+                print(f"  Blockerad, hoppar över: {r['title']}")
+                continue
+            seen_links_this_run.add(r["link"])
+            r["is_new"] = r["link"] not in seen
+            all_results.append(r)
 
-    # Spara alla som setts nu
+    # Nya först
+    all_results.sort(key=lambda r: not r["is_new"])
+
+    # Uppdatera minne
     seen.update(seen_links_this_run)
     save_seen(seen)
 
+    # Spara resultat för GitHub Pages
+    save_results(all_results)
+
     new_count = sum(1 for r in all_results if r["is_new"])
     print(f"\nHittade {len(all_results)} träffar ({new_count} nya, {len(all_results) - new_count} återkommande).")
-    all_results.sort(key=lambda r: not r["is_new"])
     return all_results
 
 

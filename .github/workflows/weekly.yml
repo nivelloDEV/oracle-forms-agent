@@ -3,7 +3,7 @@ name: Oracle Forms Weekly Agent
 on:
   schedule:
     - cron: "0 7 * * 1"   # Varje måndag kl 07:00 UTC (= 08:00 svensk tid)
-  workflow_dispatch:        # Möjliggör manuell körning via GitHub UI
+  workflow_dispatch:
 
 jobs:
   run-agent:
@@ -21,13 +21,15 @@ jobs:
       - name: Installera beroenden
         run: pip install requests
 
-      - name: Hämta tidigare data (found_companies.json)
+      - name: Hämta cachade datafiler
         uses: actions/cache@v4
         with:
-          path: found_companies.json
-          key: companies-cache-${{ github.run_id }}
+          path: |
+            found_companies.json
+            blocklist.json
+          key: agent-data-${{ github.run_id }}
           restore-keys: |
-            companies-cache-
+            agent-data-
 
       - name: Kör agenten
         env:
@@ -37,8 +39,21 @@ jobs:
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
         run: python main.py
 
-      - name: Spara uppdaterad data
+      - name: Publicera results.json till docs/
+        run: cp results.json docs/results.json
+
+      - name: Committa och pusha results.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/results.json
+          git diff --staged --quiet || git commit -m "Uppdatera results.json [skip ci]"
+          git push
+
+      - name: Spara cachade datafiler
         uses: actions/cache/save@v4
         with:
-          path: found_companies.json
-          key: companies-cache-${{ github.run_id }}
+          path: |
+            found_companies.json
+            blocklist.json
+          key: agent-data-${{ github.run_id }}
