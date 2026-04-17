@@ -26,9 +26,18 @@
   .badge-blocked { background: #fee; color: #c00; }
   .snippet { color: #333; font-size: 14px; margin: 8px 0 12px; line-height: 1.7; border-left: 3px solid #eee; padding-left: 10px; }
   .tag { display: inline-block; background: #f0f0f0; color: #666; font-size: 12px; padding: 3px 8px; border-radius: 12px; margin-right: 6px; }
-  .block-btn { margin-left: auto; background: none; border: 1px solid #ccc; border-radius: 4px; padding: 4px 10px; font-size: 12px; cursor: pointer; color: #666; transition: all 0.2s; white-space: nowrap; }
+  .block-btn { background: none; border: 1px solid #ccc; border-radius: 4px; padding: 4px 10px; font-size: 12px; cursor: pointer; color: #666; transition: all 0.2s; white-space: nowrap; }
   .block-btn:hover { background: #fee; border-color: #c00; color: #c00; }
   .block-btn.blocked-btn { background: #fee; border-color: #c00; color: #c00; }
+  .comment-section { margin-top: 10px; }
+  .comment-display { background: #fffde7; border-left: 3px solid #f9a825; padding: 8px 12px; border-radius: 4px; font-size: 13px; color: #555; margin-bottom: 6px; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  .comment-display span { flex: 1; }
+  .comment-edit-btn { background: none; border: none; cursor: pointer; font-size: 12px; color: #999; white-space: nowrap; }
+  .comment-edit-btn:hover { color: #c74b00; }
+  .comment-input-row { display: flex; gap: 8px; margin-top: 6px; }
+  .comment-input { flex: 1; border: 1px solid #ddd; border-radius: 4px; padding: 6px 10px; font-size: 13px; }
+  .comment-save-btn { background: #c74b00; color: white; border: none; border-radius: 4px; padding: 6px 14px; font-size: 13px; cursor: pointer; white-space: nowrap; }
+  .comment-save-btn:hover { background: #a33a00; }
   .loading { text-align: center; padding: 40px; color: #888; }
   .status { margin-bottom: 16px; padding: 10px 14px; border-radius: 4px; font-size: 14px; display: none; }
   .status.success { background: #e8f5e9; color: #2e7d32; display: block; }
@@ -62,6 +71,7 @@ const OWNER = "nivelloDEV";
 const REPO = "oracle-forms-agent";
 const RESULTS_FILE = "docs/results.json";
 const BLOCKLIST_FILE = "blocklist.json";
+const COMMENTS_FILE = "comments.json";
 const API = `https://api.github.com/repos/${OWNER}/${REPO}/contents/`;
 
 const params = new URLSearchParams(window.location.search);
@@ -70,6 +80,8 @@ const TOKEN = params.get("token") || "";
 let allResults = [];
 let blocklist = new Set();
 let blocklistSha = null;
+let comments = {};
+let commentsSha = null;
 let currentTab = "all";
 
 async function ghGet(file) {
@@ -116,6 +128,70 @@ function showTab(tab, btn) {
   renderCards();
 }
 
+function commentSection(link) {
+  const safeLink = link.replace(/'/g, "\\'");
+  const existing = comments[link] || "";
+  const encoded = link.replace(/[^a-zA-Z0-9]/g, "_").slice(0, 40);
+  if (existing) {
+    return `
+      <div class="comment-section">
+        <div class="comment-display" id="cd-${encoded}">
+          <span>💬 ${existing}</span>
+          <button class="comment-edit-btn" onclick="showCommentInput('${safeLink}')">Redigera</button>
+        </div>
+      </div>`;
+  } else {
+    return `
+      <div class="comment-section">
+        <div class="comment-input-row" id="ci-${encoded}">
+          <input class="comment-input" placeholder="Lägg till kommentar..." id="inp-${encoded}" onkeydown="if(event.key==='Enter') saveComment('${safeLink}')">
+          <button class="comment-save-btn" onclick="saveComment('${safeLink}')">Spara</button>
+        </div>
+      </div>`;
+  }
+}
+
+function showCommentInput(link) {
+  const encoded = link.replace(/[^a-zA-Z0-9]/g, "_").slice(0, 40);
+  const existing = comments[link] || "";
+  const safeLink = link.replace(/'/g, "\\'");
+  const cdEl = document.getElementById("cd-" + encoded);
+  if (cdEl) {
+    cdEl.outerHTML = `
+      <div class="comment-input-row" id="ci-${encoded}">
+        <input class="comment-input" placeholder="Lägg till kommentar..." id="inp-${encoded}" value="${existing.replace(/"/g, '&quot;')}" onkeydown="if(event.key==='Enter') saveComment('${safeLink}')">
+        <button class="comment-save-btn" onclick="saveComment('${safeLink}')">Spara</button>
+      </div>`;
+    document.getElementById("inp-" + encoded).focus();
+  }
+}
+
+async function saveComment(link) {
+  if (!TOKEN) {
+    showStatus("⚠️ Öppna sidan med ?token=DITT_TOKEN för att spara kommentarer.", "error");
+    return;
+  }
+  const encoded = link.replace(/[^a-zA-Z0-9]/g, "_").slice(0, 40);
+  const input = document.getElementById("inp-" + encoded);
+  const text = input ? input.value.trim() : "";
+
+  if (text) {
+    comments[link] = text;
+  } else {
+    delete comments[link];
+  }
+
+  try {
+    const fresh = await ghGet(COMMENTS_FILE);
+    commentsSha = fresh ? fresh.sha : null;
+    commentsSha = await ghPut(COMMENTS_FILE, comments, commentsSha);
+    showStatus("💬 Kommentar sparad!", "success");
+    renderCards();
+  } catch (e) {
+    showStatus("Fel: " + e.message, "error");
+  }
+}
+
 function renderCards() {
   const container = document.getElementById("cards");
 
@@ -143,6 +219,7 @@ function renderCards() {
             <button class="block-btn blocked-btn" onclick="toggleBlock('${safeLink}', this)">Ta bort blockering</button>
           </div>
           ${snippet}
+          ${commentSection(link)}
         </div>`;
     }).join("");
     return;
@@ -173,6 +250,7 @@ function renderCards() {
         </div>
         <p class="snippet">${r.snippet}</p>
         <span class="tag">Sök: ${r.query}</span>${dateTag}
+        ${commentSection(r.link)}
       </div>`;
   }).join("");
 }
@@ -213,6 +291,16 @@ async function init() {
     console.warn("Kunde inte ladda blocklista:", e.message);
     blocklist = new Set();
     blocklistSha = null;
+  }
+
+  try {
+    const commentsData = await ghGet(COMMENTS_FILE);
+    comments = commentsData ? commentsData.content : {};
+    commentsSha = commentsData ? commentsData.sha : null;
+  } catch (e) {
+    console.warn("Kunde inte ladda kommentarer:", e.message);
+    comments = {};
+    commentsSha = null;
   }
 
   renderCards();
