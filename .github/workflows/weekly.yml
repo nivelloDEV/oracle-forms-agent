@@ -2,7 +2,7 @@ name: Oracle Forms Weekly Agent
 
 on:
   schedule:
-    - cron: "0 7 * * 1"   # Varje måndag kl 07:00 UTC (= 08:00 svensk tid)
+    - cron: "0 3 * * 1"   # Varje måndag kl 03:00 UTC (= 04:00 svensk tid)
   workflow_dispatch:
 
 jobs:
