@@ -54,6 +54,16 @@ BLOCKED_BRANDS = {
     "neuvoo", "whatjobs", "jobsora", "jobted", "learn4good", "jobisjob",
 }
 
+# Enskild annons hos en aggregator (behålls) – allt annat där är söklistor
+AGGREGATOR_SINGLE_AD = re.compile(
+    r"/job/[0-9a-f]{16,}"            # jobted.se/job/2a86...
+    r"|/[a-z]{2}/job/[^/]+-[0-9a-f]{16,}"  # jobleads.com/dk/job/...-e7ff...
+    r"|/viewjob\b|[?&]jk="           # indeed enskild annons
+    r"|/job-listing/"                 # glassdoor enskild annons
+    r"|/rc/clk",
+    re.I,
+)
+
 # LinkedIn: bara svenska/danska subdomäner och www räknas
 LINKEDIN_ALLOWED_SUBDOMAINS = {"linkedin.com", "se.linkedin.com", "dk.linkedin.com"}
 
@@ -135,11 +145,11 @@ def _host(url: str) -> str:
     return host.lower().removeprefix("www.")
 
 
-def _domain_blocked(host: str) -> bool:
+def _domain_blocked(host: str) -> bool | str:
     if host.endswith(BLOCKED_SUFFIXES):
         return True
     if any(label in BLOCKED_BRANDS for label in host.split(".")):
-        return True
+        return "aggregator"
     if host.endswith("linkedin.com") and host not in LINKEDIN_ALLOWED_SUBDOMAINS:
         return True
     return any(host == d or host.endswith("." + d) for d in BLOCKED_DOMAINS)
@@ -206,7 +216,11 @@ def classify(result: dict) -> str | None:
 
     if not host:
         return "saknar URL"
-    if _domain_blocked(host):
+    blocked = _domain_blocked(host)
+    if blocked == "aggregator":
+        if not AGGREGATOR_SINGLE_AD.search(url):
+            return f"söklista hos aggregator ({host})"
+    elif blocked:
         return f"blockerad domän ({host})"
     if any(p.search(url) for p in SPAM_PATH_PATTERNS):
         return "spam-URL"
