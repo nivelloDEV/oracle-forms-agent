@@ -132,11 +132,8 @@ def search_google(query: str) -> list[dict]:
 
             is_closed = any(phrase in snippet or phrase in title for phrase in CLOSED_PHRASES)
             if is_closed:
-                if is_recent(date_str):
-                    print(f"  Stängd men under 1 år gammal, tar med: {res.get('title', '')}")
-                else:
-                    print(f"  Hoppar över stängd annons (>1 år): {res.get('title', '')}")
-                    continue
+                print(f"  Hoppar över stängd annons: {res.get('title', '')}")
+                continue
 
             # Bygg fylligare beskrivning från rich_snippet
             rich = res.get("rich_snippet", {})

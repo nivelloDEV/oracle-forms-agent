@@ -26,6 +26,10 @@ BLOCKED_DOMAINS = {
     "nivello.se",
     # företagsregister / katalogsidor
     "hitta.se", "merinfo.se", "ratsit.se", "bolagsfakta.se", "allabolag.se",
+    "alltombolag.se", "proff.se", "proff.dk", "foretagsfakta.se", "upplysning.se",
+    "syna.se", "creditsafe.com", "bisnode.se", "dnb.com", "kreditrapporten.se",
+    "foretagsinfo.se", "largestcompanies.se", "cvr.dk", "virk.dk", "krak.dk",
+    "degulesider.dk", "datacvr.virk.dk", "ownr.dk", "paqle.dk", "finanstilsynet.dk",
     "eniro.se", "infobel.com", "kompass.com", "topograph.co",
     "largestcompanies.com", "fintel.io",
     # aggregerade jobbsökningar (inte enskilda annonser)
@@ -54,6 +58,9 @@ SPAM_PATH_PATTERNS = [
     re.compile(r"/report/[A-Za-z0-9]{8,}/"),
     re.compile(r"/(download|pdf|ebook)s?/[A-Za-z0-9]{8,}"),
     re.compile(r"[_-](updated[_-]version|free[_-]download|pdf[_-]download)", re.I),
+    # företagsprofiler i register: /foretag/<namn>-556808-9014, /verksamhet/...
+    re.compile(r"/(foretag|företag|verksamhet|virksomhed|company|firma)/[^/]*\d{6}-?\d{4}", re.I),
+    re.compile(r"/(verksamhet|virksomhed)/", re.I),
     # LinkedIn-artiklar (content marketing från konsultbolag), inte annonser
     re.compile(r"linkedin\.com/pulse/", re.I),
 ]
@@ -91,6 +98,23 @@ TRACKING_PARAMS = {
 }
 
 MAX_AGE_DAYS = 365
+
+# LinkedIn delar ut jobb-ID i stigande ordning, så ID:t ger en ungefärlig
+# publiceringsdag. Ankarpunkt: ID 4489980186 ≈ 2026-11-13, ca 357 000 nya ID/dag.
+# Justera ankaret om uppskattningen börjar glida.
+LINKEDIN_ANCHOR_ID = 4_489_980_186
+LINKEDIN_ANCHOR_DATE = date(2026, 11, 13)
+LINKEDIN_IDS_PER_DAY = 357_000
+LINKEDIN_JOB_MAX_DAYS = 90
+LINKEDIN_JOB_ID = re.compile(r"linkedin\.com/jobs/view/(?:[^/?#]*-)?(\d{9,11})", re.I)
+
+
+def estimate_linkedin_job_date(url: str) -> date | None:
+    m = LINKEDIN_JOB_ID.search(url)
+    if not m:
+        return None
+    days_back = (LINKEDIN_ANCHOR_ID - int(m.group(1))) / LINKEDIN_IDS_PER_DAY
+    return LINKEDIN_ANCHOR_DATE - timedelta(days=round(days_back))
 
 
 def _host(url: str) -> str:
@@ -177,6 +201,10 @@ def classify(result: dict) -> str | None:
     d = _parse_date(result.get("date"))
     if d and (date.today() - d).days > MAX_AGE_DAYS:
         return f"för gammal ({d.isoformat()})"
+
+    li = estimate_linkedin_job_date(url)
+    if li and (date.today() - li).days > LINKEDIN_JOB_MAX_DAYS:
+        return f"gammal LinkedIn-annons (ca {li.isoformat()})"
 
     if not TECH.search(text):
         return "ingen Forms/APEX/PL-SQL-koppling"
