@@ -1,50 +1,5 @@
 [
   {
-    "title": "Jobb som matchar Sql utvecklare pl sql",
-    "link": "https://se.indeed.com/q-sql-utvecklare-pl-sql-jobb.html",
-    "snippet": "Vi p\u00e5 Crepido s\u00f6ker en senior PL/SQL-utvecklare som vill st\u00f6tta v\u00e5r kund i deras digitala transformation. I v\u00e5r familj\u00e4ra atmosf\u00e4r trivs du som gillar att ...",
-    "query": "site:linkedin.com/jobs \"pl/sql\" sweden",
-    "date": "",
-    "normalized_link": "https://se.indeed.com/q-sql-utvecklare-pl-sql-jobb.html",
-    "is_new": true
-  },
-  {
-    "title": "Senior Database Developer Oracle PL/SQL - 20823",
-    "link": "https://jobbsafari.se/jobb/senior-database-developer-oracle-plsql-20823-sasrb-20733985",
-    "snippet": "This is a hands-on development role with a strong focus on Oracle PL/SQL, database-centric business logic, and transaction-intensive systems.",
-    "query": "site:linkedin.com/jobs \"pl/sql\" sweden",
-    "date": "f\u00f6r 3 dagar sedan",
-    "normalized_link": "https://jobbsafari.se/jobb/senior-database-developer-oracle-plsql-20823-sasrb-20733985",
-    "is_new": true
-  },
-  {
-    "title": "29 jobb f\u00f6r \u201dSql Developer\u201d i Sverige",
-    "link": "https://se.linkedin.com/jobs/sql-developer-jobs",
-    "snippet": "29 jobb med nyckelorden Sql Developer i Sverige \u00b7 SQL Developer \u00b7 BI Developer \u00b7 PL/SQL Developer \u00b7 Data Engineer / BI-utvecklare \u00b7 BI-utvecklare \u00b7 Data Engineer / BI ...",
-    "query": "site:linkedin.com/jobs \"pl/sql\" sweden",
-    "date": "",
-    "normalized_link": "https://linkedin.com/jobs/sql-developer-jobs",
-    "is_new": true
-  },
-  {
-    "title": "439 sql jobs in Sweden, October 2026 - Glassdoor",
-    "link": "https://www.glassdoor.sg/Job/sweden-sql-jobs-SRCH_IL.0,6_IN223_KO7,10.htm",
-    "snippet": "\u00c4r du en erfaren och hungrig PL/SQL-utvecklare som vill g\u00f6ra skillnad? D\u00e5 kan det h\u00e4r vara din dr\u00f6mroll! Gothenburg. Vi p\u00e5 Crepido s\u00f6ker en senior PL/SQL ...",
-    "query": "site:linkedin.com/jobs \"pl/sql\" sweden",
-    "date": "",
-    "normalized_link": "https://glassdoor.sg/Job/sweden-sql-jobs-SRCH_IL.0,6_IN223_KO7,10.htm",
-    "is_new": true
-  },
-  {
-    "title": "Senior Database Developer Oracle PL/SQL - 20823 - Jobted",
-    "link": "https://www.jobted.se/job/2a86118744bb9b7593fb7b192b13462a",
-    "snippet": "This is a hands-on development role with a strong focus on Oracle PL/SQL, database-centric business logic, and transaction-intensive systems.",
-    "query": "site:linkedin.com/jobs \"pl/sql\" sweden",
-    "date": "f\u00f6r 2 dagar sedan",
-    "normalized_link": "https://jobted.se/job/2a86118744bb9b7593fb7b192b13462a",
-    "is_new": true
-  },
-  {
     "title": "Oracleutvecklare med Forms och APEX - Avaron AB",
     "link": "https://jobb.sweclockers.com/jobb/extern/oracleutvecklare-med-forms-och-apex-avaron-ab-dd11f2c3-61da-4b1d-b568-86ed4049498c",
     "snippet": "Du arbetar med Oracle Forms, Oracle WLS (Forms Services), Oracle PL/SQL och PL/SQL-baserad webbutveckling. Du anv\u00e4nder Oracle APEX f\u00f6r att ...",
@@ -54,30 +9,12 @@
     "is_new": false
   },
   {
-    "title": "1 lediga jobb f\u00f6r Oracle Forms - 30 september 2026",
-    "link": "https://se.indeed.com/q-oracle-forms-jobb.html",
-    "snippet": "Jobb som matchar Oracle forms \u00b7 Oracle PL/SQL-utvecklare till Svensk Travsport \u00b7 Oracle PL/SQL-utvecklare till Svensk Travsport \u00b7 Jobbs\u00f6kare \u00b7 Arbetsgivare \u00b7 Om oss.",
-    "query": "site:linkedin.com/jobs \"oracle forms\" sweden",
-    "date": "",
-    "normalized_link": "https://se.indeed.com/q-oracle-forms-jobb.html",
-    "is_new": false
-  },
-  {
-    "title": "Experienced Oracle database developer at Novo Nordisk ...",
-    "link": "https://www.jobleads.com/dk/job/experienced-oracle-database-developer-at-novo-nordisk-engineering--kongens-lyngby--e9b5abdc1d1ec7e1cd1f87eac932a020e",
-    "snippet": "5+ years of experience in software development. 5+ years of experience with Oracle Database, Oracle SQL and PL/SQL, Oracle Forms/Reports. Responsibilities.",
-    "query": "\"oracle forms\" developer denmark",
-    "date": "",
-    "normalized_link": "https://jobleads.com/dk/job/experienced-oracle-database-developer-at-novo-nordisk-engineering--kongens-lyngby--e9b5abdc1d1ec7e1cd1f87eac932a020e",
-    "is_new": false
-  },
-  {
-    "title": "Apex It Jobs in Worldwide (22000+ Open Roles)",
-    "link": "https://www.linkedin.com/jobs/apex-it-jobs-worldwide?f_C=13908&trk=top-card_top-card-primary-button-top-card-primary-cta",
-    "snippet": "Aalborg, North Denmark Region, Denmark. Be an early applicant. 3 days ago ... ECKXEL - D\u00e9veloppeur Oracle APEX. ECKXEL EU Partners. Luxembourg, Luxembourg ...",
-    "query": "site:linkedin.com/jobs \"oracle apex\" denmark",
-    "date": "",
-    "normalized_link": "https://linkedin.com/jobs/apex-it-jobs-worldwide?f_C=13908",
+    "title": "Senior Database Developer Oracle PL/SQL - 20823",
+    "link": "https://jobbsafari.se/jobb/senior-database-developer-oracle-plsql-20823-sasrb-20733985",
+    "snippet": "This is a hands-on development role with a strong focus on Oracle PL/SQL, database-centric business logic, and transaction-intensive systems.",
+    "query": "site:linkedin.com/jobs \"pl/sql\" sweden",
+    "date": "f\u00f6r 3 dagar sedan",
+    "normalized_link": "https://jobbsafari.se/jobb/senior-database-developer-oracle-plsql-20823-sasrb-20733985",
     "is_new": false
   }
 ]
