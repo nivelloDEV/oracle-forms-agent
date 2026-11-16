@@ -4,6 +4,8 @@ import requests
 from datetime import datetime, timedelta
 from pathlib import Path
 
+from lead_filter import filter_results, normalize_url
+
 SERPAPI_KEY = os.environ.get("SERPAPI_KEY")
 DATA_FILE = "found_companies.json"
 RESULTS_FILE = "results.json"
@@ -166,18 +168,29 @@ def run_scraper() -> list[dict]:
     all_results = []
     seen_links_this_run = set()
 
+    blocklist_norm = {normalize_url(u) for u in blocklist}
+    raw_results = []
     for query in QUERIES:
         print(f"Söker: {query}")
-        results = search_google(query)
-        for r in results:
-            if r["link"] in seen_links_this_run:
-                continue
-            if r["link"] in blocklist:
-                print(f"  Blockerad, hoppar över: {r['title']}")
-                continue
-            seen_links_this_run.add(r["link"])
-            r["is_new"] = r["link"] not in seen
-            all_results.append(r)
+        raw_results.extend(search_google(query))
+
+    # Sålla bort spam, irrelevanta, gamla och dubbletter
+    kept, dropped = filter_results(raw_results)
+    for r, why in dropped:
+        print(f"  Sållad ({why}): {r['link']}")
+    print(f"Filter: {len(kept)} behållna, {len(dropped)} sållade av {len(raw_results)}.")
+
+    for r in kept:
+        nlink = r["normalized_link"]
+        if nlink in seen_links_this_run:
+            continue
+        if r["link"] in blocklist or nlink in blocklist_norm:
+            print(f"  Blockerad, hoppar över: {r['title']}")
+            continue
+        seen_links_this_run.add(nlink)
+        # Bakåtkompatibelt: tidigare sparades råa länkar i found_companies.json
+        r["is_new"] = nlink not in seen and r["link"] not in seen
+        all_results.append(r)
 
     # Nya först
     all_results.sort(key=lambda r: not r["is_new"])
