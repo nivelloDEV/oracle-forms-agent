@@ -9,12 +9,30 @@
     "is_new": false
   },
   {
+    "title": "Experienced Oracle database developer at Novo Nordisk ...",
+    "link": "https://www.jobleads.com/dk/job/experienced-oracle-database-developer-at-novo-nordisk-engineering--kongens-lyngby--e9b5abdc1d1ec7e1cd1f87eac932a020e",
+    "snippet": "5+ years of experience in software development. 5+ years of experience with Oracle Database, Oracle SQL and PL/SQL, Oracle Forms/Reports. Responsibilities.",
+    "query": "\"oracle forms\" developer denmark",
+    "date": "",
+    "normalized_link": "https://jobleads.com/dk/job/experienced-oracle-database-developer-at-novo-nordisk-engineering--kongens-lyngby--e9b5abdc1d1ec7e1cd1f87eac932a020e",
+    "is_new": false
+  },
+  {
     "title": "Senior Database Developer Oracle PL/SQL - 20823",
     "link": "https://jobbsafari.se/jobb/senior-database-developer-oracle-plsql-20823-sasrb-20733985",
     "snippet": "This is a hands-on development role with a strong focus on Oracle PL/SQL, database-centric business logic, and transaction-intensive systems.",
     "query": "site:linkedin.com/jobs \"pl/sql\" sweden",
     "date": "f\u00f6r 3 dagar sedan",
     "normalized_link": "https://jobbsafari.se/jobb/senior-database-developer-oracle-plsql-20823-sasrb-20733985",
+    "is_new": false
+  },
+  {
+    "title": "Senior Database Developer Oracle PL/SQL - 20823 - Jobted",
+    "link": "https://www.jobted.se/job/2a86118744bb9b7593fb7b192b13462a",
+    "snippet": "This is a hands-on development role with a strong focus on Oracle PL/SQL, database-centric business logic, and transaction-intensive systems.",
+    "query": "site:linkedin.com/jobs \"pl/sql\" sweden",
+    "date": "f\u00f6r 2 dagar sedan",
+    "normalized_link": "https://jobted.se/job/2a86118744bb9b7593fb7b192b13462a",
     "is_new": false
   }
 ]
