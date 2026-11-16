@@ -46,6 +46,17 @@ BLOCKED_DOMAINS = {
     "orpheus-portal.com", "tvimenning.no", "ponty-system.se",
 }
 
+# Jobbaggregatorer och sökmotorer – blockeras oavsett landsdomän
+# (glassdoor.sg, glassdoor.co.uk, indeed.com, de.indeed.com, jooble.org ...)
+BLOCKED_BRANDS = {
+    "glassdoor", "indeed", "jooble", "careerjet", "monster", "shine", "sulekha",
+    "jobleads", "talent", "simplyhired", "ziprecruiter", "jobrapido", "adzuna",
+    "neuvoo", "whatjobs", "jobsora", "jobted", "learn4good", "jobisjob",
+}
+
+# LinkedIn: bara svenska/danska subdomäner och www räknas
+LINKEDIN_ALLOWED_SUBDOMAINS = {"linkedin.com", "se.linkedin.com", "dk.linkedin.com"}
+
 # Toppdomäner/suffix som (i det här sammanhanget) i praktiken bara är spam
 BLOCKED_SUFFIXES = (
     ".edu.br", ".gov.br", ".edu.in", ".ac.in", ".edu.pk", ".edu.ng",
@@ -61,6 +72,8 @@ SPAM_PATH_PATTERNS = [
     # företagsprofiler i register: /foretag/<namn>-556808-9014, /verksamhet/...
     re.compile(r"/(foretag|företag|verksamhet|virksomhed|company|firma)/[^/]*\d{6}-?\d{4}", re.I),
     re.compile(r"/(verksamhet|virksomhed)/", re.I),
+    # Allt under linkedin.com/jobs/ utom enskilda annonser (/jobs/view/<id>)
+    re.compile(r"linkedin\.com/jobs/(?!view/)", re.I),
     # LinkedIn-artiklar (content marketing från konsultbolag), inte annonser
     re.compile(r"linkedin\.com/pulse/", re.I),
 ]
@@ -124,6 +137,10 @@ def _host(url: str) -> str:
 
 def _domain_blocked(host: str) -> bool:
     if host.endswith(BLOCKED_SUFFIXES):
+        return True
+    if any(label in BLOCKED_BRANDS for label in host.split(".")):
+        return True
+    if host.endswith("linkedin.com") and host not in LINKEDIN_ALLOWED_SUBDOMAINS:
         return True
     return any(host == d or host.endswith("." + d) for d in BLOCKED_DOMAINS)
 
