@@ -1,38 +1,92 @@
 [
   {
-    "title": "Oracleutvecklare med Forms och APEX - Avaron AB",
-    "link": "https://jobb.sweclockers.com/jobb/extern/oracleutvecklare-med-forms-och-apex-avaron-ab-dd11f2c3-61da-4b1d-b568-86ed4049498c",
-    "snippet": "Du arbetar med Oracle Forms, Oracle WLS (Forms Services), Oracle PL/SQL och PL/SQL-baserad webbutveckling. Du anv\u00e4nder Oracle APEX f\u00f6r att ...",
+    "title": "Systemutvecklare Oracle p\u00e5 Experis \u2013 Stockholms kommun",
+    "link": "https://se.linkedin.com/jobs/view/systemutvecklare-oracle-at-experis-4471735469",
+    "snippet": "Goda erfarenheter fr\u00e5n Oracle Forms och WebLogic Server. Erfarenhet av testautomatisering och verktyg som Azure DevOps/Git hub, JIRA, TM4J eller motsvarande ...",
     "query": "site:linkedin.com/jobs \"oracle forms\" sweden",
-    "date": "6 juli 2026",
-    "normalized_link": "https://jobb.sweclockers.com/jobb/extern/oracleutvecklare-med-forms-och-apex-avaron-ab-dd11f2c3-61da-4b1d-b568-86ed4049498c",
-    "is_new": false
+    "date": "",
+    "normalized_link": "https://linkedin.com/jobs/view/systemutvecklare-oracle-at-experis-4471735469",
+    "is_new": true
   },
   {
-    "title": "Experienced Oracle database developer at Novo Nordisk ...",
-    "link": "https://www.jobleads.com/dk/job/experienced-oracle-database-developer-at-novo-nordisk-engineering--kongens-lyngby--e9b5abdc1d1ec7e1cd1f87eac932a020e",
-    "snippet": "5+ years of experience in software development. 5+ years of experience with Oracle Database, Oracle SQL and PL/SQL, Oracle Forms/Reports. Responsibilities.",
-    "query": "\"oracle forms\" developer denmark",
+    "title": "Oracle Developer",
+    "link": "https://veritaz.se/sv/jobb/oracle-developer-757",
+    "snippet": "Oracle Developer J\u00f6nk\u00f6ping, Sweden. Software Engineering opportunity with Veritaz ... Oracle Forms and Reports is considered advantageous. Work Logistics ...",
+    "query": "\"oracle forms\" consultant sweden",
     "date": "",
-    "normalized_link": "https://jobleads.com/dk/job/experienced-oracle-database-developer-at-novo-nordisk-engineering--kongens-lyngby--e9b5abdc1d1ec7e1cd1f87eac932a020e",
-    "is_new": false
+    "normalized_link": "https://veritaz.se/sv/jobb/oracle-developer-757",
+    "is_new": true
+  },
+  {
+    "title": "Backend Utvecklare PL/SQL p\u00e5 ATG - AB Trav och Galopp",
+    "link": "https://se.linkedin.com/jobs/view/backend-utvecklare-pl-sql-at-ab-trav-och-galopp-4491502241",
+    "snippet": "God f\u00f6rm\u00e5ga att samarbeta och kommunicera i ett team. Meriterande: Erfarenhet av Oracle APEX; Erfarenhet av backendutveckling i Java eller ...",
+    "query": "site:linkedin.com/jobs \"oracle apex\" sweden",
+    "date": "f\u00f6r 7 dagar sedan",
+    "normalized_link": "https://linkedin.com/jobs/view/backend-utvecklare-pl-sql-at-ab-trav-och-galopp-4491502241",
+    "is_new": true
   },
   {
     "title": "Senior Database Developer Oracle PL/SQL - 20823",
-    "link": "https://jobbsafari.se/jobb/senior-database-developer-oracle-plsql-20823-sasrb-20733985",
-    "snippet": "This is a hands-on development role with a strong focus on Oracle PL/SQL, database-centric business logic, and transaction-intensive systems.",
-    "query": "site:linkedin.com/jobs \"pl/sql\" sweden",
-    "date": "f\u00f6r 3 dagar sedan",
-    "normalized_link": "https://jobbsafari.se/jobb/senior-database-developer-oracle-plsql-20823-sasrb-20733985",
+    "link": "https://emprego.com/jobs/senior-database-developer-oracle-plsql-20823-9ea7456a-6e73-4e48-88bb-00dcc138bca3",
+    "snippet": "Senior Oracle PL/SQL-utvecklare s\u00f6kes f\u00f6r ett l\u00e5ngsiktigt konsultuppdrag inom IT-sektorn. Apply for free.",
+    "query": "\"pl/sql\" konsult sverige",
+    "date": "15 nov. 2026",
+    "normalized_link": "https://emprego.com/jobs/senior-database-developer-oracle-plsql-20823-9ea7456a-6e73-4e48-88bb-00dcc138bca3",
+    "is_new": true
+  },
+  {
+    "title": "Experienced Oracle database developer at Novo Nordisk ...",
+    "link": "https://dk.linkedin.com/jobs/view/experienced-oracle-database-developer-at-novo-nordisk-engineering-at-nne-4489980186?refId=xIgCfpIFtxWJ%2FH7L6T39WA%3D%3D&trackingId=J2MgKE794gQhp%2FqsTto%2FSg%3D%3D",
+    "snippet": "5+ years of experience with Oracle Database, Oracle SQL and PL/SQL, Oracle Forms/Reports; Experience with AI-assisted software development; You speak and ...",
+    "query": "site:linkedin.com/jobs \"oracle forms\" danmark",
+    "date": "",
+    "normalized_link": "https://linkedin.com/jobs/view/experienced-oracle-database-developer-at-novo-nordisk-engineering-at-nne-4489980186",
     "is_new": false
   },
   {
-    "title": "Senior Database Developer Oracle PL/SQL - 20823 - Jobted",
-    "link": "https://www.jobted.se/job/2a86118744bb9b7593fb7b192b13462a",
-    "snippet": "This is a hands-on development role with a strong focus on Oracle PL/SQL, database-centric business logic, and transaction-intensive systems.",
+    "title": "Senior Software Architect hos KMD",
+    "link": "https://dk.linkedin.com/jobs/view/senior-software-architect-at-kmd-4475511283",
+    "snippet": "Oracle Forms; Oracle Reports; Er nysgerrig p\u00e5 AI og LLMs. Det kan du forvente. En arbejdsplads hvor der er en god balance mellem arbejdsliv og fritid, og hvor ...",
+    "query": "site:linkedin.com/jobs \"oracle forms\" danmark",
+    "date": "",
+    "normalized_link": "https://linkedin.com/jobs/view/senior-software-architect-at-kmd-4475511283",
+    "is_new": false
+  },
+  {
+    "title": "Let's find your dream job!",
+    "link": "https://jobsinmalmo.com/jobs/oracle",
+    "snippet": "Sweden - Malmoe. 7 hours ago. Oracle Forms &amp; Reports Developer - Malmo. About the RoleAs a Senior Oracle PL/SQL Developer, you will play a pivotal ...",
+    "query": "\"oracle forms\" consultant sweden",
+    "date": "",
+    "normalized_link": "https://jobsinmalmo.com/jobs/oracle",
+    "is_new": false
+  },
+  {
+    "title": "Oracle APEX-konsulent hos emagine \u2014 K\u00f8benhavn",
+    "link": "https://dk.linkedin.com/jobs/view/oracle-apex-konsulent-at-emagine-4473718696",
+    "snippet": "Vi s\u00f8ger en erfaren Oracle APEX-konsulent til udvikling og videreudvikling af forretningsapplikationer baseret p\u00e5 Oracle-platformen.",
+    "query": "site:linkedin.com/jobs \"oracle apex\" danmark",
+    "date": "",
+    "normalized_link": "https://linkedin.com/jobs/view/oracle-apex-konsulent-at-emagine-4473718696",
+    "is_new": false
+  },
+  {
+    "title": "AI-Assisted Migration of Legacy PL/SQL to Cloud-Native ...",
+    "link": "https://se.linkedin.com/jobs/view/master-thesis-%E2%80%93-ai-assisted-migration-of-legacy-pl-sql-to-cloud-native-architectures-%E2%80%93-ikea-of-sweden-at-ikea-4483547022",
+    "snippet": "Ans\u00f6k till Master Thesis \u2013 AI-Assisted Migration of Legacy PL/SQL to Cloud-Native Architectures \u2013 IKEA of Sweden p\u00e5 IKEA i Malm\u00f6.",
     "query": "site:linkedin.com/jobs \"pl/sql\" sweden",
-    "date": "f\u00f6r 2 dagar sedan",
-    "normalized_link": "https://jobted.se/job/2a86118744bb9b7593fb7b192b13462a",
+    "date": "31 okt. 2026",
+    "normalized_link": "https://linkedin.com/jobs/view/master-thesis-%E2%80%93-ai-assisted-migration-of-legacy-pl-sql-to-cloud-native-architectures-%E2%80%93-ikea-of-sweden-at-ikea-4483547022",
+    "is_new": false
+  },
+  {
+    "title": "Senior Oracle PL/SQL Developer - NXT Interim AB - RecMan",
+    "link": "https://nxtinterim.recman.io/job/315623",
+    "snippet": "Senior Oracle PL/SQL Developer ... Sverige, Stockholms l\u00e4n, Stockholm ... NXT Interim och NXT Rekrytering \u00e4r ett nischat, innovativt f\u00f6retag som \u00e4r verksamma inom ...",
+    "query": "\"pl/sql\" konsult sverige",
+    "date": "",
+    "normalized_link": "https://nxtinterim.recman.io/job/315623",
     "is_new": false
   }
 ]
